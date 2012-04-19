@@ -1,0 +1,531 @@
+<!-- Copyright (c) 1999 Nik Clayton, All rights reserved.
+
+     Redistribution and use in source (SGML DocBook) and 'compiled' forms
+     (SGML HTML, PDF, PostScript, RTF and so forth) with or without
+     modification, are permitted provided that the following conditions
+     are met:
+
+      1. Redistributions of source code (SGML DocBook) must retain the above
+         copyright notice, this list of conditions and the following
+         disclaimer as the first lines of this file unmodified.
+
+      2. Redistributions in compiled form (transformed to other DTDs,
+         converted to PDF, PostScript, RTF and other formats) must reproduce
+         the above copyright notice, this list of conditions and the
+         following disclaimer in the documentation and/or other materials
+         provided with the distribution.
+
+     THIS DOCUMENTATION IS PROVIDED BY NIK CLAYTON "AS IS" AND ANY EXPRESS OR
+     IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+     OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+     DISCLAIMED. IN NO EVENT SHALL NIK CLAYTON BE LIABLE FOR ANY DIRECT,
+     INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+     SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+     ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE
+     POSSIBILITY OF SUCH DAMAGE.
+
+     $FreeBSD$
+-->
+
+<chapter id="translations">
+  <title>Tradu&ccedil;&otilde;es</title>
+
+  <para>Este &eacute; o  <literal>FAQ</literal> para as pessoas que
+    traduzem a documenta&ccedil;&atilde;o do FreeBSD
+    (<literal>FAQ</literal>, &a.ptbr.p.handbook;, tutoriais,
+    p&aacute;gina de manual e outros) para diferentes
+    l&iacute;nguas.</para>
+ 
+<para>Ele &eacute;  <emphasis>fortemente</emphasis> baseado na
+    tradu&ccedil;&atilde;o do <literal>FAQ</literal> do Projeto de
+    Documenta&ccedil;&atilde;o Alem&atilde;o do FreeBSD, originalmente
+    escrito por Frank Gr&uuml;nder
+    <email>elwood@mc5sys.in-berlin.de</email> e traduzido novamente
+    para o ingl&ecirc;s por Bernd Warken
+    <email>bwarken@mayn.de</email>.</para>
+ 
+  <para>O respons&aacute;vel pelo <literal>FAQ</literal> &eacute;
+    &a.doceng;.</para>
+
+  <qandaset>
+    <qandaentry>
+      <question>
+	<para>Porque da <literal> FAQ</literal>?</para>
+
+      </question>
+
+      <answer>
+	<para>Mais e mais pessoas est&atilde;o se juntando da lista
+	  de discuss&atilde;o freebsd-doc e est&atilde;o oferecendo-se
+	  para traduzir a documenta&ccedil;&atilde;o do FreeBSd para
+	  outras l&iacute;nguas. Este <literal>FAQ</literal> aponta
+	  respostas para suas perguntas, assim eles podem
+	  come&ccedil;ar a tradu&ccedil;&atilde;o da
+	  documenta&ccedil;&atilde;o t&atilde;o rapidamente quanto
+	  poss&iacute;vel;.</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>O que <phrase>i18n</phrase> and <phrase>l10n</phrase>
+	  significam?</para>
+      </question>
+      
+      <answer>
+	<para><phrase>i18n</phrase> significa
+	  <phrase>internacionaliza&ccedil;&atilde;o</phrase> and
+	  <phrase>l10n</phrase> significa
+	  <phrase>localliza&ccedil;&atilde;o</phrase>. S&atilde;o
+	  apenas abrevia&ccedil;&otilde;es.</para> 
+
+	<para><phrase>i18n</phrase> pode ser lido como
+	  <quote>i</quote> seguido por 18 letras, seguidas por
+	  <quote>n</quote>. Similarmente, <phrase>l10n</phrase>
+	  &eacute; <quote>l</quote> seguido por 10 letras, seguidas
+	  por <quote>n</quote>.</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Existe uma lista de discuss&atilde;o para tradutores?</para>
+      </question>
+
+      <answer>
+	<para>Sim.  Os diferentes grupos de tradu&ccedil;&atilde;o possuem as suas pr&oacute;prias listas de discuss&atilde;o.  A <ulink url="http://www.freebsd.org/docproj/translations.html">lista dos projetos de tradu&ccedil;&atilde;o</ulink> possui maiores informa&ccedil;&otilde;es sobre as listas de discuss&atilde;o e sobre os s&iacute;tios www mantidos por cada um dos projetos de tradu&ccedil;&atilde;o.<;para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Mais tradutores s&atilde;o necess&aacute;rios?</para>
+      </question>
+
+      <answer>
+	<para>Sim. Mais pessoas trabalhando na tradu&ccedil;&atilde;o,
+	  mais r&aacute;pida ser&aacute; terminada, e mais
+	  r&aacute;pida as mudan&ccedil;as na
+	  documenta&ccedil;&atilde;o em Ingl&ecirc; ser&atilde;o
+	  refletidas nos documentos traduzidos.</para>
+	
+	<para>Voc&ecirc; n&atilde;o precisa ser um tradutor
+	  profissional para poder ajudar.</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Que l&iacute;nguas eu necessito saber?</para>
+      </question>
+
+      <answer>
+	<para>Idealmente, voc&ecirc; deveria ter um bom conhecimento
+	  na escrita em Ingl&ecirc;s, e obviamente voc&ecirc;
+	  necessitar&aacute; ser fluente na l&iacute;ngua para a qual
+	  estiver traduzindo.</para>
+
+	<para>Ingl&ecirc;s n&atilde;o &eacute; estritamente
+	  necess&aacute;rio. Por exemplo, voc&ecirc; poderia fazer uma
+	  tradu&ccedil;&atilde;o do FAQ Hungaro para o
+	  Espanhol.</para>
+      </answer>
+    </qandaentry>
+    
+    <qandaentry>
+      <question>
+	<para>Que software eu necessito conhecer?</para>
+      </question>
+
+      <answer>
+	<para>&Eacute; fortemente recomendado que voc&ecirc; mantenha uma
+	  c&oacute;pia local do reposit&oacute;rio CVS do FreeBSD (ao
+	  menos parte da documenta&ccedil;&atilde;o) usando
+	  <application>CTM</application> ou
+	  <application>CVSup</application>. O cap&iacute;tulo
+	  "Permancendo atualizado com o FreeBSD" do
+	  &a.ptbr.p.handbook; explica como usar estas
+	  aplica&ccedil;&otilde;es.</para>
+
+	<para>Voc&ecirc; deve estar confort&aacute;vel usando
+	  <application>CVS</application>. Ele permitir&aacute; que
+	  voc&ecirc; veja as diferentes vers&otilde;es dos arquivos que fazem
+	  a documenta&ccedil;&atilde;o.</para>
+
+	<para>[XXX Para Fazer -- escreva um tutorial que mostre como
+	  usar o CVSup para pegar apenas a documenta&ccedil;&atilde;o,
+	  verifica-la, e mostrar as mudan&ccedil;as entre as duas
+	  revis&otilde;es]</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Como eu encontro algu&eacute;m que esteja fazendo a
+	  tradu&ccedil;&atilde;o para a mesma
+	  l&iacute;ngua?</para>
+
+      </question>
+
+      <answer>
+	<para><ulink
+	    url="http://www.FreeBSD.org/docproj/translations.html">A
+	    p&aacute;gina do Projeto de Tradu&ccedil;&atilde;o da
+	    Documenta&ccedil;&atilde;o</ulink> lista os trabalhos de
+	  tradu&ccedil;&atilde;o que s&atilde;o conhecidos atualmente.
+	  Se outros j&aacute; est&atilde;o trabalhando na
+	  tradu&ccedil;&atilde;o da documenta&ccedil;&atilde;o para
+	  sua l&iacute;ngua, por favor, n&atilde;o duplique os
+	  esfor&ccedil;os. Ao inv&eacute;s disso, contacte-os para ver 
+          como pode ajudar.</para>
+
+	<para>Se ningu&eacute;m for listado na p&aacute;gina como
+	  traduzindo para sua l&iacute;ngua, envie uma mensagem para
+	  &a.doc; para o caso de algu&eacute;m estar pensando em
+	  fazer a tradu&ccedil;&atilde;o, mas ainda n&atilde;o
+	  anunciou nada.</para>
+      </answer>
+    </qandaentry>
+      
+    <qandaentry>
+      <question>
+	<para>Ningu&eacute;m mais est&aacute; traduzindo para minha
+	  l&iacute;ngua. O que eu fa&ccedil;o?</para>
+      </question>
+
+      <answer>
+	<para>Felicita&ccedil;&otilde;es, voc&ecirc; acabou de come&ccedil;ar
+	  o <quote>FreeBSD
+	    <replaceable>sua-l&iacute;ngua-aqui</replaceable>
+	    Documentation Translation Project</quote>. Bem vindo a
+	  bordo.</para>
+
+	<para>Primeiro, pense se voc&ecirc; ter&aacute; o tempo 
+	  necess&aacute;rio. Uma vez que voc&ecirc; &eacute; a &uacute;nica 
+	  pessoa trabalhando  no sua l&iacute;ngua no momento, ser&aacute; sua 
+	  a responsabilidade de  publicar o seu trabalho e coordenar 
+	  qualquer volunt&aacute;rio que queira ajuda-lo.</para>
+
+	<para>Escreva um email para a lista de discuss&atilde;o do
+	  Projeto de Documenta&ccedil;&atilde;o, anunciando que
+	  voc&acirc; ir&aacute; traduzir a
+	  documenta&ccedil;&atilde;o, assim a p&aacute;gina do Projeto
+	  de Tradu&ccedil;&otilde;es de Documenta&ccedil;&atilde;o
+	  poder&aacute; ser mantida.</para>
+
+	<para>Se j&aacute; existir algu&eacute;m em seu pa&iacute;s
+	  provendo servi&ccedil;os de espelhamentodo FreeBSD,
+	  voc&ecirc; deve contacta-lo e perguntar se voc&ecirc; pode
+	  ter algum espa&ccedil;o para seu projeto, e se
+	  poss&iacute;vel um endere&ccedil;o de email ou um
+	  servi&ccedil;o de lista de discuss&atilde;o.</para>
+	
+	<para>Ent&atilde;o escolha um documento e comece a traduzir. &Eacute;
+	  melhor come&ccedil;ar com algo razoavelmente pequeno como
+	  <literal>FAQ</literal> ou um dos tutoriais.</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Eu tenho traduzido alguma documenta&ccedil;&atilde;o,
+	  onde eu a envio?</para>
+      </question>
+
+      <answer>
+	<para>Isso depende. Se voc&ecirc; j&aacute; est&aacute;
+	  trabalhando com uma equipe de tradu&ccedil;&atilde;o (tal
+	  como a equipe japonesa, ou a equipe alem&atilde;)
+	  ent&atilde;o ela ter&aacute; seus pr&oacute;prios
+	  procedimentos para manipular a documenta&ccedil;&atilde;o
+	  submetida, e estes ser&atilde;o descritos em seus
+	  s&iacute;tios www.</para>
+
+	<para>Se voc&ecirc; for a &uacute;nica pessoa que trabalha em
+	  uma determinada l&iacute;ngua (ou voc&ecirc; &eacute; o
+	  respons&aacute;vel pelo projeto de tradu&ccedil;&atilde;o e
+	  quer submeter suas mudan&ccedil;as de volta para o projeto
+	  FreeBSD) ent&atilde;o voc&ecirc; deve enviar sua
+	  tradu&ccedil;&atilde;o ao Projeto FreBSD (veja as seguintes
+	  perguntas).</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Eu sou a &uacute;nica pessoa trabalhando na
+	  tradu&ccedil;&atilde;o para est&aacute; l&iacute;ngua, como
+	  submeter minha tradu&ccedil;&atilde;o?</para>
+
+	<para>ou</para>
+
+	<para>N&oacute;s somos uma equipe de tradu&ccedil;&atilde;o, e
+	  queremos submeter a documenta&ccedil;&atilde;o que nossos
+	  membros traduziram para n&oacute;s?</para>
+      </question>
+
+      <answer>
+	<para>Primeiramente certifique-se que sua
+	  tradu&ccedil;&atilde;o est&aacute; organizada corretamente.
+          Isto significa que ela deve se encaixar na &aacute;rvore de
+          diret&oacute;rios corrente e ser processada de maneira direta.</para>
+
+	<para>Atualmente a documenta&ccedil;&atilde;o do FreeBSD
+	  &eacute; armazenada em diret&oacute;rio de n&iacute;vel
+	  superior chamado <filename>doc/</filename>. Os
+	  diret&oacute;rios abaixo deste s&atilde;o nomeados de acordo
+	  com o c&oacute;digo da l&iacute;ngua que eles s&atilde;o
+	  escritos, definidos na ISO639
+	  (<filename>/usr/share/misc/iso639</filename> em uma
+	  vers&atilde;o do FreeBSD mais nova que 20 de janeiro de
+	  1999).</para>
+
+	<para>Se sua l&iacute;ngua puder ser codificada de maneiras
+	  diferentes (por exemplo, Chin&ecirc;s) ent&atilde;o deve
+	  haver diret&oacute;rios abaixo deste uma para cada formato
+	  que voc&ecirc; tenha forncecido.</para>
+
+	<para>Finalmente voc&ecirc; deve ter diret&oacute;rios para
+	  cada original.</para>
+
+	<para>Por exemplo, em uma hipot&eacute;tica
+	  tradu&ccedil;&atilde;o para o Sueco ficaria assim</para>
+
+	<programlisting>doc/
+    sv_SE.ISO8859-1/
+                     Makefile 
+                     books/
+                           faq/
+                               Makefile
+                               book.sgml</programlisting>
+
+	<para><literal>sv_SE.ISO8859-1</literal> &eacute; o nome da
+	  tradu&ccedil;&atilde;o, na forma
+	  <filename><replaceable>lang</replaceable>.<replaceable>encoding</replaceable></filename>. 
+	  Repare nos dois Makefiles que ser&atilde;o usados para
+	  construir a documenta&ccedil;&atilde;o.</para>
+
+	<para>Use &man.tar.1; and &man.gzip.1; para compactar sua documenta&ccedil;&atilde;o, e envie para o projeto.</para>
+
+	<screen>&prompt.user; <userinput>cd doc</userinput>
+&prompt.user; <userinput>tar cf swedish-docs.tar sv_SE.ISO8859-1</userinput>
+&prompt.user; <userinput>gzip -9 swedish-docs.tar</userinput></screen>
+
+	<para>Ponha <filename>swedish-docs.tar.gz</filename> em algum
+	  lugar. Se voc&ecirc; n&atilde;o tiver acesso a seu
+	  pr&oacute;prio espa&ccedil;o na web (talvez seu ISP
+	  n&atilde;o o deixe ter algum), ent&atilde;o voc&ecirc; pode
+	  mandar um email para &a.doceng;, e combinar de enviar os arquivos
+          quando for conveniente.</para> 
+
+	<para>De qualquer maneira, voc&ecirc; deve usar &man.send-pr.1; 
+          para enviar um relat&oacute;rio indicando que voc&ecirc; submeteu 
+          a documenta&ccedil;&atilde;o. Seria muito &uacute;til se voc&ecirc; 
+          conseguisse outras pessoas para rever a sua tradu&ccedil;&atilde;o 
+          e verifica-la primeiro, uma vez que &eacute; improv&aacute;vel que 
+          a pessoa que a esteja desenvolvendo seja fluente na 
+          l&iacute;ngua.</para>
+
+	<para>Algu&eacute;m (provavelmente o gerente do projeto de
+	  documenta&ccedil;&atilde;o, atualmente &a.doceng;) far&aacute;
+	  o exame de sua tradu&ccedil;&atilde;o e confirmar&aacute;
+	  que ela est&aacute; feita. Em detalhe, as seguintes
+	  coisas ser&atilde;o observadas:</para>
+
+	<orderedlist>
+	  <listitem>
+	    <para>Todos os seus arquivos usam strings RCS
+	      (tais como "ID")?</para>
+	  </listitem>
+
+	  <listitem>
+	    <para>O <command>make all</command> no diret&oacute;rio
+	      <filename>sv_SE.ISO8859-1</filename> funciona 
+              corretamente?</para>
+	  </listitem>
+	  
+	  <listitem>
+	    <para>O <command>make install</command>
+	      funciona corretamente?</para>
+	  </listitem>
+        </orderedlist>
+	  
+	<para>Se houver algum problema, ent&atilde;o quem estiver
+	  olhando a submiss&atilde;o vai retonar para que voc&ecirc;
+	  fa&ccedil;a as corre&ccedil;&otilde;es.</para>
+
+	<para>Se n&atilde;o houver problemas na sua
+	  tradu&ccedil;&atilde;o ela ser&aacute; gravada
+	  assim que poss&iacute;vel.</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Posso incluir uma l&iacute;ngua ou um texto especifico
+	  do pa&iacute;s em minha tradu&ccedil;&atilde;o?</para>
+      </question>
+
+      <answer>
+	<para>N&oacute;s preferimos que voc&acirc; n&atilde;o
+	  fa&ccedil;a.</para>
+
+	<para>Por exemplo, suponha que voc&ecirc; esteja
+	  traduzindo o &a.ptbr.p.handbook; para o Coreano e queira
+	  incluir uma se&ccedil;&atilde;o sobre sobre varejistas na
+	  Cor&eacute;ia em seu &a.ptbr.p.handbook;.</para>
+
+	<para>N&atilde;o h&aacute; raz&atilde;o pela qual aquela
+	  informa&ccedil;&atilde;o n&atilde;o deveria estar nas
+	  vers&otilde;es em Ingl&ecirc;s (ou Alem&atilde;o, ou Espanhol, ou
+	  Japon&acirc;s, ou &hellip;). &Eacute; poss&iacute;vel que uma pessoa que
+	  fale Ingl&ecirc;s na Cor&eacute;ia possa tentar obter uma
+	  c&oacute;pia do FreeBSD enquanto esteja ali. Isso
+	  tamb&eacute;m ajuda a aumentar a presen&ccedil;a
+	  percept&iacute;vel do FreeBSD ao redor do mundo, o que
+	  n&atilde;o &eacute; uma coisa ruim </para>
+
+	<para>Se voc&ecirc; tem uma informa&ccedil;&atilde;o especifica do 
+	seu pa&iacute;s, por favor, submeta ela para altera&ccedil;&atilde;o 
+	no &a.ptbr.p.handbook; em Ingl&ecirc;s (usando &man.send-pr.1;) e 
+	depois traduza novamente para sua l&iacute;ngua no &a.ptbr.p.handbook; 
+	traduzido.</para>
+
+	<para>Obrigado.</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Como os caracteres espec&iacute;ficos da l&iacute;nga
+	  podem ser inclu&iacute;dos?</para>
+      </question>
+
+      <answer>
+ 	<para>N&atilde;o-ASCII caracteres na
+	  documenta&ccedil;&atilde;o devem ser incluidos usando
+	  entidades SGML.</para>
+
+	<para>Resumidamente, eles s&atilde;o um ``e'' comercial (&amp;), o
+	nome da entidade e um ponto-e-v&iacute;rgula(;).</para>
+
+	<para>Os nomes de entidades est&atilde;o definidos no ISO8879,
+	  que est&aacute; na &aacute;rvore do ports como <filename
+	    role="package">textproc/iso8879</filename>.</para>
+
+ 	<para>Alguns exemplos Incluem</para>
+
+	<segmentedlist>
+          <segtitle>Entidade</segtitle>
+
+          <segtitle>Apar&acirc;ncia</segtitle>
+
+          <segtitle>Descri&ccedil;&atilde;o</segtitle>
+
+	  <seglistitem>
+	    <seg>&amp;eacute;</seg>
+	    <seg>&eacute;</seg>
+	    <seg><quote>e</quote> min&uacute;sculo com acento agudo</seg>
+	  </seglistitem>
+
+	  <seglistitem>
+	    <seg>&amp;Eacute;</seg>
+	    <seg>&Eacute;</seg>
+	    <seg><quote>E</quote> ma&uacute;sculo com acento agudo</seg>
+	  </seglistitem>
+
+	  <seglistitem>
+	    <seg>&amp;uuml;</seg>
+	    <seg>&uuml;</seg>
+	    <seg><quote>u</quote> min&uacute;sculo com trema</seg>
+	  </seglistitem>
+	</segmentedlist>
+
+	<para>Depois de voc&ecirc; ter instalado o pacote iso8879,
+	  os arquivos em
+	  <filename>/usr/local/share/sgml/iso8879</filename>
+	  conter&atilde;o a lista completa.</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Dirigindo-se ao leitor</para>
+      </question>
+
+      <answer>
+	<para>Nos documentos em Ingl&ecirc;s, dirige-se ao leitor como
+	  <quote>voc&ecirc;</quote>, n&atilde;o h&aacute;
+	  distin&ccedil;&atilde;o formal/informal como existe em
+	  algumas l&iacute;nguas.</para>
+
+	<para>Se voc&ecirc; estiver traduzindo a uma l&iacute;ngua que
+	  distingua, use qualquer forma que normalmente &eacute; usada
+	  em outras documenta&ccedil;&otilde;es t&eacute;cnicas. Na
+	  d&uacute;vida, use a forma mais polida.</para>
+      </answer>
+    </qandaentry>
+
+    <qandaentry>
+      <question>
+	<para>Eu necessito colocar alguma informa&ccedil;&atilde;o
+	  adicional na tradu&ccedil;&atilde;o?</para>
+      </question>
+
+      <answer>
+	<para>Sim.</para>
+
+	<para>O cabe&ccedil;alho em da vers&atilde;o em Ingl&ecirc;s
+	  deste documento mostrar&aacute; algo como</para>
+
+	<programlisting>&lt;!--
+     The FreeBSD Documentation Project
+
+     &dollar;FreeBSD: doc/en_US.ISO8859-1/books/fdp-primer/translations/chapter.sgml,v 1.5 2000/07/07 18:38:38 dannyboy Exp &dollar;
+--&gt;</programlisting>
+
+	<para>A forma exata pode mudar, mas ela sempre
+	  incluir&aacute; a linha &dollar;FreeBSD&dollar; e a frase
+	  <literal>The FreeBSD Documentation Project</literal>. Note
+	  que o &dollar;FreeBSD &eacute; inserido pelo CVS, portanto
+	  ele deve estar vazio (apenas
+	  <literal>&dollar;FreeBSD&dollar;</literal>) para novos 
+	  documentos.</para>
+
+	<para>Seu documento de tradu&ccedil;&atilde;o deve incluir sua
+	  pr&oacute;pria linha &dollar;FreeBSD&dollar;, e mudar a
+	  linha <literal>FreeBSD Documentation Project</literal> para
+	  <literal>The FreeBSD <replaceable>language</replaceable>
+	    Documentation Project</literal>.</para>
+
+	<para>Voc&ecirc; deve ainda adicionar uma terceira linha que
+	  indicar&aacute; qual revis&atilde;o do texto em ingl&ecirc;s
+	  o texto &eacute; baseado.</para>
+	
+	<para>Assim, a vers&atilde;o em Espanhol deste arquivo pode
+	  come&ccedil;ar</para>
+
+	<programlisting>&lt;!--
+     The FreeBSD Spanish Documentation Project
+
+     &dollar;FreeBSD: doc/es_ES.ISO8859-1/books/fdp-primer/translations/chapter.sgml,v 1.3 1999/06/24 19:12:32 jesusr Exp &dollar;
+     Original revision: 1.11
+--&gt;</programlisting>
+      </answer>
+    </qandaentry>
+  </qandaset>
+</chapter>
+
+<!--
+     Local Variables:
+     mode: sgml
+     sgml-declaration: "../chapter.decl"
+     sgml-indent-data: t
+     sgml-omittag: nil
+     sgml-always-quote-attributes: t
+     sgml-parent-document: ("../book.sgml" "part" "chapter")
+     End:
+-->
