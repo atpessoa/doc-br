@@ -1528,12 +1528,13 @@ main(void)
 
 	<para>Tanto o <sgmltag>tgroup</sgmltag> quanto o
 	  <sgmltag>thead</sgmltag> cont&eacute;m elementos
-	  <sgmltag>row</sgmltag>, que por sua vez cont&eacute;m elementos
-	  <sgmltag>entry</sgmltag>.  Cada elemento <sgmltag>entry</sgmltag>
-	  especifica uma c&eacute;lula da tabela.</para>
+	  <sgmltag>row</sgmltag>, que por sua vez cont&eacute;m 
+	  elementos <sgmltag>entry</sgmltag>.  Cada elemento 
+	  <sgmltag>entry</sgmltag> especifica uma c&eacute;lula da 
+	  tabela.</para>
 
 	<example>
-	  <title><sgmltag>Tabela Informal</sgmltag></title>
+	  <title><sgmltag>informaltable</sgmltag></title>
 	
 	  <para>Uso:</para>
 	
@@ -1560,14 +1561,16 @@ main(void)
   </tgroup>
 </informaltable>]]></programlisting>
 	
-	  <para>Apar&ecirc;encia:</para>
+	  <para>Apar&ecirc;ncia:</para>
 	
 	  <informaltable>
 	    <tgroup cols="2">
 	      <thead>
 		<row>
-		  <entry>Este &eacute; o cabe&ccedil;alho da coluna 1</entry>
-		  <entry>Este &eacute; o cabe&ccedil;alho da coluna 2</entry>
+		  <entry>Este &eacute; o cabe&ccedil;alho da coluna 
+		    1</entry>
+		  <entry>Este &eacute; o cabe&ccedil;alho da coluna 
+		    2</entry>
 		</row>
 	      </thead>
 	
@@ -1587,16 +1590,16 @@ main(void)
 	</example>
 
 	<para>Sempre utilize o atributo <literal>pgwide</literal>
-	com o valor <literal>1</literal> junto ao elemento
-	<sgmltag>informaltable</sgmltag>.  Um bug no Internet Explorer
-	pode fazer com que a tabela renderize de forma incorreta
-	se ele for omitido.</para>
+	  com o valor <literal>1</literal> junto ao elemento
+	  <sgmltag>informaltable</sgmltag>.  Um bug no Internet 
+	  Explorer pode fazer com que a tabela renderize de forma 
+	  incorreta se ele for omitido.</para>
 	
-	<para>Se voc&ecirc; n&atilde;o quiser borda na tabela adicione o
-	  atributo <literal>frame</literal> ao elemento
-	  <sgmltag>informaltable</sgmltag> com o valor <literal>none</literal>
-	  (i.e., <literal>&lt;informaltable frame="none"&gt;</literal>).
-	</para>
+	<para>Se voc&ecirc; n&atilde;o quiser borda na tabela 
+	  adicione o atributo <literal>frame</literal> ao elemento
+	  <sgmltag>informaltable</sgmltag> com o valor 
+	  <literal>none</literal> (i.e., <literal>&lt;informaltable 
+	  frame="none"&gt;</literal>).</para>
 
 
 	<example>
@@ -1608,8 +1611,10 @@ main(void)
 	    <tgroup cols="2">
 	      <thead>
 		<row>
-		  <entry>Este &eacute; o cabe&ccedil;alho da coluna 1</entry>
-		  <entry>Este &eacute; o cabe&ccedil;alho da coluna 2</entry>
+		  <entry>Este &eacute; o cabe&ccedil;alho da coluna 
+		    1</entry>
+		  <entry>Este &eacute; o cabe&ccedil;alho da coluna 
+		    2</entry>
 		</row>
 	      </thead>
 	
@@ -1632,59 +1637,63 @@ main(void)
       <sect3>
 	<title>Exemplos para o Usu&aacute;rio Seguir</title>
 	
-	<para>Geralmente voc&ecirc; precisa mostrar exemplos para que o
-	  usu&aacute;rio siga.  Tipicamente, isso ir&aacute; consistir
-	  de di&aacute;logos com o computador; o usu&aacute;rio digita um
-	  comando, o usu&aacute;rio obt&eacute;m uma resposta de volta,
-	  ele digita outro comando, e assim por diante.
-	</para>
+	<para>Geralmente voc&ecirc; precisa mostrar exemplos para 
+	  que o usu&aacute;rio siga.  Normalmente, isso ir&aacute; 
+	  consistir de di&aacute;logos com o computador, nos quais 
+	  o usu&aacute;rio digita um comando, e obt&eacute;m uma 
+	  resposta de volta, ele digita outro comando e recebe outra 
+	  reposta, e assim por diante.</para>
 
-	<para>Um certo n&uacute;mero de elementos e entidades participam
-	  disso.
-	</para>
-
+	<para>V&aacute;rios elementos e entidades podem ser utilizados
+	  nestes casos.</para>
 	
 	<variablelist>
 	  <varlistentry>
 	    <term><sgmltag>screen</sgmltag></term>
 	
 	    <listitem>
-	      <para>Tudo que o usu&aacute;rio vir neste exemplo estar&aacute;
-		na tela do computador, assim o pr&oacute;ximo elemento &eacute;
-		<sgmltag>screen</sgmltag>.
-	</para>
+	      <para>Tudo que o usu&aacute;rio vir neste exemplo 
+		estar&aacute; na tela do computador, assim o 
+		pr&oacute;ximo elemento &eacute; 
+		<sgmltag>screen</sgmltag>.</para>
 
-	      <para>Dentro <sgmltag>screen</sgmltag>, espa&ccedil;os em branco
+	      <para>Dentro da marca&ccedil;&atilde;o do 
+		<sgmltag>screen</sgmltag>, espa&ccedil;os em branco
 		s&atilde;o significantes.</para>
 	    </listitem>
 	  </varlistentry>
 	
 	  <varlistentry>
 	    <term><sgmltag>prompt</sgmltag>,
-	      <literal>&amp;prompt.root;</literal> and
+	      <literal>&amp;prompt.root;</literal> e
 	      <literal>&amp;prompt.user;</literal></term>
 	
 	    <listitem>
 
-	      <para>Algumas das coisas que o usu&aacute;rio estar&aacute;
-		vendo na tela do computador (tanto do sistema operacional,
-		comando, shell, ou aplica&ccedil;&atilde;o).  Devem ser marcadas
-		 usando <sgmltag>prompt</sgmltag>.
-	</para>
+	      <para>Algumas das coisas que o usu&aacute;rio 
+		estar&aacute; vendo na tela  
+		ser&atilde;o os prompts do computador (seja do 
+		sistema operacional, da linha de comando shell ou 
+		de uma aplica&ccedil;&atilde;o).  Estes prompts devem
+		ser marcados usando <sgmltag>prompt</sgmltag>.</para>
 
-	      <para>Como caso especial, dois prompts de shell s&atilde;o dados:
-		uma para o usu&aacute;rio e outro para o root.  Sempre que
-		quiser indicar que o usu&aacute;rio est&aacute; em um prompt
-		do shell, use <literal>&amp;prompt.root;</literal> e
-		<literal>&amp;prompt.user;</literal> quando for preciso.
-	</para>
+	      <para>Por serem especiais, os prompts de shell do 
+		usu&aacute;rio normal e do usu&aacute;rio root 
+		est&atilde;o dispon&iacute;veis como uma entidade.  
+		Sempre que quiser indicar que o usu&aacute;rio 
+		est&aacute; em um prompt do shell, use 
+		<literal>&amp;prompt.root;</literal> para o
+		usu&aacute;rio root e 
+		<literal>&amp;prompt.user;</literal> para o 
+		usu&aacute;rio normal conforme necess&aacute;rio.  
+		Estas entidades n&atilde;o precisam estar dentro de
+		um <sgmltag>prompt</sgmltag>.</para>
 
 	      <note>
 		<para><literal>&amp;prompt.root;</literal> e
 		  <literal>&amp;prompt.user;</literal> s&atilde;o
-		  extens&otilde;es ao DocBook, e n&atilde;o s&atilde;o
-		  parte do DTD original.
-		</para>
+		  extens&otilde;es do FreeBSD ao DocBook, e 
+		  n&atilde;o s&atilde;o parte do DTD original.</para>
 	      </note>
 	    </listitem>
 	  </varlistentry>
@@ -1693,11 +1702,11 @@ main(void)
 	    <term><sgmltag>userinput</sgmltag></term>
 	
 	    <listitem>
-	      <para>Quanto estiver mostrando texto que o usu&aacute;rio deva
-		digitar, envolva-o com as tags <sgmltag>userinput</sgmltag>.
-		Ele provavelmente ser&aacute; mostrado diferente para o
-		usu&aacute;rio.
-	</para>
+	      <para>Quanto estiver mostrando texto que o 
+		usu&aacute;rio deva digitar, envolva-o com as tags 
+		<sgmltag>userinput</sgmltag>.  Ele provavelmente 
+		ser&aacute; mostrado diferente para o 
+		usu&aacute;rio.</para>
 
 	    </listitem>
 	  </varlistentry>
@@ -1735,13 +1744,13 @@ This is the file called 'foo2'</screen>
 	</example>
 	
 	<note>
-	  <para>Ainda que estejamos mostrando o conte&uacute;do do arquivo
-	    <filename>foo2</filename>, ele <emphasis>n&atilde;o</emphasis>
-	     &eacute; marcado como <sgmltag>programlisting</sgmltag>.
-	     Deixe <sgmltag>programlisting</sgmltag> para mostrar
-	     fragmentos de arquivos fora do contexto de a&ccedil;&atilde;o
-	     do usu&aacute;rio.
-	</para>
+	  <para>Ainda que estejamos mostrando o conte&uacute;do do 
+	    arquivo <filename>foo2</filename>, ele 
+	    <emphasis>n&atilde;o</emphasis> &eacute; marcado como 
+	    <sgmltag>programlisting</sgmltag>.  Deixe o 
+	    <sgmltag>programlisting</sgmltag> para mostrar fragmentos
+	    de arquivos fora do contexto de a&ccedil;&atilde;o do 
+	    usu&aacute;rio.</para>
 	</note>
       </sect3>
     </sect2>
@@ -1752,32 +1761,32 @@ This is the file called 'foo2'</screen>
       <sect3>
 	<title>Enfatizando a Informa&ccedil;&atilde;o</title>
 
-	<para>Quando voc&ecirc; quiser enfatizar uma palavra ou frase em
-	  particular, use <sgmltag>emphasis</sgmltag>.  Ela pode ser
-	  apresentada em it&aacute;lico, ou negrito, ou pode ser falada
-	  diferentemente com um sistema texto-para-fala.
-	</para>
+	<para>Quando voc&ecirc; quiser enfatizar uma palavra ou frase
+	  em particular, use <sgmltag>emphasis</sgmltag>.  Ela pode 
+	  ser apresentada em it&aacute;lico, ou negrito, ou pode ser 
+	  falada diferentemente com um sistema texto-para-fala.</para>
 
-	<para>N&atilde;o h&aacute; maneira de mudar a
+	<para>N&atilde;o h&aacute; uma maneira de mudar a 
 	  apresenta&ccedil;&atilde;o da &ecirc;nfase no seu documento,
-	  n&atilde;o tem equivalente do HTML <sgmltag>b</sgmltag> e
-	  <sgmltag>i</sgmltag>.  Se a informa&ccedil;&atilde;o que voc&ecirc;
-	  est&aacute; apresentando &eacute; importante ent&atilde;o
-	  considere usar <sgmltag>important</sgmltag> ao inv&eacute;s de
-	  <sgmltag>emphasis</sgmltag>.
-	</para>	
+	  n&atilde;o existe um equivalente ao  <sgmltag>b</sgmltag> e
+	  ao <sgmltag>i</sgmltag> do HTML.  Se a 
+	  informa&ccedil;&atilde;o que voc&ecirc; est&aacute; 
+	  apresentando &eacute; importante ent&atilde;o considere 
+	  usar <sgmltag>important</sgmltag> ao inv&eacute;s de
+	  <sgmltag>emphasis</sgmltag>.</para>	
 	
 	<example>
 	  <title><sgmltag>emphasis</sgmltag></title>
 	
 	  <para>Uso:</para>
 	
-	  <programlisting><![ RCDATA [<para>FreeBSD &eacute; sem d&uacute;vida <emphasis>o</emphasis> melhor sistema operacional tipo Unix
- para a arquitetura Intel.</para>]]></programlisting>
+	  <programlisting><![ RCDATA [<para>O FreeBSD &eacute; sem d&uacute;vida <emphasis>o</emphasis> melhor sistema operacional tipo Unix
+para a arquitetura Intel.</para>]]></programlisting>
 	
 	  <para>Apar&ecirc;ncia:</para>
-	<para>FreeBSD &eacute; sem d&uacute;vida <emphasis>o</emphasis>
-melhor sistema operacional tipo Unix.</para>
+	<para>O FreeBSD &eacute; sem d&uacute;vida 
+	  <emphasis>o</emphasis> melhor sistema operacional tipo 
+	  Unix.</para>
 	</example>
       </sect3>
 
@@ -1786,10 +1795,10 @@ melhor sistema operacional tipo Unix.</para>
 
 	<para>Para citar um texto de outro documento ou fonte, ou para
 	  denotar uma frase que &eacute; usado figuradamente, use
-	  <sgmltag>quote</sgmltag>.  Dentro da tag <sgmltag>quote</sgmltag>,
-	  voc&ecirc; pode usar a maioira da marca&ccedil;&atilde;o
-	  dispon&iacute;vel para um texto normal.
-	</para>
+	  <sgmltag>quote</sgmltag>.  Dentro da tag 
+	  <sgmltag>quote</sgmltag>, voc&ecirc; pode usar a maioira 
+	  da marca&ccedil;&atilde;o dispon&iacute;vel para um texto 
+	  normal.</para>
 
 	<example>
 	  <title>Cita&ccedil;&otilde;es</title>
@@ -1801,49 +1810,54 @@ local e p&uacute;blica</quote> como diz o RFC 1535.</para>]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
 
-	  <para>Entretanto, certifique-se que a busca n&atilde;o v&aacute;
-	    al&eacute;m do <quote>limite entre a administra&ccedil;&atilde;o
-	    local e p&uacute;blica</quote> como diz o RFC 1535.</para>
+	  <para>Entretanto, certifique-se que a busca n&atilde;o 
+	    v&aacute; al&eacute;m do <quote>limite entre a 
+	    administra&ccedil;&atilde;o local e p&uacute;blica
+	    </quote> como diz o RFC 1535.</para>
 	</example>
       </sect3>
 
       <sect3>
 	<title>Teclas, Mouse e Combina&ccedil;&otilde;es</title>
 
-	<para>Para se referir a uma tecla espec&iacute;fica do teclado, use
-	  <sgmltag>keycap</sgmltag>.  Para se referir a um bot&atilde;o do
-	  mouse, use <sgmltag>mousebutton</sgmltag>.  E para se referir a
+	<para>Para se referir a uma tecla espec&iacute;fica do 
+	  teclado, use <sgmltag>keycap</sgmltag>.  Para se referir 
+	  a um bot&atilde;o do mouse, use 
+	  <sgmltag>mousebutton</sgmltag>.  E para se referir a
 	  combina&ccedil;&atilde;o de digitar uma tecla e um clique do
-	  mouse, envolva-os com <sgmltag>keycombo</sgmltag>.
-	</para>
+	  mouse, envolva-os com <sgmltag>keycombo</sgmltag>.</para>
 
-	<para><sgmltag>keycombo</sgmltag> tem um atributo chamado
-	  <literal>action</literal>, que pode ser <literal>click</literal>,
-	  <literal>double-click</literal>,<literal>other</literal>,
-	   <literal>press</literal>, <literal>seq</literal>, ou
-	   <literal>simul</literal>.  Os dois &uacute;ltimos dizem se
-	   teclas ou bot&otilde;es devem ser pressionados em
-	   sequ&ecirc;ncia ou simultaneamente
-	</para>
+	<para>O <sgmltag>keycombo</sgmltag> tem um atributo chamado
+	  <literal>action</literal>, que pode ser 
+	  <literal>click</literal>, <literal>double-click</literal>,
+	  <literal>other</literal>, <literal>press</literal>, 
+	  <literal>seq</literal>, ou <literal>simul</literal>.  Os 
+	  dois &uacute;ltimos dizem se teclas ou bot&otilde;es devem 
+	  ser pressionados em sequ&ecirc;ncia ou simultaneamente.
+	  </para>
 
-	<para>As folhas de estilo automaticamente colocam o s&iacute;mbolo de
-	  liga&ccedil;&atilde;o, tal como <literal>+</literal>, entre os
-	  nomes das teclas, quando envolvida com <sgmltag>keycombo</sgmltag>.
-	</para>
+	<para>As folhas de estilo automaticamente colocam o 
+	  s&iacute;mbolo de liga&ccedil;&atilde;o, tal como 
+	  <literal>+</literal>, entre os nomes das teclas, quando 
+	  envolvida com <sgmltag>keycombo</sgmltag>.</para>
 	
 	<example>
 	  <title>Teclas, Mouse e Combina&ccedil;&otilde;es</title>
 	
 	  <para>Uso:</para>
 	
-	  <programlisting><![ RCDATA [<para>Para mudar para o segundo terminal virtual, digite <keycombo action="simul"><keycap>Alt</keycap>
-<keycap>F1</keycap></keycombo>.</para>
+	  <programlisting><![ RCDATA [<para>Para mudar para o segundo terminal virtual, digite 
+  <keycombo action="simul"><keycap>Alt</keycap>
+    <keycap>F1</keycap></keycombo>.</para>
 
-<para>Sair do <command>vi</command> sem salvar o seu trabalho, digite <keycombo action="seq">
-<keycap>Esc</keycap><keycap>:</keycap><keycap>q</keycap><keycap>!</keycap></keycombo>.</para>
+<para>Sair do <command>vi</command> sem salvar o seu trabalho, digite
+  <keycombo action="seq"> <keycap>Esc</keycap><keycap>:</keycap>
+    <keycap>q</keycap><keycap>!</keycap></keycombo>.</para>
 
-<para>Meu gerenciador de janela &eacute; configurado de forma que <keycombo action="simul"><keycap>Alt</keycap>
-<mousebutton>bot&atilde;o direito</mousebutton></keycombo> do mouse &eacute; usado para mover as janelas.</para>
+<para>Meu gerenciador de janela &eacute; configurado de forma que 
+  <keycombo action="simul"><keycap>Alt</keycap>
+    <mousebutton>bot&atilde;o direito</mousebutton>
+  </keycombo> do mouse &eacute; usado para mover as janelas.</para>
 ]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
@@ -1853,67 +1867,66 @@ local e p&uacute;blica</quote> como diz o RFC 1535.</para>]]></programlisting>
 	    <keycap>F1</keycap></keycombo>.
 	</para>
 
-	  <para>Sair do <command>vi</command> sem salvar o seu trabalho,
-	    digite <keycombo action="seq"><keycap>Esc</keycap><keycap>:
-	    </keycap><keycap>q</keycap><keycap>!</keycap></keycombo>.
-	</para>
+	  <para>Sair do <command>vi</command> sem salvar o seu 
+	    trabalho, digite <keycombo action="seq">
+	    <keycap>Esc</keycap><keycap>:</keycap>
+	    <keycap>q</keycap><keycap>!</keycap></keycombo>.</para>
 
-	  <para>Meu gerenciador de janela &eacute; configurado de forma que
-	     <keycombo action="simul"><keycap>Alt</keycap>
-	     <mousebutton>bot&atilde;o direito</mousebutton></keycombo>
-	     do mouse &eacute; usado para mover as janelas.
-	</para>
+	  <para>Meu gerenciador de janela &eacute; configurado de 
+	    forma que <keycombo action="simul"><keycap>Alt</keycap>
+	     <mousebutton>bot&atilde;o direito</mousebutton>
+	     </keycombo> do mouse &eacute; usado para mover as 
+	     janelas.</para>
 	</example>
       </sect3>
 
       <sect3>
-	<title>Aplica&ccedil;&otilde;es, Comandos, Op&ccedil;&otilde;es e
-	  Cita&ccedil;&otilde;es</title>
+	<title>Aplica&ccedil;&otilde;es, Comandos, 
+	  Op&ccedil;&otilde;es e Cita&ccedil;&otilde;es</title>
 
-	<para>Frequentemente voc&ecirc; ir&aacute; fazer refer&ecirc;ncia
-	  tanto a aplica&ccedil;&otilde;es quanto a comandos quando estiver
-	  escrendo a documenta&ccedil;&atilde;o.  A distin&ccedil;&atilde;o entre
-	  eles &eacute; simples: uma aplica&ccedil;&atilde;o &eacute; o
-	  nome de um pacote de programas (ou possivelmente apenas um)
-	  que fa&ccedil;am uma tarefa em particular.  Um comando &eacute;
-	  o nome de um programa que o usu&aacute;rio pode rodar.
-	</para>
+	<para>Frequentemente voc&ecirc; ir&aacute; fazer 
+	  refer&ecirc;ncia tanto a aplica&ccedil;&otilde;es quanto 
+	  a comandos quando estiver escrevendo a 
+	  documenta&ccedil;&atilde;o.  A distin&ccedil;&atilde;o entre
+	  eles &eacute; simples: uma 
+	  aplica&ccedil;&atilde;o &eacute; o nome de um pacote de 
+	  programas (ou possivelmente apenas um) que fa&ccedil;am 
+	  uma tarefa em particular.  Um comando &eacute; o nome de 
+	  um programa que o usu&aacute;rio pode rodar.</para>
 
-	<para>Al&eacute;m disso, voc&ecirc; eventualmente precisar&aacute;
-	  listar uma ou mais op&ccedil;&otilde;es que um comando possa ter.
-	</para>
+	<para>Al&eacute;m disso, voc&ecirc; eventualmente 
+	  precisar&aacute; listar uma ou mais op&ccedil;&otilde;es 
+	  que um comando possa ter.</para>
 
-	<para>Finalmente, voc&ecirc; ir&aacute; querer listar um comando
-	  com o n&uacute;mero da sua se&ccedil;&atilde;o no manual, na
-	  forma <quote>comando(number)</quote> t&atilde;o comum nos manuais
-	  de Unix.
-	</para>
+	<para>Finalmente, voc&ecirc; ir&aacute; querer listar um 
+	  comando com o n&uacute;mero da sua se&ccedil;&atilde;o no 
+	  manual, na forma <quote>comando(number)</quote> t&atilde;o 
+	  comum nos manuais de Unix.</para>
 	
-	<para>marcando o nome da aplica&ccedil;&atilde;o com
-	  <sgmltag>application</sgmltag>.
-	</para>
+	<para>Voc&ecirc; deve marcar o nome de uma 
+	  aplica&ccedil;&atilde;o com <sgmltag>application</sgmltag>.
+	  </para>
 
-	<para>Quando voc&ecirc; quiser listar um comando com o seu
-	  n&uacute;mero da sua se&ccedil;&atilde;o no manual (que deve
-	  acontecer a maioria das vezes) o elemento do DocBook &eacute; o
-	  <sgmltag>citerefentry</sgmltag>.  Isto ir&aacute; ter mais dois
-	  elementos, <sgmltag>refentrytitle</sgmltag> e
+	<para>Quando voc&ecirc; quiser listar um comando com o 
+	  n&uacute;mero da sua se&ccedil;&atilde;o no manual (o que 
+	  deve acontecer a maioria das vezes) o elemento do DocBook 
+	  que deve ser utilizado &eacute; o 
+	  <sgmltag>citerefentry</sgmltag>.  Ele ir&aacute; ter mais i
+	  dois elementos, <sgmltag>refentrytitle</sgmltag> e
 	  <sgmltag>manvolnum</sgmltag>.  O conte&uacute;do de
-	  <sgmltag>refentrytitle</sgmltag> &eacute; o nome do comando, e o
-	  conte&uacute;do de <sgmltag>manvolnum</sgmltag> &eacute; a
-	  se&ccedil;&atilde;o da p&aacute;gina do manual.
-	</para>	
+	  <sgmltag>refentrytitle</sgmltag> &eacute; o nome do comando,
+	  e o conte&uacute;do de <sgmltag>manvolnum</sgmltag> &eacute;
+	  a se&ccedil;&atilde;o da p&aacute;gina do manual.</para>	
 
-	<para>Isso pode ser trabalhoso de escrever, e assim uma s&eacute;rie
-	  de <link linkend="sgml-primer-general-entities">entidades gerais
-	  </link> foi criada para facilitar.  Cada entidade &eacute; da
-	  forma <literal>&amp;man.<replaceable>manual-page</replaceable>.<replaceable>manual-section</replaceable>;</literal>.
-	</para>
+	<para>Pode ser trabalhoso de escrever desta forma, e para
+	  facilitar este processo foram criadas uma s&eacute;rie de  
+	  <link linkend="sgml-primer-general-entities">entidades 
+	  gerais </link>.  Cada entidade &eacute; est&eacute; na 
+	  forma <literal>&amp;man.<replaceable>manual-page</replaceable>.<replaceable>manual-section</replaceable>;</literal>.</para>
 
-	<para>O arquivo que cont&eacute;m estas entidades est&aacute; em
-	  <filename>doc/share/sgml/man-refs.ent</filename>, e pode ser
-	  usado usando este IPF:
-	</para>
+	<para>O arquivo que cont&eacute;m estas entidades 
+	  &eacute; o <filename>doc/share/sgml/man-refs.ent</filename>,
+	  e pode ser usado usando este IPF:</para>
 
 	<programlisting>PUBLIC "-//FreeBSD//ENTITIES DocBook Manual Page Entities//EN"</programlisting>
 
@@ -1932,25 +1945,24 @@ local e p&uacute;blica</quote> como diz o RFC 1535.</para>]]></programlisting>
 
 
 	<para>Use <sgmltag>command</sgmltag> quando quiser incluir um
-	  comando <quote>in-line</quote> mas como algo que deveria ser
-	  digitado.
-	</para>
+	  comando <quote>in-line</quote> para ser apresentado como 
+	  algo que deveria ser digitado.</para>
 
-	<para>Use <sgmltag>option</sgmltag> para marcar as op&ccedil;&otilde;es que ser&atilde/o passadas para um comando.
-	</para>
+	<para>Use <sgmltag>option</sgmltag> para marcar as 
+	op&ccedil;&otilde;es que ser&atilde;o passadas para um 
+	comando.</para>
 
-	<para>Quando diversas refer&ecirc;ncias a um mesmo comando estiverem
-	  pr&oacute;ximas &eacute; melhor usar a nota&ccedil;&atilde;o
-	  <literal>&amp;man.<replaceable>command</replaceable>.<replaceable>section</replaceable>;</literal>
+	<para>Quando diversas refer&ecirc;ncias a um mesmo comando 
+	  estiverem pr&oacute;ximas &eacute; melhor usar a 
+	  nota&ccedil;&atilde;o <literal>&amp;man.<replaceable>command</replaceable>.<replaceable>section</replaceable>;</literal>
 	  para marcar a primeira refer&ecirc;ncia e usar
 	  <sgmltag>command</sgmltag> para marcar as refer&ecirc;ncias
-	  subsequentes.  Isso faz a sa&iacute;da gerada, especialmente HTML,
-	  parecer visualmente melhor.
-	</para>
+	  subsequentes.  Isso faz a sa&iacute;da gerada, especialmente
+	  em HTML, parecer visualmente melhor.</para>
 	
-	<para>Isso pode ser confuso, e &agrave;s vezes a escolha nem sempre
-	  &acute; clara.  Este exemplo pode tornas as coisas mais claras.
-	</para>
+	<para>Isso pode ser confuso, e &agrave;s vezes a escolha nem 
+	  sempre &acute; clara.  Espero que o exemplo abaixo ajude a
+	  tornar as coisas mais claras.</para>
 
 
 	<example>
@@ -1959,27 +1971,27 @@ local e p&uacute;blica</quote> como diz o RFC 1535.</para>]]></programlisting>
 	
 	  <para>Uso:</para>
 	
-	  <programlisting><![ CDATA [<para><application>Sendmail</application> e a aplica&ccedil;&atilde;o de email em Unix mais usada.</para>
+	  <programlisting><![ CDATA [<para>O <application>Sendmail</application> e a aplicacao de email mais utilizada em em Unix.</para>
 
-<para><application>Sendmail</application> inclui os programas 
+<para>O <application>Sendmail</application> inclui os programas 
   <citerefentry>
     <refentrytitle>sendmail</refentrytitle>
     <manvolnum>8</manvolnum>
   </citerefentry>, &man.mailq.1;, e &man.newaliases.1;.</para>
 
 
-<para>Um dos parametros de linha de comando para <citerefentry>
+<para>Um dos parametros de linha de comando para o <citerefentry>
     <refentrytitle>sendmail</refentrytitle>
     <manvolnum>8</manvolnum>
   </citerefentry>, <option>-bp</option>, ira mostrar o atual estado da
-mensagem na file de email. 
-Verifique isto na linha de comando usando <command>sendmail -bp</command>.</para>]]></programlisting>
+  mensagem na file de email. 
+  Verifique isto na linha de comando usando <command>sendmail -bp</command>.</para>]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
 	
-	  <para><application>Sendmail</application> &eacute; a
-	    aplica&ccedil;&atilde;o de email em Unix mais usada.
-	</para>
+	  <para><application>O sendmail</application> &eacute; a
+	    aplica&ccedil;&atilde;o de email mais utilizada em 
+	    Unix.</para>
 	
 	  <para>O <application>Sendmail</application> inclui os programas
 	    <citerefentry>
@@ -1987,16 +1999,17 @@ Verifique isto na linha de comando usando <command>sendmail -bp</command>.</para
 	      <manvolnum>8</manvolnum>
 	 		</citerefentry>, &man.mailq.1;, and &man.newaliases.1;.</para>
 
-  	  <para>Um dos parametros de linha de comando para <citerefentry>
-	     <refentrytitle>sendmail</refentrytitle> <manvolnum>8</manvolnum>
-	     </citerefentry>, <option>-bp</option>, ir&aacute;  mostrar o atual
-	      estado da mensagem na fila de email.  Verifique isto na linha de
-	      comando usando <command>sendmail -bp</command>.</para>
+  	  <para>Um dos parametros de linha de comando para o 
+	    <citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</manvolnum></citerefentry>, 
+	    <option>-bp</option>, ir&aacute;  mostrar o atual estado 
+	    da mensagem na fila de email.  Verifique isto na linha de
+	    comando usando <command>sendmail -bp</command>.</para>
 	</example>
 
 	<note>
 	  <para>Veja como a nota&ccedil;&atilde;o
-	    <literal>&amp;man.<replaceable>command</replaceable>.<replaceable>section</replaceable>;</literal> &eacute; mais f&aacute;cil de seguir.</para>
+	    <literal>&amp;man.<replaceable>command</replaceable>.<replaceable>section</replaceable>;</literal> 
+	    &eacute; mais f&aacute;cil de seguir.</para>
 	</note>
       </sect3>
 
@@ -2013,23 +2026,21 @@ Verifique isto na linha de comando usando <command>sendmail -bp</command>.</para
 	
 	  <para>Uso:</para>
 	
-	  <programlisting><![ RCDATA [
-		<para>O fonte SGML do Handbook em Ingl&ecirc;s pode ser encotrado em 
-		<filename class="directory">/usr/doc/en_US.ISO8859-1/books/handbook/</filename>.  
-		O primeiro arquivo neste diret&oacute;rio &eacute; chamado <filename>book.sgml</filename>. 
-		Voc&ecirc; tamb&eacute;m deve ver o <filename>Makefile</filename> 
-		e alguns arquivos com a extens&atilde;o <filename>.ent</filename>.</para>
-		]]></programlisting>
+	  <programlisting><![ RCDATA [<para>O fonte SGML do Handbook em Ingl&ecirc;s pode ser encotrado em 
+  <filename class="directory">/usr/doc/en_US.ISO8859-1/books/handbook/</filename>.  
+  O primeiro arquivo neste diret&oacute;rio &eacute; chamado <filename>book.sgml</filename>. 
+  Voc&ecirc; tamb&eacute;m deve ver o <filename>Makefile</filename> 
+  e alguns arquivos com a extens&atilde;o <filename>.ent</filename>.</para>]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
 	
-	  <para>O fonte SGML do Handbook em Ingl&ecirc;s pode ser encotrado em
-	    <filename>/usr/doc/en/handbook/</filename>.  O primeiro arquivo
-	    neste diret&oacute;rio &eacute; chamado
-	    <filename>handbook.sgml</filename>.  Voc&ecirc; tamb&eacute;m deve
-	    ver o <filename>Makefile</filename> e alguns arquivos com a
-	    extens&atilde;o <filename>.ent</filename>.
-	</para>
+	  <para>O fonte SGML do Handbook em Ingl&ecirc;s pode ser 
+	    encotrado em <filename>/usr/doc/en/handbook/</filename>.
+	    O primeiro arquivo neste diret&oacute;rio &eacute; 
+	    chamado <filename>handbook.sgml</filename>.  Voc&ecirc; 
+	    tamb&eacute;m deve ver o <filename>Makefile</filename> 
+	    e alguns arquivos com a extens&atilde;o 
+	    <filename>.ent</filename>.</para>
 
 	</example>
       </sect3>
@@ -2040,22 +2051,23 @@ Verifique isto na linha de comando usando <command>sendmail -bp</command>.</para
 	<note>
 	  <title>Extens&otilde;es FreeBSD</title>
 	
-	  <para>Estes elementos s&atilde;o parte das extens&otilde;es FreeBSD
-	    ao DocBook, e n&atilde;o existem no DTD DocBook original.
-	</para>
+	  <para>Estes elementos s&atilde;o parte das extens&otilde;es
+	    do FreeBSD ao DocBook, e n&atilde;o existem no DTD 
+	    DocBook original.</para>
 	</note>
 
-	<para>Voc&ecirc; pode precisar incluir o nome de um programa da
-	  Cole&ccedil;&atilde;o de Ports FreeBSD na documenta&ccedil;&atilde;o.
-	  Use a tag <sgmltag>filename</sgmltag> com o atributo
-	  <literal>role</literal> ajustado para <literal>package</literal>
-	  para identifica-lo.  Uma vez que podem ser instalados em diversos
-	  lugares, inclua apenas a categoria e o nome do port, n&atilde;o
-	  inclua o <filename>/usr/ports</filename>.
-	</para>
+	<para>Voc&ecirc; pode precisar incluir o nome de um programa 
+	da Cole&ccedil;&atilde;o de Ports do FreeBSD na 
+	documenta&ccedil;&atilde;o.  Use a tag 
+	<sgmltag>filename</sgmltag> com o atributo 
+	<literal>role</literal> ajustado para <literal>package
+	</literal> para identifica-lo.  Uma vez que podem ser 
+	instalados em diversos lugares, inclua apenas a categoria 
+	e o nome do port, n&atilde;o inclua o 
+	<filename>/usr/ports</filename>.</para>
 
 	<example>
-	  <title>Tag <sgmltag>filename</sgmltag>  com a regra
+	  <title>Tag <sgmltag>filename</sgmltag>  com o atributo
 	    <literal>package</literal></title>
 
 	  <para>Use:</para>
@@ -2065,9 +2077,9 @@ para ver o tr&aacute;fego na rede.</para>]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
 	
-	  <para>Instale o port <filename role="package">net/ethereal</filename>
-	    para ver o tr&aacute;fego na rede.
-	</para>
+	  <para>Instale o port 
+	    <filename role="package">net/ethereal</filename>
+	    para ver o tr&aacute;fego na rede.</para>
 	</example>
       </sect3>
 
@@ -2077,23 +2089,22 @@ para ver o tr&aacute;fego na rede.</para>]]></programlisting>
 	<note>
 	  <title>Extens&otilde;es FreeBSD</title>
 	
-	  <para>Estes elementos s&atilde;o parte das extens&otilde;es FreeBSD
-	    ao DocBook, e n&atilde;o existem no DTD DocBook original.
-	</para>
+	  <para>Estes elementos s&atilde;o parte das extens&otilde;es
+	    do FreeBSD ao DocBook, e n&atilde;o existem no DTD 
+	    DocBook original.</para>
 	</note>
 
-	<para>Quando estiver falando de dispositivos, voc&ecirc; tem duas
-	  escolhas.  Voc&ecirc; pode se referir ao dispositivo como aparece
-	  no <filename>/dev</filename>, ou usar o nome do dispositivo como
-	  ele aparece no kernel.  No segundo caso, use
-	  <sgmltag>devicename</sgmltag>.
-	</para>	
+	<para>Quando voc&ecirc; estiver se referindo a dispositivos,
+	  voc&ecirc; tem duas op&ccedil;&otilde;es.  Voc&ecirc; pode 
+	  se referir ao dispositivo como aparece no 
+	  <filename>/dev</filename>, ou usar o nome do dispositivo 
+	  como ele aparece no kernel.  No segundo caso, use o elemento
+	  <sgmltag>devicename</sgmltag>.</para>	
 
-	<para>&Agrave; vezes voc&ecirc; n&atilde;o tem escolha.  Alguns
-	  dispositivos, como placas de rede, n&atilde;o tem entrada no
-	  <filename>/dev</filename>, ou as entradas s&atilde;o muito
-	  diferentes daquelas entradas.
-	</para>	
+	<para>&Agrave; vezes voc&ecirc; n&atilde;o tem escolha.  
+	  Alguns dispositivos, como as placas de rede, n&atilde;o 
+	  tem entrada no <filename>/dev</filename>, ou as entradas 
+	  s&atilde;o muito diferentes das esperadas.</para>	
 	
 	<example>
 	  <title><sgmltag>devicename</sgmltag></title>
@@ -2102,38 +2113,34 @@ para ver o tr&aacute;fego na rede.</para>]]></programlisting>
 	
 	  <programlisting><![ RCDATA [
 <para><devicename>sio</devicename> e usado para comunica&ccedil;&atilde;o
-serial no FreeBSD. <devicename>sio</devicename> se manifesta 
-atrav&eacute;s de entradas em <filename>/dev</filename>, incluindo 
-<filename>/dev/ttyd0</filename> e <filename>/dev/cuaa0</filename>.
-</para>
+  serial no FreeBSD. <devicename>sio</devicename> se manifesta 
+  atrav&eacute;s de entradas em <filename>/dev</filename>, incluindo 
+  <filename>/dev/ttyd0</filename> e <filename>/dev/cuaa0</filename>.
+  </para>
 
 <para>Por outro lado, dispositivos de rede, tais como <devicename>ed0</devicename> 
-n&atilde;o aparecem <filename>/dev</filename>.
-</para>
+  n&atilde;o aparecem <filename>/dev</filename>.
+  </para>
 
 <para>No MS-DOS, o primeiro disco flex&iacute;vel &eacute; chamado de <devicename>a:</devicename>. 
-No FreeBSD &eacute; <filename>/dev/fd0</filename>.
-</para>
-]]></programlisting>
+  No FreeBSD &eacute; <filename>/dev/fd0</filename>.
+  </para>]]></programlisting>
 
-	  <para>Apar&ecirc;ncia:</para>
-	    <para><devicename>sio</devicename> &eacute; usado para
-	      comunica&ccedil;&atilde;o serial no FreeBSD.
-	      <devicename>sio</devicename> se manifesta atrav&eacute;s de
-	      entradas em <filename>/dev</filename>, incluindo
-	      <filename>/dev/ttyd0</filename> e
-	      <filename>/dev/cuaa0</filename>.
-	</para>
+	<para>Apar&ecirc;ncia:</para>
+	<para><devicename>sio</devicename> &eacute; usado para 
+	  comunica&ccedil;&atilde;o serial no FreeBSD.  
+	  <devicename>sio</devicename> se manifesta atrav&eacute;s 
+	  de entradas em <filename>/dev</filename>, incluindo 
+	  <filename>/dev/ttyd0</filename> e 
+	  <filename>/dev/cuaa0</filename>.</para>
 
-	    <para>Por outro lado, dispositivos de rede, tais
-	      como <devicename>ed0</devicename> n&atilde;o aparecem
-	      <filename>/dev</filename>.
-	</para>
+	<para>Por outro lado, dispositivos de rede, tais como 
+	<devicename>ed0</devicename> n&atilde;o aparecem 
+	<filename>/dev</filename>.</para>
 
-	    <para>No MS-DOS, o primeiro disco flex&iacute;vel &eacute;
-	      chamado de <devicename>a:</devicename>.  No FreeBSD &eacute;
-	      <filename>/dev/fd0</filename>.
-	</para>	
+	<para>No MS-DOS, o primeiro disco flex&iacute;vel &eacute; 
+	chamado de <devicename>a:</devicename>.  No FreeBSD &eacute; 
+	<filename>/dev/fd0</filename>.</para>	
 
 	</example>
       </sect3>
@@ -2144,31 +2151,32 @@ No FreeBSD &eacute; <filename>/dev/fd0</filename>.
 	<note>
 	  <title>Extens&otilde;es FreeBSD</title>
 	
-	  <para>Estes elementos s&atilde;o parte das extens&otilde;es FreeBSD
-	    ao DocBook, e n&atilde;o existem no DTD DocBook original.
-	</para>
+	  <para>Estes elementos s&atilde;o parte das extens&otilde;es
+	    do FreeBSD ao DocBook, e n&atilde;o existem no DTD 
+	    DocBook original.</para>
 	</note>
 
-	<para>Voc&ecirc; pode marcar a informa&ccedil;&atilde;o sobre a
-	  identifica&ccedil;&atilde;o de computadores em rede (hosts) de
-	  diversas maneiras.  Todas elas usam <sgmltag>hostid</sgmltag>
-	  como elemento, com o atributo <literal>role</literal>
-	  dizendo o tipo da informa&ccedil;&atilde;o marcada.
-	</para>	
+	<para>Voc&ecirc; pode marcar a informa&ccedil;&atilde;o sobre
+	  a identifica&ccedil;&atilde;o de computadores em rede 
+	  (hosts) de diversas maneiras.  Todas elas usam 
+	  <sgmltag>hostid</sgmltag> como elemento, com o atributo 
+	  <literal>role</literal> dizendo o tipo da 
+	  informa&ccedil;&atilde;o marcada.</para>	
 	
 	<variablelist>
 	  <varlistentry>
-	    <term>Sem o atributo <literal>role</literal>, or
+	    <term>Sem o atributo <literal>role</literal>, ou 
 	      <literal>role="hostname"</literal></term>
 	
 	    <listitem>
 	      <para>Sem o atributo <literal>role</literal> (i.e.,
 		<sgmltag>hostid</sgmltag>...<sgmltag>/hostid</sgmltag>)
-		a informa&ccedil;&atilde;o marcada &eacute; simplesmente o
-		nome do computador, tal como <literal>freefall</literal> ou
-		<literal>wcarchive</literal>.  Voc&ecirc; pode especificar
-		explicitamente com <literal>role="hostname"</literal>.
-	</para>
+		a informa&ccedil;&atilde;o marcada &eacute; 
+		simplesmente o nome do computador, tal como 
+		<literal>freefall</literal> ou 
+		<literal>wcarchive</literal>.  Voc&ecirc; pode 
+		especificar explicitamente com 
+		<literal>role="hostname"</literal>.</para>
 	    </listitem>
 	  </varlistentry>
 	
@@ -2176,11 +2184,10 @@ No FreeBSD &eacute; <filename>/dev/fd0</filename>.
 	    <term><literal>role="domainname"</literal></term>
 	
 	    <listitem>
-	      <para>O texto &eacute; um nome de dom&iacute;nio, tal como
-		<literal>FreeBSD.org</literal> ou
+	      <para>O texto &eacute; um nome de dom&iacute;nio, tal 
+		como <literal>FreeBSD.org</literal> ou
 		<literal>ngo.org.uk</literal>.  N&atilde;o h&aacute; o
-		componente do nome do computador (hostname).
-	</para>
+		componente do nome do computador (hostname).</para>
 
 	    </listitem>
 	  </varlistentry>
@@ -2191,10 +2198,9 @@ No FreeBSD &eacute; <filename>/dev/fd0</filename>.
 	    <listitem>
 	      <para>O texto &eacute; um nome completo, com o nome do
 		computador e do dom&iacute;nio.  O termo
-		<literal>fqdn</literal> significa <quote>Fully Qualified
-		Domain Name</quote> - Nome de Dom&iacute;minio Completamente
-		Qualificado.
-	</para>
+		<literal>fqdn</literal> significa <quote>Fully 
+		Qualified Domain Name</quote> - Nome de 
+		Dom&iacute;minio Completamente Qualificado.</para>
 	    </listitem>
 	  </varlistentry>
 
@@ -2202,9 +2208,8 @@ No FreeBSD &eacute; <filename>/dev/fd0</filename>.
 	    <term><literal>role="ipaddr"</literal></term>
 	
 	    <listitem>
-	      <para>O texto &eacute; um endere&ccedil;o IP, provavelmente
-		expresso como dotted quad.
-	</para>
+	      <para>O texto &eacute; um endere&ccedil;o IP, 
+		provavelmente expresso como dotted quad.</para>
 	    </listitem>
 	  </varlistentry>
 
@@ -2220,10 +2225,10 @@ No FreeBSD &eacute; <filename>/dev/fd0</filename>.
 	    <term><literal>role="netmask"</literal></term>
 	
 	    <listitem>
-	      <para>O texto &acute; uma m&aacute;scara de rede, que pode
-		ser expressa como dotted quad, uma string hexadecimal ou como
-		<literal>/</literal> seguido de um n&uacute;mero.
-	</para>
+	      <para>O texto &acute; uma m&aacute;scara de rede, que 
+		pode ser expressa como dotted quad, uma string 
+		hexadecimal ou como <literal>/</literal> seguido de 
+		um n&uacute;mero.</para>
 	    </listitem>
 	  </varlistentry>
 	
@@ -2233,8 +2238,7 @@ No FreeBSD &eacute; <filename>/dev/fd0</filename>.
 	    <listitem>
 	      <para>O texto &eacute; um endere&ccedil;o MAC Ethernet,
 		expresso como n&uacute;meros hexadecimais de 2 digitos
-		separados por dois pontos (:).
-	</para>
+		separados por dois pontos (:).</para>
 	    </listitem>
 	  </varlistentry>
 	</variablelist>
@@ -2268,29 +2272,28 @@ role="mac">08:00:20:87:ef:d0</hostid>).</para>
 
 	  <para>Apar&ecirc;ncia:</para>
 	
-	  <para>A m&aacute;quina local sempre pode ser referida pelo nome
-	    <hostid>localhost</hostid>, que ter&aacute; o endere&ccedil;o IP
-	    <hostid role="ipaddr">127.0.0.1</hostid>.
-	</para>
+	  <para>A m&aacute;quina local sempre pode ser referida pelo 
+	    nome <hostid>localhost</hostid>, que ter&aacute; o 
+	    endere&ccedil;o IP 
+	    <hostid role="ipaddr">127.0.0.1</hostid>.</para>
 
 	  <para>O dom&iacute;minio
-	    <hostid role="domainname">FreeBSD.org</hostid> cont&eacute;m
-	    v&aacute;rios hosts diferentes, incluindo
+	    <hostid role="domainname">FreeBSD.org</hostid> 
+	    cont&eacute;m v&aacute;rios hosts diferentes, incluindo
 	    <hostid role="fqdn">freefall.FreeBSD.org</hostid> e
-	    <hostid role="fqdn">bento.FreeBSD.org</hostid>.
-	</para>
+	    <hostid role="fqdn">bento.FreeBSD.org</hostid>.</para>
 
-	  <para>Quando tiver adicionando um apelido para uma interface (usando
-	    <command>ifconfig</command>) <emphasis>sempre</emphasis> use uma
-	    m&aacute;scara de <hostid role="netmask">255.255.255.255</hostid>
-	    (que tamb&eacute;m pode expressa como
-	    <hostid role="netmask">0xffffffff</hostid>).
-	</para>
+	  <para>Quando tiver adicionando um apelido para uma 
+	    interface (usando <command>ifconfig</command>) 
+	    <emphasis>sempre</emphasis> use uma m&aacute;scara de 
+	    <hostid role="netmask">255.255.255.255</hostid> (que 
+	    tamb&eacute;m pode expressa como
+	    <hostid role="netmask">0xffffffff</hostid>).</para>
 
-	  <para>O endere&ccedil;o MAC identifica unicamente cada placa de
-	    rede existente.  Um endere&ccedil;o MAC t&iacute;pico se parece com
-	    <hostid role="mac">08:00:20:87:ef:d0</hostid>.
-	</para>
+	  <para>O endere&ccedil;o MAC identifica unicamente cada 
+	    placa de rede existente.  Um endere&ccedil;o MAC 
+	    t&iacute;pico se parece com
+	    <hostid role="mac">08:00:20:87:ef:d0</hostid>.</para>
 	</example>
       </sect3>
 
@@ -2300,31 +2303,29 @@ role="mac">08:00:20:87:ef:d0</hostid>).</para>
 	<note>
 	  <title>Extens&otilde;es FreeBSD</title>
 	
-	  <para>Estes elementos s&atilde;o parte das extens&otilde;es FreeBSD
-	    ao DocBook, e n&atilde;o existem no DTD DocBook original.
-	</para>
+	  <para>Estes elementos s&atilde;o parte das extens&otilde;es
+	    do FreeBSD ao DocBook, e n&atilde;o existem no DTD 
+	    DocBook original.</para>
 	</note>
 
 	<para>Quando precisar se referir a um nome de usu&aacute;rio
 	  espec&iacute;fico, tal como <literal>root</literal> ou
 	  <literal>bin</literal>, use <sgmltag>username</sgmltag>.
-	</para>	
+	  </para>	
 	
 	<example>
 	  <title><sgmltag>Username</sgmltag></title>
 	
 	  <para>Uso:</para>
 	
-	  <programlisting><![ RCDATA [<para>
-Para fazer a maioria das fun&ccedil;&otilde;es administrativas voc&ecirc; precisar&aacute; 
-ser <username>root</username>.</para>
-]]></programlisting>
+	  <programlisting><![ RCDATA [<para>Para fazer a maioria das fun&ccedil;&otilde;es administrativas voc&ecirc; precisar&aacute; 
+  ser <username>root</username>.</para>]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
 	
-	  <para>Para fazer a maioria das fun&ccedil;&otilde;es administrativas
-	    voc&ecirc; precisar&aacute; ser <username>root</username>.
-	</para>
+	  <para>Para fazer a maioria das fun&ccedil;&otilde;es 
+	    administrativas voc&ecirc; precisar&aacute; ser 
+	    <username>root</username>.</para>
 	</example>
       </sect3>
 
@@ -2334,25 +2335,25 @@ ser <username>root</username>.</para>
 	<note>
 	  <title>Extens&otilde;es FreeBSD</title>
 	
-	  <para>Estes elementos s&atilde;o parte das extens&otilde;es FreeBSD
-	    ao DocBook, e n&atilde;o existem no DTD DocBook original.
-	</para>
+	  <para>Estes elementos s&atilde;o parte das extens&otilde;es
+	    do FreeBSD ao DocBook, e n&atilde;o existem no DTD 
+	    DocBook original.</para>
 	</note>
 
-	<para>Existe dois elementos para descrever partes de
-	  <filename>Makefile</filename>s, <sgmltag>maketarget</sgmltag> e
-	  <sgmltag>makevar</sgmltag>.
-	</para>	
+	<para>Existem dois elementos para descrever partes de
+	  <filename>Makefile</filename>s, 
+	  <sgmltag>maketarget</sgmltag> e <sgmltag>makevar</sgmltag>.
+	  </para>	
 
-	<para><sgmltag>maketarget</sgmltag> identifica uma alvo de
+	<para>O <sgmltag>maketarget</sgmltag> identifica uma alvo de
 	  constru&ccedil;&atilde;o exportado por um
 	  <filename>Makefile</filename> que pode ser dado como um
-	  par&acirc;metro ao <command>make</command>.
-	  <sgmltag>makevar</sgmltag> identifica uma vari&aacute;vel que pode
-	  ser ajustada (no ambiente, na linha de comando
-	  <command>make</command>, ou dentro do <filename>Makefile</filename>)
-	  para influenciar no processo.
-	</para>	
+	  par&acirc;metro ao <command>make</command>.  O
+	  <sgmltag>makevar</sgmltag> identifica uma vari&aacute;vel 
+	  que pode ser ajustada (no ambiente, na linha de comando 
+	  <command>make</command>, ou dentro do 
+	  <filename>Makefile</filename>) para influenciar no 
+	  processo.</para>	
 
 	<example>
 	  <title><sgmltag>Maketarget</sgmltag> e
@@ -2378,81 +2379,79 @@ muitas vari&aacute;veis, incluindo <makevar>CLOBBER</makevar> e
 	
 	  <para>Dois alvos comuns em um <filename>Makefile</filename>
 	    s&atilde;o <maketarget>all</maketarget> e
-	    <maketarget>clean</maketarget>.
-	</para>
+	    <maketarget>clean</maketarget>.</para>
 
-	  <para>Tipicamente, usar <maketarget>all</maketarget> ir&aacute;
-	    refazer a aplica&ccedil;&atilde;o, usar
+	  <para>Tipicamente, usar <maketarget>all</maketarget> 
+	    ir&aacute; refazer a aplica&ccedil;&atilde;o, usar
 	    <maketarget>clean</maketarget> ir&aacute; remover os
-	    arquivos tempor&aacute;rios (<filename>.o</filename> por exemplo)
-	    criado pelo processo de constru&ccedil;&atilde;o.
-	</para>
+	    arquivos tempor&aacute;rios (<filename>.o</filename> 
+	    por exemplo) criado pelo processo de 
+	    constru&ccedil;&atilde;o.</para>
 
-	  <para><maketarget>clean</maketarget> pode ser controlado por
-	    muitas vari&aacute;veis, incluindo <makevar>CLOBBER</makevar> e
-	    <makevar>RECURSE</makevar>.
-	</para>	
+	  <para>O <maketarget>clean</maketarget> pode ser controlado 
+	    por muitas vari&aacute;veis, incluindo 
+	    <makevar>CLOBBER</makevar> e 
+	    <makevar>RECURSE</makevar>.</para>	
 	</example>
       </sect3>
 
       <sect3>
 	<title>Texto Literal</title>
 
-	<para>Com frequ&ecirc;ncia voc&ecirc; ir&aacute; precisar incluir
-	  texto <quote>literal</quote> na documenta&ccedil;&atilde;o.  Este texto &eacute;
-	  retirado de outro arquivo, ou que deve ser copiado da documenta&ccedil;&atilde;o
-	  para outro arquivo palavra-por-palavra.
-	</para>	
+	<para>Com frequ&ecirc;ncia voc&ecirc; ir&aacute; precisar 
+	  incluir texto <quote>literal</quote> na 
+	  documenta&ccedil;&atilde;o.  Este textoi que  &eacute; 
+	  originado de outro arquivo, ou que deve ser copiado de
+	  forma fiel da documenta&ccedil;&atilde;o para outro 
+	  arquivo.</para>	
 
-	<para>&Agrave;s vezes, <sgmltag>programlisting</sgmltag>
-	  ser&aacute; suficiente. <sgmltag>programlisting</sgmltag>
-	  nem sempre &eacute; apropriado, particularmente quando
-	  voc&ecirc; quer incluir uma parte de um arquivo
-	  <quote>in-line</quote> com todos os par&aacute;grafos.
-	</para>
+	<para>&Agrave;s vezes, o <sgmltag>programlisting</sgmltag>
+	  ser&aacute; suficiente. Mas o 
+	  <sgmltag>programlisting</sgmltag> nem sempre &eacute; 
+	  apropriado, particularmente quando voc&ecirc; quer incluir 
+	  uma parte de um arquivo <quote>in-line</quote> com todos 
+	  os par&aacute;grafos.</para>
 
 	<para>Nestas ocasi&otilde;es, use <sgmltag>literal</sgmltag>.
-	</para>
+	  </para>
 	
 	<example>
 	  <title><sgmltag>Literal</sgmltag></title>
 	
 	  <para>Uso:</para>
 	
-	  <programlisting><![ RCDATA [
-<para>A linha <literal>maxusers 10</literal> no arquivo de 
+	  <programlisting><![ RCDATA [ <para>A linha <literal>maxusers 10</literal> no arquivo de 
 configura&ccedil;&atilde;o do kernel determina o tamanho de muitas tabelas 
 do sistema, e diz aproximadamente quantos logins simultaneos
-o sistema ir&aacute; suportar.
-</para>
+o sistema ir&aacute; suportar.</para>
 ]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
 	  <para>A linha <literal>maxusers 10</literal> no arquivo de
-	    configura&ccedil;&atilde;o do kernel determina o tamanho de
-	    muitas tabelas do sistema, e diz aproximadamente quantos
-	    logins simultaneos o sistema ir&aacute; suportar.
-	</para>
+	    configura&ccedil;&atilde;o do kernel determina o tamanho 
+	    de muitas tabelas do sistema, e diz aproximadamente 
+	    quantos logins simultaneos o sistema ir&aacute; 
+	    suportar.</para>
 	
 	</example>
       </sect3>
 	
       <sect3>
-	<title>Mostrando Itens que o Usu&aacute;rio <emphasis>Deve</emphasis>
-	Preencher</title>
+	<title>Mostrando Itens que o Usu&aacute;rio 
+	  <emphasis>Deve</emphasis> Preencher</title>
 
-	<para>Ir&aacute; acontecer muitas vezes que voc&ecirc; quer mostrar
-	  ao usu&aacute;rio o que fazer, ou se referir ao um arquivo, uma
-	  linha de comando ou coisa parecida, onde ele n&atilde;o pode
-	  simplesmente copiar o exemplo que voc&ecirc; forneceu, mas
-	  deve dar alguma informa&ccedil;&atilde;o por ele mesmo.
-	</para>	
+	<para>Muitas vezes voc&ecirc; ir&aacute; querer mostrar ao 
+	  usu&aacute;rio o que fazer, ou precisar&aacute;se referir a
+	  um arquivo, a uma linha de comando ou coisa parecida, na 
+	  qual ele n&atilde;o poder&aacute; simplesmente copiar o 
+	  exemplo que voc&ecirc; forneceu, mas na qual ele 
+	  ter&aacute; deve dar alguma informa&ccedil;&atilde;o por 
+	  ele mesmo.</para>	
 
-	<para><sgmltag>replaceable</sgmltag> &eacute; feita para estas
-	  eventualidades.  Use <emphasis>inside</emphasis> dentro de
-	  outros elementos para indicar partes do conte&uacute;do do
-	  elemento que o usu&aacute;rio deve substituir.
-	</para>
+	<para>O <sgmltag>replaceable</sgmltag> criado para  estas
+	  ocasi&otilde;es.  Use ele dentro de outros elementos para 
+	  indicar partes do conte&uacute;do do elemento que o 
+	  usu&aacute;rio deve substituir.</para>
 
 	<example>
 	  <title><sgmltag>replaceable</sgmltag></title>
@@ -2467,14 +2466,13 @@ o sistema ir&aacute; suportar.
 	    <screen>&prompt.user; <userinput>man <replaceable>comando</replaceable></userinput></screen>
 	  </informalexample>
 	
-	  <para><sgmltag>replaceable</sgmltag> pode ser usada em muitos
-	    elementos diferentes, incluindo <sgmltag>literal</sgmltag>.
-	    Este exemplo tamb&eacute;m mostra que
-	    <sgmltag>replaceable</sgmltag> s&oacute; deve envolver o
-	    conte&uacute;do que o o usu&aacute;rio <emphasis>deve</emphasis>
-	    fornecer.  O outro conte&uacute;do n&atilde;o deve ser
-	    alterado.
-	</para>
+	  <para>O <sgmltag>replaceable</sgmltag> pode ser usada em 
+	    muitos elementos diferentes, incluindo 
+	    <sgmltag>literal</sgmltag>.  Este exemplo tamb&eacute;m 
+	    mostra que <sgmltag>replaceable</sgmltag> s&oacute; deve 
+	    envolver o conte&uacute;do que o o usu&aacute;rio 
+	    <emphasis>deve</emphasis> fornecer.  O outro 
+	    conte&uacute;do n&atilde;o deve ser alterado.</para>
 	
 	  <para>Uso:</para>
 	
@@ -2490,17 +2488,15 @@ bom valor para <replaceable>n</replaceable>.</para>
 ]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
-	  <para>A linha <literal>maxusers
-	    <replaceable>n</replaceable></literal>
-	    no arquivo de configura&ccedil;&atilde;o do kernel determina
-	    o tamanho de muitas tabelas do sistema, e diz aproximadamente
-	    quantos logins simultaneos o sistema ir&aacute; suportar.
-	</para>
+	  <para>A linha <literal>maxusers <replaceable>n</replaceable></literal>
+	    no arquivo de configura&ccedil;&atilde;o do kernel 
+	    determina o tamanho de muitas tabelas do sistema, e diz 
+	    aproximadamente quantos logins simultaneos o sistema 
+	    ir&aacute; suportar.</para>
 
 	    <para>Para uma esta&ccedil;&atilde;o de trabalho,
 	    <literal>32</literal> &eacute; um bom valor para
-	    <replaceable>n</replaceable>.
-	</para>	
+	    <replaceable>n</replaceable>.</para>	
 	</example>
       </sect3>
 
@@ -2509,8 +2505,7 @@ bom valor para <replaceable>n</replaceable>.</para>
 
 	<para>Voc&ecirc; pode querer mostrar erros gerados pelo
 	  FreeBSD.  Marque-os com <sgmltag>errorname</sgmltag>.
-	  Isto indica o exato erro que aparece.
-	</para>
+	  Isto indica o exato erro que aparece.</para>
 	<example>
 	  <title><sgmltag>errorname</sgmltag></title>
 
@@ -2535,68 +2530,69 @@ bom valor para <replaceable>n</replaceable>.</para>
 
       <important>
 	<para>O suporte a imagem na documenta&ccedil;&atilde;o ainda
-	  &eacute; extremamente experiemental.  O mecanismo aqui descrito provavelmente
-	  n&atilde;o ir&aacute; mudar, mas isto n&atilde;o &eacute; garantido.
-	</para>
+	  &eacute; extremamente experiemental.  O mecanismo aqui 
+	  descrito provavelmente n&atilde;o ir&aacute; mudar, mas 
+	  isto n&atilde;o &eacute; garantido.</para>
 
 	<para>Voc&ecirc; precisar&aacute; instalar o port
 	  <filename role="package">graphics/ImageMagick</filename>
-	  que &eacute; usado para converter entre os diferentes formatos de
-	  imagens.  Ele &eacute; grande e sua maior parte n&atilde;o &eacute;
-	  necess&aacute;ria.  Entretanto, ainda trabalhamos nos
-	  <filename>Makefile</filename>s e na infraestrutura para tornar as
-	  coisas mais f&aacute;ceis.  Este port <emphasis>n&atilde;o</emphasis>
-	  est&aacute; no meta port
-	  <filename role="package">textproc/docproj</filename>, voc&ecirc;
-	  deve instala-lo manualmente.
-	</para>
+	  que &eacute; usado para converter entre os diferentes 
+	  formatos de imagens.  Ele &eacute; grande e a sua maior 
+	  parte n&atilde;o &eacute; necess&aacute;ria.  Entretanto, 
+	  ainda trabalhamos nos <filename>Makefile</filename>s e na 
+	  infraestrutura para tornar as coisas mais f&aacute;ceis.  
+	  Este port <emphasis>n&atilde;o</emphasis> est&aacute; no 
+	  meta port 
+	  <filename role="package">textproc/docproj</filename>, 
+	  voc&ecirc; deve instal&aacute;-lo manualmente.</para>
 
-	<para>O melhor exemplo do que acontece na pr&aacute;tica &eacute; o
-	  documento
-	  <filename>doc/en_US.ISO8859-1/articles/vm-design/</filename>.
-	  Se voc&ecirc; se sentir inseguro na descri&ccedil;&atilde;o que
-	  segue, d&ecirc; uma olhada nos arquivos naquele diret&oacute;rio
-	  e veja como tudo se encaixa.  Experimente criar vers&otilde;es
-	  com diferentes formatos do documento para ver como a
-	  marca&ccedil;&atilde;o de imagem aparece na sa&iacute;da.
-	</para>
+	<para>O melhor exemplo do que acontece na pr&aacute;tica 
+	  &eacute; o documento
+	  <filename>doc/en_US.ISO8859-1/articles/vm-design/
+	  </filename>.  Se voc&ecirc; se sentir inseguro na 
+	  descri&ccedil;&atilde;o que segue, d&ecirc; uma olhada nos 
+	  arquivos deste diret&oacute;rio e veja como tudo se 
+	  encaixa.  Experimente criar vers&otilde;es com diferentes 
+	  formatos do documento para ver como a 
+	  marca&ccedil;&atilde;o de imagem aparece na 
+	  sa&iacute;da.</para>
       </important>
 
       <sect3>
 	<title>Formatos de Imagens</title>
 
-	<para>Atualmente suportamos dois formatos de imagens.  O formato
-	  que voc&ecirc; deve usar depende da natureza da sua imagem.
-	</para>
+	<para>Atualmente suportamos dois formatos de imagens.  O 
+	  formato que voc&ecirc; deve usar depende da natureza da 
+	  sua imagem.</para>
 
 	<para>Para imagens vetoriais, tais como diagramas de rede,
 	  linhas temporais e similares, use Encapsulated Postscript,
 	  e certifique-se que suas imagens tenham a extens&atilde;o
-	  <filename>.eps</filename>.
-	</para>
+	  <filename>.eps</filename>.</para>
 
 	<para>Para bitmaps, tais como a captura de uma tela, use o
 	  formato Portable Network Graphic, e certifique-se que suas
-	  imagens tenham a extens&atilde;o <filename>.png</filename>.
-	</para>
+	  imagens tenham a extens&atilde;o 
+	  <filename>.png</filename>.</para>
 
 	<para>Estes s&atilde;o os <emphasis>&uacute;nicos</emphasis>
-	  que podem ser gravados no reposit&oacute;rio CVS
-	</para>
+	  formatos de imagem que podem ser gravados no 
+	  reposit&oacute;rio CVS.</para>
 
 	<para>Use o formato correto para a imagem correta.  Espera-se
 	  que a sua documenta&ccedil;&atilde;o tenha tanto imagens
 	  EPS quanto PNG.  Os <filename>Makefile</filename>s
 	  asseguram que o formato correto seja escolhido dependendo
-	  do formato de sa&iacute;da da sua documenta&ccedil;&atilde;o.
-	  <emphasis>N&atilde;o grave a mesma imagem nos dois formatos
-	  diferentes no reposit&oacute;rio</emphasis>.
-	</para>
+	  do formato de sa&iacute;da da sua 
+	  documenta&ccedil;&atilde;o.<emphasis>N&atilde;o fa&ccedil; 
+	  commit da mesma imagem nos dois formatos diferentes para o 
+	  reposit&oacute;rio</emphasis>.</para>
 
 	<important>
-	  <para>Foi antecipado que o projeto de documenta&ccedil;&atilde;o
-	    ir&aacute; mudar para o formato Scalable Vector Graphic (SVG)
-	    para imagens vetoriais.  Entretanto, o atual estado das ferramentas
+	  <para>&Eacute; esperado que o projeto de 
+	    documenta&ccedil;&atilde;o ir&aacute; mudar para o 
+	    formato Scalable Vector Graphic (SVG) para imagens 
+	    vetoriais.  Entretanto, o atual estado das ferramentas
 	    de edi&ccedil;&atilde;o tornam isto impratic&aacute;vel.
 	</para>
 	</important>
@@ -2606,50 +2602,50 @@ bom valor para <replaceable>n</replaceable>.</para>
 	<title>Marca&ccedil;&atilde;o</title>
 
 	<para>A marca&ccedil;&atilde;o para uma imagem &eacute;
-	  relativamente simples.  Primeiro, marque
-	  <sgmltag>mediaobject</sgmltag>.  O <sgmltag>mediaobject</sgmltag>
-	  pode conter outros objetos mais espec&iacute;ficos.  Estamos
-	  interessandos em dois, o <sgmltag>imageobject</sgmltag> e o
-	  <sgmltag>textobject</sgmltag>.
-	</para>
+	  relativamente simples.  Primeiro, marque um
+	  <sgmltag>mediaobject</sgmltag>.  O 
+	  <sgmltag>mediaobject</sgmltag> pode conter outros objetos 
+	  mais espec&iacute;ficos.  Estamos interessandos em dois, 
+	  o <sgmltag>imageobject</sgmltag> e o 
+	  <sgmltag>textobject</sgmltag>.</para>
 
-	<para>Voc&ecirc; deve incluir um <sgmltag>imageobject</sgmltag>,
-	  e dois elementos <sgmltag>textobject</sgmltag>.  O
-	  <sgmltag>imageobject</sgmltag> ir&aacute; apontar para o nome do
-	  arquivo da imagem que ser&aacute; usada (sem a extens&atilde;o).
-	  Os elementos <sgmltag>textobject</sgmltag> cont&eacute;m
-	  informa&ccedil;&atilde;o que ser&aacute; apresentada ao
-	  usu&aacute;rio junto, ou n&atilde;o, com a imagem.
-	</para>
+	<para>Voc&ecirc; deve incluir um 
+	  <sgmltag>imageobject</sgmltag>, e dois elementos 
+	  <sgmltag>textobject</sgmltag>.  O 
+	  <sgmltag>imageobject</sgmltag> ir&aacute; apontar para o 
+	  nome do arquivo da imagem que ser&aacute; usada 
+	  (sem a extens&atilde;o).  Os elementos 
+	  <sgmltag>textobject</sgmltag> cont&eacute;m a
+	  informa&ccedil;&atilde;o que ser&aacute; apresentada ao 
+	  usu&aacute;rio junto, ou n&atilde;o, com a imagem.</para>
 
-	<para>H&aacute; duas circunst&acirc;ncias em que isso pode
-	  ocorrer.
-	</para>
+	<para>H&aacute; duas circunst&acirc;ncias em que isso pode 
+	  ocorrer.</para>
 
 	<itemizedlist>
 	  <listitem>
-	    <para>Quando o leitor estiver vendo a documenta&ccedil;&atilde;o
-	      em HTML.  Neste caso, cada imagem precisar&aacute; ter um
-	      texto alternativo associado para mostrar ao usu&aacute;rio,
-	      tipicamente enquanto a imagem estiver sendo carregada, ou
-	      se ele parar o ponteiro do mouse sobre a imagem.
-	</para>
+	    <para>Quando o leitor estiver vendo a 
+	      documenta&ccedil;&atilde;o em HTML.  Neste caso, cada 
+	      imagem precisar&aacute; ter um texto alternativo 
+	      associado para mostrar ao usu&aacute;rio, tipicamente 
+	      enquanto a imagem estiver sendo carregada, ou se ele 
+	      parar o ponteiro do mouse sobre a imagem.</para>
 	  </listitem>
 
 	  <listitem>
-	    <para>Quando o leitor estiver vendo a documenta&ccedil;&atilde;o
-	      em modo texto.  Neste caso, cada imagem deve ter uma ASCII art
-	      equivalente para mostrar ao usu&aacute;rio.
-	</para>
+	    <para>Quando o leitor estiver vendo a 
+	      documenta&ccedil;&atilde;o em modo texto.  Neste caso, 
+	      cada imagem deve ter uma ASCII art equivalente para 
+	      mostrar ao usu&aacute;rio.</para>
 	  </listitem>
 	</itemizedlist>
 
-	<para>Um exemplo provavelmente ir&aacute; tornas as coisas mais
-	  f&aacute;ceis de se entender.  Suponha que voc&ecirc; tenha uma
-	  imagem, chamada <filename>fig1</filename>, que voc&ecirc; queira
-	  incluir no documento.  Esta imagem &eacute; um ret&acirc;ngulo
-	  com um A dentro dele.  A marca&ccedil;&atilde;o para isso ser&aacute;
-	</para>
+	<para>Um exemplo provavelmente ir&aacute; tornar as coisas 
+	  mais f&aacute;ceis de se entender.  Suponha que voc&ecirc; 
+	  tenha uma imagem, chamada <filename>fig1</filename>, que 
+	  voc&ecirc; queira incluir no documento.  Esta imagem 
+	  &eacute; um ret&acirc;ngulo com um A dentro dele.  A 
+	  marca&ccedil;&atilde;o para isso ser&aacute;:</para>
 
 	<programlisting>&lt;mediaobject>
   &lt;imageobject>
@@ -2669,39 +2665,37 @@ bom valor para <replaceable>n</replaceable>.</para>
 
 	<calloutlist>
 	  <callout arearefs="co-image-ext">
-	    <para>Inclua um elemento <sgmltag>imagedata</sgmltag> dentro
-	      do elemento <sgmltag>imageobject</sgmltag>.  O atributo
-	      <literal>fileref</literal> deve conter o nome da imagem a
-	      ser incluida, sem a extens&atilde;o.  As folhas de estilo
-	      ir&atilde;o decidir qual a extens&atilde;o deve ser adicionada
-	      ao nome do arquivo automaticamente.
-	</para>
+	    <para>Inclua um elemento <sgmltag>imagedata</sgmltag> 
+	      dentro do elemento <sgmltag>imageobject</sgmltag>.  
+	      O atributo <literal>fileref</literal> deve conter o 
+	      nome da imagem a ser incluida, sem a extens&atilde;o.  
+	      As folhas de estilo ir&atilde;o decidir qual a 
+	      extens&atilde;o deve ser adicionada ao nome do arquivo 
+	      automaticamente.</para>
 	  </callout>
 
 	  <callout arearefs="co-image-literal">
 	    <para>O primeiro <sgmltag>textobject</sgmltag> deve conter
-	      um elemento <sgmltag>literallayout</sgmltag>, onde o atributo
-	      <literal>class</literal> &eacute; ajustado para
-	      <literal>monospaced</literal>.  Esta &eacute; a oportunidade
-	      para voc&ecirc; demonstrar suas habilidades ASCII art.
-	      O conte&uacute;do ser&aacute; usado se o documento for
-	      convertido para texto.
-	</para>
+	      um elemento <sgmltag>literallayout</sgmltag>, onde o 
+	      atributo <literal>class</literal> &eacute; ajustado para
+	      <literal>monospaced</literal>.  Esta &eacute; a 
+	      oportunidade para voc&ecirc; demonstrar suas habilidades
+	      ASCII art.  O conte&uacute;do ser&aacute; usado se o 
+	      documento for convertido para texto.</para>
 
 	    <para>Veja como as primeras e &uacute;ltimas linhas do
-	      conte&uacute;do do elemento <sgmltag>literallayout</sgmltag>
-	      fica pr&oacute;ximo a tag do elemento.  Isso assegura que
-	      n&atilde;o seja incluido espa&ccedil;os extras.
-	</para>
+	      conte&uacute;do do elemento <sgmltag>literallayout
+	      </sgmltag> fica pr&oacute;ximo a tag do elemento.  
+	      Isso assegura que n&atilde;o seja incluido 
+	      espa&ccedil;os extras.</para>
 	  </callout>
 
 	  <callout arearefs="co-image-phrase">
-	    <para>O segundo <sgmltag>textobject</sgmltag> deve conter um
-	      &uacute;nico elemento <sgmltag>phrase</sgmltag>.  O
+	    <para>O segundo <sgmltag>textobject</sgmltag> deve conter
+	      um &uacute;nico elemento <sgmltag>phrase</sgmltag>.  O
 	      conte&uacute;do deste se tornar&aacute; o atributo
 	      <literal>alt</literal> para as imagens quando o este
-	      documento for convertido para HTML.
-	</para>
+	      documento for convertido para HTML.</para>
 	  </callout>
 	</calloutlist>
       </sect3>
@@ -2714,16 +2708,17 @@ bom valor para <replaceable>n</replaceable>.</para>
 	  Esta vari&aacute;vel deve conter o nome de todos
 	  <emphasis>fontes</emphasis> das suas imagens.  Por exemplo,
 	  se voc&ecirc; criou tr&ecirc;s figuras,
-	  <filename>fig1.eps</filename>, <filename>fig2.png</filename>,
-	  <filename>fig3.png</filename>,, ent&atilde;o o seu
+	  <filename>fig1.eps</filename>, 
+	  <filename>fig2.png</filename>,
+	  <filename>fig3.png</filename>, ent&atilde;o o seu
 	  <filename>Makefile</filename> deve ter linhas como estas.
-	</para>
+	  </para>
 
 	<programlisting>&hellip;
 IMAGES= fig1.eps fig2.png fig3.png
 &hellip;</programlisting>
 
-	<para>or</para>
+	<para>ou</para>
 
 	<programlisting>&hellip;
 IMAGES=  fig1.eps
@@ -2731,12 +2726,11 @@ IMAGES+= fig2.png
 IMAGES+= fig3.png
 &hellip;</programlisting>
 
-
-	<para>De novo, o <filename>Makefile</filename> ir&aacute; fazer
-	  uma lista completa das imagens necess&aacute;rias para criar
-	  o seu documento fonte, voc&ecirc; apenas precisa listar as
-	  imagens que <emphasis>voc&ecirc;</emphasis> fornece.
-	</para>
+	<para>De novo, o <filename>Makefile</filename> ir&aacute; 
+	  fazer uma lista completa das imagens necess&aacute;rias 
+	  para criar o seu documento fonte, voc&ecirc; apenas 
+	  precisa listar as imagens que 
+	  <emphasis>voc&ecirc;</emphasis> fornece.</para>
       </sect3>
 
       <sect3>
@@ -2745,33 +2739,32 @@ IMAGES+= fig3.png
 	<para>Voc&ecirc; precisa ser cuidadoso quando separar a sua
 	  documenta&ccedil;&atilde;o em arquivos menores (veja
 	  <xref linkend="sgml-primer-include-using-gen-entities">) em
-	  diret&oacute;rios diferentes.
-	</para>
+	  diret&oacute;rios diferentes.</para>
 
 	<para>Suponha que voc&ecirc; tenha um livro com tr&ecirc;s
-	  cap&iacute;tulos, e os cap&iacute;tulos est&atilde;o armazenados
-	  cada um no seu pr&oacute;prio diret&oacute;rio, chamados
-	  <filename>chapter1/chapter.sgml</filename>,
+	  cap&iacute;tulos, e os cap&iacute;tulos est&atilde;o 
+	  armazenados cada um no seu pr&oacute;prio diret&oacute;rio,
+	  chamados <filename>chapter1/chapter.sgml</filename>,
 	  <filename>chapter2/chapter.sgml</filename>, e
-	  <filename>chapter3/chapter.sgml</filename>.  Se cada cap&iacute;tulo
-	  tiver imagens associadas a eles, &eacute; sugerido que voc&ecirc; as
-	  coloque dentro do respectivo subdiret&oacute;rio de cap&iacute;tulo
-	  (<filename>chapter1/</filename>, <filename>chapter2/</filename>,
-	  <filename>chapter3/</filename>).
-	</para>	
+	  <filename>chapter3/chapter.sgml</filename>.  Se cada 
+	  cap&iacute;tulo tiver imagens associadas a eles, &eacute; 
+	  sugerido que voc&ecirc; as coloque dentro do respectivo 
+	  subdiret&oacute;rio de cap&iacute;tulo 
+	  (<filename>chapter1/</filename>, 
+	  <filename>chapter2/</filename>, 
+	  <filename>chapter3/</filename>).</para>	
 
-	<para>Entretanto, se voc&ecirc; fizer isso voc&ecirc; deve incluir
-	  o nome dos diret&oacute;rios na vari&aacute;vel
+	<para>Entretanto, se voc&ecirc; fizer isso voc&ecirc; deve 
+	  incluir o nome dos diret&oacute;rios na vari&aacute;vel
 	  <makevar>IMAGES</makevar> no <filename>Makefile</filename>,
 	  <emphasis>e</emphasis> deve incluir o nome do
 	  diret&oacute;rio no elemento <sgmltag>imagedata</sgmltag>
-	  do seu documento.
-</para>
+	  do seu documento.</para>
 
 	<para>Por exemplo, se voc&ecirc; tiver
 	  <filename>chapter1/fig1.png</filename>, ent&atilde;o
-	  <filename>chapter1/chapter.sgml</filename> deve conter
-	</para>  	
+	  <filename>chapter1/chapter.sgml</filename> deve 
+	  conter:</para>  	
 
 	<programlisting>&lt;mediaobject>
   &lt;imageobject>
@@ -2784,18 +2777,18 @@ IMAGES+= fig3.png
 	
 	<calloutlist>
 	  <callout arearefs="co-image-dir">
-	    <para>O nome do diret&oacute;rio deve ser incluido no atributo
-	    <literal>fileref</literal></para>
+	    <para>O nome do diret&oacute;rio deve ser incluido no 
+	    atributo <literal>fileref</literal></para>
 	  </callout>
 	</calloutlist>
 
-	<para>O <filename>Makefile</filename> deve conter</para>
+	<para>O <filename>Makefile</filename> deve conter:</para>
 
 	<programlisting>&hellip;
 IMAGES=  chapter1/fig1.png
 &hellip;</programlisting>
 
-	<para>Assim as coisas devem funcionar.</para>
+	<para>Desta forma tudo deve funcionar.</para>
       </sect3>
     </sect2>
 
@@ -2813,25 +2806,25 @@ IMAGES=  chapter1/fig1.png
 	  especifique de onde voc&ecirc; esta se ligando (i.e.,
 	  o texto no qual o usu&aacute;rio ir&aacute; clicar, ou
 	  indicando de outra maneira como origem do link) e para onde
-	  voc&ecirc; voc&ecirc; est&aacute; se ligando (o destino do link).
-	</para>
+	  voc&ecirc; voc&ecirc; est&aacute; se ligando (o destino do 
+	  link).</para>
 
 	<para>Cada elemento dentro do DocBook tem um atributo chamado
-	  <literal>id</literal>.  Voc&ecirc; pode por um texto neste atributo
-	  para identificar unicamente o elemento associado a ele.
-	</para>
+	  <literal>id</literal>.  Voc&ecirc; pode por um texto neste 
+	  atributo para identificar unicamente o elemento associado 
+	  a ele.</para>
 
-	<para>Este valor ser&aacute; usado quando voc&ecirc; especificar
-	  a origem do link.
-	</para>
+	<para>Este valor ser&aacute; usado quando voc&ecirc; 
+	  especificar a origem do link.</para>
 
 	<para>Normalmente, voc&ecirc; ir&aacute; se ligar apenas a
-	  cap&iacute;tulos ou se&ccedil;&otilde;es, assim voc&ecirc; vai
-	  colocar o atributo <literal>id</literal> nestes elementos.
-	</para>
+	  cap&iacute;tulos ou se&ccedil;&otilde;es, assim voc&ecirc; 
+	  r&aacute; colocar o atributo <literal>id</literal> nestes 
+	  elementos.</para>
 
 	<example>
-	  <title>O atributo <literal>id</literal> em cap&iacute;tulos ou se&ccedil;&otilde;es</title>
+	  <title>O atributo <literal>id</literal> em cap&iacute;tulos
+	    ou se&ccedil;&otilde;es</title>
 
 	  <programlisting><![ RCDATA [<chapter id="chapter1">
   <title>Introdu&ccedil;&atilde;o</title>
@@ -2847,163 +2840,157 @@ IMAGES=  chapter1/fig1.png
 </chapter>]]></programlisting>
 	</example>
 
-	<para>Obviamente, voc&ecirc; deve usar nomes mais descritivos.  Estes
-	  nomes devem ser &uacute;nicos dentro do documento (i.e., n&atilde;o
-	  apenas no arquivo, mas bem como no documento no qual o arquivo
-	  est&aacute; incluido).  Repare como o <literal>id</literal> &eacute;
-	  feito adicionando-se texto ao <literal>id</literal> do
-	  cap&iacute;tulo.  Isto ajuda a garantir eles sejam &uacute;nicos.
-	</para>	
+	<para>Obviamente, voc&ecirc; deve usar nomes mais descritivos.
+	  Estes nomes devem ser &uacute;nicos dentro do documento 
+	  (i.e., n&atilde;o apenas no arquivo, mas sim no documento 
+	  no qual o arquivo est&aacute; incluido).  Repare como o 
+	  <literal>id</literal> &eacute; construido adicionando-se 
+	  texto ao <literal>id</literal> do cap&iacute;tulo.  Isto 
+	  ajuda a garantir eles sejam &uacute;nicos.</para>	
 
-	<para>Se voc&ecirc; quiser permitir ao usu&aacute;rio saltar para
-	  uma parte espec&iacute;fica do documento (possivelmente para o
-	  meio do par&aacute;grafo ou um exemplo), use
-	  <sgmltag>anchor</sgmltag>.  Este elemento n&atilde;o tem
-	  conte&uacute;do, exceto um atributo <literal>id</literal>.
-	</para>
+	<para>Se voc&ecirc; quiser permitir ao usu&aacute;rio saltar 
+	  para uma parte espec&iacute;fica do documento 
+	  (possivelmente para o meio do par&aacute;grafo ou um 
+	  exemplo), use <sgmltag>anchor</sgmltag>.  Este elemento 
+	  n&atilde;o tem conte&uacute;do, exceto um atributo 
+	  <literal>id</literal>.</para>
 
 	<example>
 	  <title><sgmltag>anchor</sgmltag></title>
 
 	  <programlisting><![ RCDATA [<para>
-Este par&aacute;grafo tem um <anchor id="para1">alvo dentro dele. Nao
- ira aparecer no documento
+Este par&aacute;grafo tem um <anchor id="para1">alvo dentro dele. 
+N&atilde;o ir&aacute; aparecer no documento
 </para>]]></programlisting>
 	</example>
 	
-	<para>Quando voc&ecirc; quiser dar ao usu&aacute;rio um link que
-	  possa ser ativado (provavelmente clicando-se) para ir para outra
-	  se&ccedil;&atilde;o do documento que tenha um atributo
-	  <literal>id</literal>, voc&ecirc; pode usar <sgmltag>xref</sgmltag>
-	  ou <sgmltag>link</sgmltag>.
-	</para>
+	<para>Quando voc&ecirc; quiser dar ao usu&aacute;rio um link 
+	  que possa ser ativado (provavelmente clicando-se) para ir 
+	  para outra se&ccedil;&atilde;o do documento que tenha um 
+	  atributo <literal>id</literal>, voc&ecirc; pode usar 
+	  <sgmltag>xref</sgmltag> ou <sgmltag>link</sgmltag>.</para>
 
 	<para>Ambos elementos t&ecirc;m um atributo
-	  <literal>linkend</literal>.  O valor deste atributo deve ser o
-	  mesmo usado no atributo <literal>id</literal> (n&atilde;o
-	  importa se ele ainda n&atilde;o ocorreu no documento; isto
-	  funciona tanto para link a frente quanto para tr&aacute;s).
-	</para>
+	  <literal>linkend</literal>.  O valor deste atributo deve 
+	  ser o mesmo usado no atributo <literal>id</literal> 
+	  (n&atilde;o importa se ele ainda n&atilde;o ocorreu no 
+	  documento; isto funciona tanto para um link a frente 
+	  quanto para tr&aacute;s).</para>
 
 	<para>Se voc&ecirc; usar <sgmltag>xref</sgmltag> ent&atilde;o
 	  n&atilde;o ter&aacute; controle sobre o texto do link.  Ele
-	  ser&aacute; gerado para voc&ecirc;.
-	</para>	
+	  ser&aacute; gerado para voc&ecirc;.</para>	
 	
 	<example>
 	  <title>Usando <sgmltag>xref</sgmltag></title>
 
-	  <para>Assuma que este fragmento apare&ccedil;a em algum lugar
-	    de um documento que inclua o exemplo <literal>id</literal>;
-	</para>
+	  <para>Assuma que este fragmento apare&ccedil;a em algum 
+	    lugar de um documento que inclua o exemplo 
+	    <literal>id</literal>;</para>
 	
 	  <programlisting><![ RCDATA [
 <para>Mais informa&ccedil;&atilde;o pode ser encontrada
-em <xref linkend="chapter1">
-</para>
+em <xref linkend="chapter1"></para>
 
 <para>Informa&ccedil;&atilde;o mais espec&iacute;fica pode ser encontrada
-em <xref linkend="chapter1-sect1">.
-</para>
+em <xref linkend="chapter1-sect1">.</para>
 ]]></programlisting>
 
 	  <para>O texto do link ser&aacute; gerado automaticamente, e
-	    ir&aacute; se parecer com (texto <emphasis>emphasised</emphasis>
-	    indicam que o texto que ser&aacute; o link);
-	</para>
+	    ir&aacute; se parecer com (As palavras em  
+	    <emphasis>italico</emphasis> indicam o texto que 
+	    ser&aacute; o link):</para>
 
 	  <blockquote>
 	    <para>Mais informa&ccedil;&atilde;o pode ser encontrada no
-	      <emphasis>Cap&iacute;tulo Um</emphasis>.
-	</para>
+	      <emphasis>Cap&iacute;tulo Um</emphasis>.</para>
 	
-	    <para>Informa&ccedil;&atilde;o mais espec&iacute;fica pode ser
-	      encontrada
-	      <emphasis>a se&ccedil;&atilde;o chamada Sub-sect1</emphasis>.
-	</para>
+	    <para>Informa&ccedil;&atilde;o mais espec&iacute;fica 
+	      pode ser encontrada <emphasis>a se&ccedil;&atilde;o 
+	      chamada Sub-sect1</emphasis>.</para>
 	  </blockquote>
 	</example>
 
-	<para>Note como o texto do link &eacute; deduzido a partir do
-	  t&iacute;tulo da se&ccedil;&atilde;o ou do n&uacute;mero do
-	  cap&iacute;tulo.
-	</para>	
+	<para>Observe como o texto do link &eacute; deduzido a 
+	  partir do t&iacute;tulo da se&ccedil;&atilde;o ou do 
+	  n&uacute;mero do cap&iacute;tulo.</para>	
 
 	<note>
 	  <para>Isto significa que voc&ecirc; <emphasis>n&atilde;o
 	    pode</emphasis> usar <sgmltag>xref</sgmltag> para se
 	    ligar a um atributo <literal>id</literal> em um elemento
-	    <sgmltag>anchor</sgmltag>.  O <sgmltag>anchor</sgmltag> n&atilde;o
-	    tem conte&uacute;do, assim o <sgmltag>xref</sgmltag> n&atilde;o
-	    pode gerar o texto para o link.
-	</para>
+	    <sgmltag>anchor</sgmltag>.  O <sgmltag>anchor</sgmltag> 
+	    n&atilde;o tem conte&uacute;do, desta forma  o 
+	    <sgmltag>xref</sgmltag> n&atilde;o pode gerar o texto 
+	    para o link.</para>
 	</note>
 
-	<para>Se voc&ecirc; quiser controlar o texto do link ent&atilde;o
-	  use <sgmltag>link</sgmltag>.  Este elemento envolve o conte&uacute;do,
-	  e o conte&uacute;do ser&aacute; usado para o link.
-	</para>	
+	<para>Se voc&ecirc; quiser controlar o texto do link 
+	  ent&atilde;o use <sgmltag>link</sgmltag>.  Este elemento 
+	  envolve o conte&uacute;do, e o conte&uacute;do ser&aacute; 
+	  usado para o link.</para>	
 
 	<example>
 	  <title>Usando <sgmltag>link</sgmltag></title>
 
-	  <para>Assume that this fragment appears somewhere in a document that
-	    includes the <literal>id</literal> example.</para>
-
+	  <para>Assume que este fragmento aparece em algum lugar em 
+	    um documento que inclui o <literal>id</literal> do 
+	    exemplo.</para>
+	  
 	  <programlisting><![ RCDATA [
-<para>Mais informa&ccedil;&atilde;o pode ser encontrada
+<para>Maiores informa&ccedil;&otilde;es podem ser encontradas
 <link linkend="chapter1">no primeiro cap&iacute;tulo</link>.
 </para>
 
-<para>Informa&ccedil;&atilde;o mais espec&iacute;fica pode ser encontrada
+<para>Informa&ccedil;&otilde;es mais espec&iacute;ficas podem ser encontradas
 <link linkend="chapter1-sect1">nesta</link> se&ccedil;&atilde;o
 </para>
 ]]></programlisting>
 	
-	  <para>Isto ir&aacute; gerar o seguinte (texto
-	    <emphasis>enfatizado</emphasis> indica o texto que ser&aacute; o
-	    link);
-	</para>
+	  <para>Isto ir&aacute; gerar o seguinte (Palavras em 
+	    <emphasis>italico</emphasis> indicam o texto que 
+	    ser&aacute; o link);</para>
 	
 	  <blockquote>
-	    <para>Mais informa&ccedil;&atilde;o pode ser encontrada no
-	      <emphasis>no primeiro cap&iacute;tulo </emphasis>.
-	</para>
+	    <para>Maiores informa&ccedil;&otilde;es podem ser
+	      encontradas <emphasis>no primeiro cap&iacute;tulo
+	      </emphasis>.</para>
 
-	    <para>Informa&ccedil;&atilde;o mais espec&iacute;fica pode ser
-	      encontrada <emphasis>nesta</emphasis> se&ccedil;&atilde;o
-	</para>
+	    <para>Informa&ccedil;&otilde;es mais espec&iacute;ficas
+	      podem ser encontradas encontrada <emphasis>nesta
+	      </emphasis> se&ccedil;&atilde;o</para>
 	  </blockquote>
 	</example>
 	
 	<note>
-	  <para>O &uacute;ltimo &eacute; um mal exemplo exemplo.  Nunca use
-	    palavras como <quote>esta</quote> ou <quote>aqui</quote>
-	    como origem do link.  O leitor ter&aacute; que procurar no
-	    contexo pr&oacute;ximo para ver para onde o link os esta levando.
-	</para>
+	  <para>O &uacute;ltimo &eacute; um mal exemplo exemplo.  
+	    Nunca use palavras como <quote>esta</quote> ou 
+	    <quote>aqui</quote> como origem do link.  O leitor 
+	    ter&aacute; que procurar no contexo pr&oacute;ximo para 
+	    ver para onde o link o esta levando.</para>
 	</note>
 
 	<note>
 	  <para>Voc&ecirc; <emphasis>pode</emphasis> usar
 	    <sgmltag>link</sgmltag> para incluir um link para um
-	    <literal>id</literal> em um elemento <sgmltag>anchor</sgmltag>,
-	    uma vez que o conte&uacute;do de <sgmltag>link</sgmltag>
-	    define o texto que ser&acute; usado para o link.
-	</para>
+	    <literal>id</literal> em um elemento 
+	    <sgmltag>anchor</sgmltag>, uma vez que o conte&uacute;do 
+	    de <sgmltag>link</sgmltag> define o texto que ser&acute; 
+	    usado para o link.</para>
 	</note>
       </sect3>
 
       <sect3>
 	<title>Ligando-se a documentos na WWW</title>
 
-	<para>Ligar-se a um documento externo &eacute; muito mais simples,
-	  desde que voc&ecirc; saiba o URL do documento ao deseja se ligar.
-	  Use <sgmltag>ulink</sgmltag>.  O atributo <literal>url</literal>
-	  &eacute; o URL da p&aacute;gina para o qual o link aponta, e o
-	  conte&uacute;do do elemento &eacute; o texto que ser&aacute;
-	  mostrado para o usu&aacute;rio ativar.
-	</para>
+	<para>Ligar-se a um documento externo &eacute; muito mais 
+	  simples, desde que voc&ecirc; saiba o URL do documento ao 
+	  qual deseja se ligar.  Basta utilizar o elemento 
+	  <sgmltag>ulink</sgmltag>.  O atributo <literal>url
+	  </literal> &eacute; o URL da p&aacute;gina para o qual 
+	  o link aponta, e o conte&uacute;do do elemento &eacute; 
+	  o texto que ser&aacute; mostrado para o usu&aacute;rio 
+	  ativar.</para>
 
 	<example>
 	  <title><sgmltag>ulink</sgmltag></title>
@@ -3011,17 +2998,17 @@ em <xref linkend="chapter1-sect1">.
 	  <para>Uso:</para>
 
 	  <programlisting><![ RCDATA [
-<para>Claro que voc&ecirc; parar de ler este documento e ir para a
+<para>&Eacute; claro que voc&ecirc; pode parar de ler este documento e ir para a
 <ulink url="&url.base;/index.html">P&aacute;gina principal do FreeBSD</ulink>
 </para>
 ]]></programlisting>
 
 	  <para>Apar&ecirc;ncia:</para>
 
-	  <para>Claro que voc&ecirc; parar de ler este documento e ir para a
-	    <ulink url="&url.base;/index.html">P&aacute;gina principal do
-	    FreeBSD</ulink>
-	</para>
+	  <para>&Eacute; claro que voc&ecirc; pode parar de ler este 
+	    documento e ir para a
+	    <ulink url="&url.base;/index.html">P&aacute;gina principal
+	    do FreeBSD</ulink></para>
 	</example>
       </sect3>
     </sect2>
