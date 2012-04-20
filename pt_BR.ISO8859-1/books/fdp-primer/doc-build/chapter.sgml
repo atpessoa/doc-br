@@ -387,44 +387,50 @@ PRI_LANG?=	en_US.ISO8859-1
 	  fun&ccedil;&atilde;o que retorna se a vari&aacute;vel 
 	  passada est&aacute; definida ou n&atilde;o.</para>
 
-	<para>A seguir, <literal>.if ${DOCFORMAT} == "docbook"</literal>,
-	  teste se a vari&aacute;vel <makevar>DOCFORMAT</makevar> &eacute;
-	  <literal>"docbook"</literal>, e neste caso, inclue o
-	  <filename>doc.docbook.mk</filename>.</para>
+	<para>A seguir, <literal>.if ${DOCFORMAT} == "docbook"
+	  </literal>, teste se a vari&aacute;vel <makevar>DOCFORMAT
+	  </makevar> &eacute; <literal>"docbook"</literal>, e neste 
+	  caso, inclue o <filename>doc.docbook.mk</filename>.</para>
 
-	<para>Os dois <literal>.endif</literal>s fecham as duas condi&ccedil;&otilde;es
-	  anteriores, marcando o fim da sua aplica&ccedil;&atilde;o.</para>
+	<para>Os dois <literal>.endif</literal>s fecham as duas 
+	  condi&ccedil;&otilde;es anteriores, marcando o fim da sua 
+	  aplica&ccedil;&atilde;o.</para>
       </sect3>
     </sect2>
 
     <sect2>
       <title>doc.subdir.mk</title>
 
-      <para>Isto &eacute; muito longo para ser explicado por inspe&ccedil;&atilde;o, voc&ecirc; dever&aacute; estar
-	apto a trabalhar com isto com o conhecimento adquirido nos cap&iacute;tulos
-	anteriores, e uma pequena ajuda ser&aacute; dada aqui.</para>
+      <para>Isto &eacute; muito longo para ser explicado por 
+	inspe&ccedil;&atilde;o, voc&ecirc; dever&aacute; estar apto 
+	a trabalhar com isto com o conhecimento adquirido nos 
+	cap&iacute;tulos anteriores, e uma pequena ajuda ser&aacute; 
+	dada aqui.</para>
 
       <sect3>
 	<title>Vari&aacute;veis</title>
 
 	<itemizedlist>
 	  <listitem>
-	    <para><makevar>SUBDIR</makevar> &eacute; a lista de subdiret&oacute;rios
-	      em que o processo de constru&ccedil;&atilde;o deve feito
-	      abaixo.</para>
+	    <para><makevar>SUBDIR</makevar> &eacute; a lista de 
+	      subdiret&oacute;rios em que o processo de 
+	      constru&ccedil;&atilde;o deve feito abaixo.</para>
 	  </listitem>
 
 	  <listitem>
 	    <para><makevar>ROOT_SYMLINKS</makevar> &eacute; o nome dos
-	      diret&oacute;rios que devem ser linkados a ra&iacute;z de instala&ccedil;&atilde;o
-	      do documento em sua localiza&ccedil;&atilde;o atual, se a linguagem
-	      atual &eacute; a linguagem prim&aacute;ria (especificado por
+	      diret&oacute;rios que devem ser linkados a ra&iacute;z 
+	      de instala&ccedil;&atilde;o do documento em sua 
+	      localiza&ccedil;&atilde;o atual, se a linguagem atual 
+	      &eacute; a linguagem prim&aacute;ria (especificado por
 	      <makevar>PRI_LANG</makevar>).</para>
 	  </listitem>
 
 	  <listitem>
-	    <para><makevar>COMPAT_SYMLINK</makevar> &eacute; descrito na se&ccedil;&atilde;o
-	      <link linkend="sub-make">Subdiret&oacute;rio Makefiles</link>.</para>
+	    <para><makevar>COMPAT_SYMLINK</makevar> &eacute; 
+	      descrito na se&ccedil;&atilde;o <link 
+	      linkend="sub-make">Subdiret&oacute;rio Makefiles</link>.
+	      </para>
 	  </listitem>
 	</itemizedlist>
       </sect3>
@@ -434,18 +440,20 @@ PRI_LANG?=	en_US.ISO8859-1
 
 	<para>Depend&ecirc;ncias s&atilde;o descritas por
 	  <literal><replaceable>target</replaceable>:
-	  <replaceable>depend&ecirc;ncia1 depend&ecirc;ncia2 ...</replaceable></literal>
-	  , onde para construir o <literal>target</literal>, voc&ecirc; necessita primeiramente
-	  construir as depend&ecirc;ncias dadas.</para>
+	  <replaceable>depend&ecirc;ncia1 depend&ecirc;ncia2 ...
+	  </replaceable></literal>, onde para construir o 
+	  <literal>target</literal>, voc&ecirc; necessita 
+	  primeiramente construir as depend&ecirc;ncias dadas.</para>
 
-	<para>Em seguida a tupla descritiva, instru&ccedil;&otilde;es em como construir
-	  o target pode ser dada, se o processo de convers&atilde;o entre o
-	  target e estas depend&ecirc;ncias n&atilde;o forem previamente definidas, ou se
-	  esta convers&atilde;o particular n&atilde;o for a mesma que o m&eacute;todo de
-	  convers&atilde;o padr&atilde;o.</para>
+	<para>Em seguida a dupla descritiva, instru&ccedil;&otilde;es
+	  de como construir o target pode ser dada, se o processo de 
+	  convers&atilde;o entre o target e estas depend&ecirc;ncias 
+	  n&atilde;o forem previamente definidas, ou se esta 
+	  convers&atilde;o particular n&atilde;o for a mesma que o 
+	  m&eacute;todo de convers&atilde;o padr&atilde;o.</para>
 
-	<para>A depend&ecirc;ncia especial <literal>.USE</literal> define
-	  o equivalente ao macro.</para>
+	<para>A depend&ecirc;ncia especial <literal>.USE</literal> 
+	  define o equivalente ao macro.</para>
 
 <programlisting>_SUBDIRUSE: .USE
 .for entry in ${SUBDIR}
@@ -454,27 +462,30 @@ PRI_LANG?=	en_US.ISO8859-1
 	${MAKE} ${.TARGET:S/realpackage/package/:S/realinstall/install/} DIRPRFX=${DIRPRFX}${entry}/ )
 .endfor</programlisting>
 
-	<para>Acima, <maketarget>_SUBDIRUSE</maketarget> &eacute; agora um
-	  macro que ir&aacute; executar comandos passados quando for listado
-	  como depend&ecirc;ncia.</para>
+	<para>Acima, <maketarget>_SUBDIRUSE</maketarget> &eacute; 
+	  agora um macro que ir&aacute; executar comandos passados 
+	  quando for listado como depend&ecirc;ncia.</para>
 
-	<para>O que configura este macro a parte de outros targets?  Basicamente,
-	  &eacute; executado <emphasis>ap&oacute;s</emphasis> as instru&ccedil;&otilde;es
-	  passadas no processo de constru&ccedil;&atilde;o, s&atilde;o listados como uma depend&ecirc;ncia,
-	  e n&atilde;o o configura o <makevar>.TARGET</makevar>, que &eacute; a
+	<para>O que configura este macro a parte de outros targets? 
+	  Basicamente, &eacute; executado <emphasis>ap&oacute;s
+	  </emphasis> as instru&ccedil;&otilde;es passadas no 
+	  processo de constru&ccedil;&atilde;o, s&atilde;o listados 
+	  como uma depend&ecirc;ncia, e n&atilde;o o configura o 
+	  <makevar>.TARGET</makevar>, que &eacute; a
 	  vari&aacute;vel que cont&eacute;m o nome do target atual
 	  est&aacute; sendo constru&iacute;do.</para>
 
 <programlisting>clean: _SUBDIRUSE
 	rm -f ${CLEANFILES}</programlisting>
 
-	<para>Acima, o <maketarget>clean</maketarget> ir&aacute; usar o macro
-	  <maketarget>_SUBDIRUSE</maketarget> depois de ter
+	<para>Acima, o <maketarget>clean</maketarget> ir&aacute; usar
+	  o macro <maketarget>_SUBDIRUSE</maketarget> depois de ter
 	  executado a instru&ccedil;&atilde;o
-	  <command>rm -f ${CLEANFILES}</command>.  De fato, isto causa um
-	  <maketarget>clean</maketarget> na &aacute;rvore de diret&oacute;rio,
-	  deletando arquivos constru&iacute;dos enquanto vai
-	  <emphasis>descendo</emphasis> aos subdiret&oacute;rios.</para>
+	  <command>rm -f ${CLEANFILES}</command>.  De fato, isto causa
+	  um <maketarget>clean</maketarget> na &aacute;rvore de 
+	  diret&oacute;rio, deletando arquivos constru&iacute;dos 
+	  enquanto vai <emphasis>descendo</emphasis> aos 
+	  subdiret&oacute;rios.</para>
 
 	<sect4>
 	  <title>Targets fornecidos</title>
@@ -482,19 +493,22 @@ PRI_LANG?=	en_US.ISO8859-1
 	  <itemizedlist>
 	    <listitem>
 	      <para><maketarget>install</maketarget> e
-		<maketarget>package</maketarget>, ambos v&atilde;o abaixo
-		na &aacute;rvore de diret&oacute;rio requisitando a real vers&atilde;o deles
-		nos subdiret&oacute;rios.
-		(<maketarget>realinstall</maketarget> e
-		<maketarget>realpackage</maketarget>
+		<maketarget>package</maketarget>, ambos v&atilde;o 
+		abaixo na &aacute;rvore de diret&oacute;rio 
+		requisitando a real vers&atilde;o deles nos 
+		subdiret&oacute;rios.  (<maketarget>realinstall
+		</maketarget> e <maketarget>realpackage</maketarget>
 		 respectivamente)</para>
 	    </listitem>
 
 	    <listitem>
-	      <para>O <maketarget>clean</maketarget> remove arquivos criados
-		pelo processo de compila&ccedil;&atilde;o (e tamb&eacute;m desce na &aacute;rvore de diret&oacute;rios
-		tamb&eacute;m).  O <maketarget>cleandir</maketarget> faz a mesma coisa,
-		e tamb&eacute;m remove o diret&oacute;rio de objetos se este existir.</para>
+	      <para>O <maketarget>clean</maketarget> remove arquivos 
+		criados pelo processo de compila&ccedil;&atilde;o (e 
+		tamb&eacute;m desce na &aacute;rvore de 
+		diret&oacute;rios).  O <maketarget>cleandir
+		</maketarget> faz a mesma coisa, e tamb&eacute;m 
+		remove o diret&oacute;rio de objetos se este existir.
+		</para>
 	    </listitem>
 	  </itemizedlist>
 	</sect4>
@@ -505,29 +519,33 @@ PRI_LANG?=	en_US.ISO8859-1
 
 	<itemizedlist>
 	  <listitem>
-	    <para><literal>exists</literal> &eacute; outra fun&ccedil;&atilde;o
-	      condicional que retorna verdadeiro se o arquivo dado existir.</para>
+	    <para><literal>exists</literal> &eacute; outra 
+	      fun&ccedil;&atilde;o condicional que retorna verdadeiro
+	      se o arquivo dado existir.</para>
 	  </listitem>
 
 	  <listitem>
-	    <para><literal>empty</literal> retorna verdadeiro se a vari&aacute;vel
-	      passada estiver vazia.</para>
+	    <para><literal>empty</literal> retorna verdadeiro se a 
+	      vari&aacute;vel passada estiver vazia.</para>
 	  </listitem>
 
 	  <listitem>
-	    <para><literal>target</literal> retorna verdadeiro se o target
-	      passado j&aacute; n&atilde;o existir.</para>
+	    <para><literal>target</literal> retorna verdadeiro se o 
+	      target passado j&aacute; n&atilde;o existir.</para>
 	  </listitem>
 	</itemizedlist>
       </sect3>
 
       <sect3>
-	<title>Constru&ccedil;&atilde;o de Looping no make (.for)</title>
+	<title>Constru&ccedil;&atilde;o de Looping no make (.for)
+	  </title>
 
-	<para><literal>.for</literal> fornece uma maneira de repetir instru&ccedil;&otilde;es
-	  definidas para cada elemente separado por espa&ccedil;o em uma vari&aacute;vel.
-	  Ele faz isso atribu&iacute;ndo uma vari&aacute;vel para conter o elemento
-	  atual na lista que est&aacute; sendo examinada.</para>
+	<para>O <literal>.for</literal> fornece uma maneira de 
+	  repetir instru&ccedil;&otilde;es definidas para cada 
+	  elemente separado por espa&ccedil;o em uma vari&aacute;vel.
+	  Ele faz isso atribu&iacute;ndo uma vari&aacute;vel para 
+	  conter o elemento atual na lista que est&aacute; sendo 
+	  examinada.</para>
 
 <programlisting>_SUBDIRUSE: .USE
 .for entry in ${SUBDIR}
@@ -536,12 +554,13 @@ PRI_LANG?=	en_US.ISO8859-1
 	${MAKE} ${.TARGET:S/realpackage/package/:S/realinstall/install/} DIRPRFX=${DIRPRFX}${entry}/ )
 .endfor</programlisting>
 
-	<para>Acima, se o <makevar>SUBDIR</makevar> est&aacute; vazio, nenhuma
-	  a&ccedil;&atilde;o &eacute; feita; se ele tiver um ou mais elementos, as
-	  instru&ccedil;&otilde;es entre o <literal>.for</literal> e o
-	  <literal>.endfor</literal> repetiria para cada elemento,
-	  com o <makevar>entry</makevar> sendo substitu&iacute;da com o valor
-	  do elemento atual.</para>
+	<para>Acima, se o <makevar>SUBDIR</makevar> est&aacute; vazio,
+	  nenhuma a&ccedil;&atilde;o &eacute; feita; se ele tiver um 
+	  ou mais elementos, as instru&ccedil;&otilde;es entre o 
+	  <literal>.for</literal> e o <literal>.endfor</literal> 
+	  repetiria para cada elemento, com o <makevar>entry</makevar>
+	  sendo substitu&iacute;da com o valor do elemento atual.
+	  </para>
       </sect3>
     </sect2>
   </sect1>

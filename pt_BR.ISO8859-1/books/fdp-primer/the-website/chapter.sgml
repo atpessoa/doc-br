@@ -36,158 +36,254 @@
   <sect1 id="the-website-prep">
     <title>Prepara&ccedil;&atilde;o</title>
     
-    <para>Utilize um disco que tenha espa&ccedil;o livre suficiente.  Voc&ecirc; ir&aacute; precisar de
-    200&nbsp;MB a 500&nbsp;MB, dependendo do m&eacute;todo que escolher. Este espa&ccedil;o ir&aacute;
-    abrigar as ferramentas SGML, um subconjunto da &aacute;rvore <application>CVS</application>, os
-    arquivos tempor&aacute;rios de trabalho e as p&aacute;ginas web instaladas.</para>
+    <para>Utilize um disco que tenha espa&ccedil;o livre suficiente. 
+      Voc&ecirc; ir&aacute; precisar de 200&nbsp;MB a 500&nbsp;MB, 
+      dependendo do m&eacute;todo que escolher. Este espa&ccedil;o 
+      ir&aacute; abrigar as ferramentas SGML, um subconjunto da 
+      &aacute;rvore <application>CVS</application>, os arquivos 
+      tempor&aacute;rios de trabalho e as p&aacute;ginas web 
+      instaladas.</para>
  
     <note>
-      <para>Certifique-se que seus ports de documenta&ccedil;&atilde;o est&atilde;o atualizados! Quando na
-        d&uacute;vida, remova o outro ports usando o comando &man.pkg.delete.1; antes de instalar o ports.
-        Por exemplo, n&oacute;s atualmente dependemos do jade-1.2, e se voc&ecirc; tem instalado o jade-1.1. por favor fa&ccedil;a:</para>
+      <para>Certifique-se que seus ports de 
+	documenta&ccedil;&atilde;o est&atilde;o atualizados! Quando 
+	na d&uacute;vida, remova o outro ports usando o comando 
+	&man.pkg.delete.1; antes de instalar o ports.  Por exemplo, 
+	n&oacute;s atualmente dependemos do jade-1.2, e se voc&ecirc;
+	tem instalado o jade-1.1. por favor fa&ccedil;a:</para>
 
       <screen>&prompt.root; <userinput><command>pkg_delete jade-1.1</command></userinput></screen>
     </note>
-    <para>Existem 2 m&eacute;todos para se obter os arquivos necess&aacute;rios para construir 
-    o s&iacute;tio www:</para>
+    <para>Existem 2 m&eacute;todos para se obter os arquivos 
+      necess&aacute;rios para construir o s&iacute;tio www:</para>
     <itemizedlist>
     	<listitem>
-    	<para>Utilize o <command>csup</command> para obter uma c&oacute;pia local dos 
-    	arquivos de um servidor <application>CVSup</application>.  Este &eacute; o 
-    	m&eacute;todo mais f&aacute;cil e ele n&atilde;o requer a instala&ccedil;&atilde;o de
-    	nenhum software adicional.  O <literal>supfile</literal> apresentado na pr&oacute;xima
-    	sess&atilde;o ir&aacute; sempre buscar a vers&atilde;o mais atual dos arquivos 
-    	necess&aacute;rios.  Este m&eacute';todo &eacute; suficiente se voc&ecirc; est&aacute;
-    	apenas regerando o s&iacute;tio www e n&atilde;o tem inten&ccedil;&atilde;o de 
-    	realizar o <literal>commit</literal> de nenhuma mudan&ccedil;a/</para>
+    	<para>Utilize o <command>csup</command> para obter uma 
+	  c&oacute;pia local dos arquivos de um servidor 
+	  <application>CVSup</application>.  Este &eacute; o 
+	  m&eacute;todo mais f&aacute;cil e ele n&atilde;o requer 
+	  a instala&ccedil;&atilde;o de nenhum software adicional.  
+	  O <literal>supfile</literal> apresentado na pr&oacute;xima 
+	  sess&atilde;o ir&aacute; sempre buscar a vers&atilde;o mais
+	  atual dos arquivos necess&aacute;rios.  Este m&eacute';todo
+	  &eacute; suficiente se voc&ecirc; est&aacute; apenas 
+	  regerando o s&iacute;tio www e n&atilde;o tem 
+	  inten&ccedil;&atilde;o de realizar o <literal>commit
+	  </literal> de nenhuma mudan&ccedil;a/</para>
 	</listitem>
 
 	<listitem>
-	<para>Utilizar o <command>cvsup</command> em modo <quote>cvs</quote> para criar e manter um
-	reposit&oacute;rio <application>CVS</application> local com os arquivos necess&aacute;rios.  
-	Isto ir&aacute; requerer que voc&ecirc; instale um programa como o 
-	<filename>net/cvsup-without-gui</filename>, este &eacute; o m&eacute;todo  mais 
-	flex&iacute;vel se voc&ecirc; precisa de acesso r&aacute;pido a diferentes revis&otilde;es
-	dos arquivos do <literal>doc/www</literal>, revis&otilde;es hist&oacute;ricas, ou se voc&ecirc; planeja realizar
-	<literal>commits</literal> de altera&ccedil;&otilde;es para o reposit&oacute;rio 
-	<application>CVS</application> central do &os;
+	<para>Utilizar o <command>cvsup</command> em modo <quote>cvs
+	  </quote> para criar e manter um reposit&oacute;rio 
+	  <application>CVS</application> local com os arquivos 
+	  necess&aacute;rios.  Isto ir&aacute; requerer que 
+	  voc&ecirc; instale um programa como o 
+	  <filename>net/cvsup-without-gui</filename>, este &eacute; 
+	  o m&eacute;todo  mais flex&iacute;vel se voc&ecirc; 
+	  precisa de acesso r&aacute;pido a diferentes revis&otilde;es
+	  dos arquivos do <literal>doc/www</literal>, revis&otilde;es
+	  hist&oacute;ricas, ou se voc&ecirc; planeja realizar 
+	  <literal>commits</literal> de altera&ccedil;&otilde;es para
+	  o reposit&oacute;rio <application>CVS</application> central
+	  do &os;</para>
 	</listitem>
       </itemizedlist>
 	
       <sect2 id="the-website-csup">
 
-	<title>M&eacute;todo Simples: Usando o <command>csup</command></title>
+	<title>M&eacute;todo Simples: Usando o 
+	  <command>csup</command></title>
 
-	<para>O comando <command>csup</command> &eacute; parte do sistema base e j&aacute; &eacute;
-	extensivamente usado pela maioria das pessoas para atualizar a cole&ccedil;&atilde;o de 
-	<literal>ports</literal>.  O exemplo seguinte de supfile pode ser utilizado para obter os 
-	arquivos necess&aacute;rios para a gera&ccedil;&atilde;o do s&iacute;tio www:</para>
+	<para>O comando <command>csup</command> &eacute; parte do 
+	  sistema base e j&aacute; &eacute; extensivamente usado pela
+	  maioria das pessoas para atualizar a cole&ccedil;&atilde;o 
+	  de <literal>ports</literal>.  O exemplo seguinte de supfile
+	  pode ser utilizado para obter os arquivos necess&aacute;rios
+	  para a gera&ccedil;&atilde;o do s&iacute;tio www:</para>
 
 	<programlisting>#
-	# This file checks out all collections required to rebuild
-	# the FreeBSD website
-	#
-	# Use the nearest CVSup mirror
-	# listed at http://www.freebsd.org/doc/handbook/mirrors.html.
+# This file checks out all collections required to rebuild
+# the FreeBSD website
+#
+# Use the nearest CVSup mirror
+# listed at http://www.freebsd.org/doc/handbook/mirrors.html.
 
-	*default host=<replaceable>cvsup10.FreeBSD.org</replaceable>
-	*default base=/var/db
-	*default prefix=<replaceable>/usr/build</replaceable>
-	*default release=cvs tag=.
-	*default delete use-rel-suffix
-	*default compress
+*default host=<replaceable>cvsup10.FreeBSD.org</replaceable>
+*default base=/var/db
+*default prefix=<replaceable>/usr/build</replaceable>
+*default release=cvs tag=.
+*default delete use-rel-suffix
+*default compress
 
-	# This will retrieve the entire doc branch of the FreeBSD repository.
+# This will retrieve the entire doc branch of the FreeBSD repository.
 
-	doc-all
+doc-all
 
-	# This will retrieve the files required for the website
+# This will retrieve the files required for the website
 
-	www
+www
 
-	# This will retrieve some basic ports info required for the build
+# This will retrieve some basic ports info required for the build
 
-	ports-base</programlisting>
+ports-base</programlisting>
 
-	<para>Voc&ecirc; deve &eacute; claro, alterar o registro <literal>default host</literal>
-	para apontar para um mirror <application>CVSup</application> pr&oacute;ximo da sua 
-	localiza&ccedil;&atilde;o, e o registro <literal>default prefix</literal> deve ser 
-	ajustado para o local onde voc&ecirc; deseja armazenar os arquivos do CVS.  Salve
-	este arquivo com o nome desejado, por ex. <filename><replaceable>doc-www-supfile</replaceable></filename>,
-	e execute o comando abaixo:</para>
+	<para>Voc&ecirc; deve &eacute; claro, alterar o registro 
+	  <literal>default host</literal> para apontar para um 
+	  mirror <application>CVSup</application> pr&oacute;ximo da 
+	  sua localiza&ccedil;&atilde;o, e o registro 
+	  <literal>default prefix</literal> deve ser ajustado para o 
+	  local onde voc&ecirc; deseja armazenar os arquivos do CVS.
+	  Salve este arquivo com o nome desejado, por ex. 
+	  <filename><replaceable>doc-www-supfile</replaceable>
+	  </filename>, e execute o comando abaixo:</para>
 
 	<screen>&prompt.root; <userinput><command>csup</command> <option>-g</option> <option>-L2</option> <replaceable>doc-www-supfile</replaceable></userinput></screen>
 	
-	<para>Quanto este comando finalizar, voc&ecirc; ir&aacute; encontrar os diret&oacute;rios 
+	<para>Quando este comando finalizar, voc&ecirc; ir&aacute; 
+	encontrar os diret&oacute;rios 
 	<filename class="directory">doc/</filename>, 
 	<filename class="directory">www/</filename> e 
 	<filename class="directory">ports/</filename> 
-	dentro do diret&oacute; que voc&ecirc; especificou
-	em <literal>default prefix</literal> (<filename class="directory"><replaceable>/usr/build</replaceable>
-	</filename> no nosso exemplo).  N&oacute;s iremos utilizar o mesmo diret&oacute;rio para o processo de
-	gera&ccedil;&atilde;o em si, ent&atilde;o &eacute; melhor utilizar uma parti&ccedil;&atilde;o com
-	espa&ccedil;o livre suficiente.</para>
+	dentro do diret&oacute;rio que voc&ecirc; especificou
+	em <literal>default prefix</literal> (<filename 
+	class="directory"><replaceable>/usr/build</replaceable>
+	</filename> no nosso exemplo).  N&oacute;s iremos utilizar 
+	o mesmo diret&oacute;rio para o processo de
+	gera&ccedil;&atilde;o em si, ent&atilde;o &eacute; melhor 
+	utilizar uma parti&ccedil;&atilde;o com espa&ccedil;o livre 
+	suficiente.</para>
 
-	<para>&Eacute; isso!  Agora voc&ecirc; pode proceder com a <link linkend="the-website-build">
-	gera&ccedil;&atilde;o do s&iacute;tio www</link>.</para>
+	<para>&Eacute; isso!  Agora voc&ecirc; pode proceder com a 
+	<link linkend="the-website-build"> gera&ccedil;&atilde;o do 
+	s&iacute;tio www</link>.</para>
       </sect2>
 
       <sect2 id="the-website-cvsup">
 
-	<title>M&eacute;todo Avan&ccedil;ado: Mantendo um reposit&oacute;rio <application>CVS</application> o <literal>doc/www</literal> localmente</title>
-	<para>Este m&eacute;todo ir&aacute; lhe dar op&ccedil;&otilde;es mais avan&ccedil;adas, por&eacute;m voc&ecirc; ter&aacute; que instalar o pacote ou <literal>port</literal> do <filename>net/cvsup-without-gui</filename>.</para>
-		<note>
-			<para>A constru&ccedil;&atilde;o do <literal>port</literal> <filename>net/cvsup-without-gui</filename> depende do <filename role="package">lang/ezm3</filename>, um compilador Modula&nbsp;3.  Como este compilador &eacute; relativamente lento, e uma vez que a maior parte das pessoas n&atilde;o vai precisar dele para mais nada, possivelmente ser&acute; melhor instalar o <application>CVSup</application> a partir de um pacote.</para>
-		</note>
-	<para>o aplicativo <application>CVSup</application> tem um modo <quote>cvs</quote> especial o qual possibilita a obten&ccedil;&atilde;o dos arquivos <quote>,v</quote> dos quais um reposit&oacute;rio <application>CVS</application> &eacute; constitui&iacute;do.  Esta fun&ccedil;&atilde;o n&atilde;o est&aacute; dispon&iacute;vel atualmente no <application>csup</application>.  Para informa&ccedil;&otilde;es mais detalhadas sobre o <application>CVSup</application>, por favor leia a <ulink url="&url.books.handbook;/synching.html#CVSUP">Introdu&ccedil;&atilde;o ao CVSup</ulink> no Manual do &os;.</para>
-	<para>O arquivo supfile exibido abaixo ir&aacute; obter as cole&ccedil;&otilde;es cvs necess&aacute;rias para compilar o s&iacute;tio www, e para criar um reposit&oacute;rio <application>CVS</application> local:</para>
+	<title>M&eacute;todo Avan&ccedil;ado: Mantendo um 
+	  reposit&oacute;rio <application>CVS</application> o 
+	  <literal>doc/www</literal> localmente</title>
+
+	<para>Este m&eacute;todo ir&aacute; lhe dar 
+	  op&ccedil;&otilde;es mais avan&ccedil;adas, por&eacute;m 
+	  voc&ecirc; ter&aacute; que instalar o pacote ou <literal>
+	  port</literal> do 
+	  <filename>net/cvsup-without-gui</filename>.</para>
+
+	<note>
+	  <para>A constru&ccedil;&atilde;o do <literal>port</literal>
+	    <filename>net/cvsup-without-gui</filename> depende do 
+	    <filename role="package">lang/ezm3</filename>, um 
+	    compilador Modula&nbsp;3.  Como este compilador &eacute; 
+	    relativamente lento, e uma vez que a maior parte das 
+	    pessoas n&atilde;o vai precisar dele para mais nada, 
+	    possivelmente ser&acute; melhor instalar o 
+	    <application>CVSup</application> a partir de um 
+	    pacote.</para>
+	</note>
+
+	<para>o aplicativo <application>CVSup</application> tem um 
+	  modo <quote>cvs</quote> especial o qual possibilita a 
+	  obten&ccedil;&atilde;o dos arquivos <quote>,v</quote> dos
+	  quais um reposit&oacute;rio <application>CVS</application> 
+	  &eacute; constitui&iacute;do.  Esta fun&ccedil;&atilde;o 
+	  n&atilde;o est&aacute; dispon&iacute;vel atualmente no 
+	  <application>csup</application>.  Para 
+	  informa&ccedil;&otilde;es mais detalhadas sobre o 
+	  <application>CVSup</application>, por favor leia a 
+	  <ulink url="&url.books.handbook;/synching.html#CVSUP">
+	  Introdu&ccedil;&atilde;o ao CVSup</ulink> no Manual do 
+	  &os;.</para>
+
+	<para>O arquivo supfile exibido abaixo ir&aacute; obter as 
+	  cole&ccedil;&otilde;es cvs necess&aacute;rias para compilar
+	  o s&iacute;tio www, e para criar um reposit&oacute;rio 
+	  <application>CVS</application> local:</para>
 
 	<programlisting>#
-	# This file will create a local CVS repository
-	# with the collections required for a complete
-	# FreeBSD website rebuild. It should be used with
-	# cvsup *only* (csup will not work)
+# This file will create a local CVS repository
+# with the collections required for a complete
+# FreeBSD website rebuild. It should be used with
+# cvsup *only* (csup will not work)
 
-	*default host=<replaceable>cvsup10.FreeBSD.org</replaceable>
-	*default base=/var/db
-	*default prefix=<replaceable>/usr/dcvs</replaceable>
-	*default release=cvs
-	*default delete use-rel-suffix
-	*default compress
+*default host=<replaceable>cvsup10.FreeBSD.org</replaceable>
+*default base=/var/db
+*default prefix=<replaceable>/usr/dcvs</replaceable>
+*default release=cvs
+*default delete use-rel-suffix
+*default compress
 
-	# The following collections are needed
-	# for the website build
+# The following collections are needed
+# for the website build
 
-	ports-base
-	doc-all
-	www
+ports-base
+doc-all
+www
 
-	# These collections are needed
-	# for CVS functionality
+# These collections are needed
+# for CVS functionality
 
-	cvsroot-common
-	cvsroot-ports
-	cvsroot-doc</programlisting>
+cvsroot-common
+cvsroot-ports
+cvsroot-doc</programlisting>
 
-	<para>Voc&ecirc; deve &eacute; claro, alterar o registro <literal>default host</literal> para apontar para um sit&iacute;o espelho que esteja pr&oacute;ximo da sua localiza&ccedil;&atilde;o, e o registro <literal>default prefix</literal> deve ser alterado para apontar para o local no qual voc&ecirc; deseja armazenar os arquivos do reposit&oacute;o.  Salve este arquivo como por exemplo <filename><replaceable>doc-www-cvsfile</replaceable></filename> e execute o seguinte comando:</para>
+	<para>Voc&ecirc; deve &eacute; claro, alterar o registro 
+	  <literal>default host</literal> para apontar para um 
+	  sit&iacute;o espelho que esteja pr&oacute;ximo da sua 
+	  localiza&ccedil;&atilde;o, e o registro <literal>default 
+	  prefix</literal> deve ser alterado para apontar para o 
+	  local no qual voc&ecirc; deseja armazenar os arquivos do 
+	  reposit&oacute;o.  Salve este arquivo como por exemplo 
+	  <filename><replaceable>doc-www-cvsfile</replaceable>
+	  </filename> e execute o seguinte comando:</para>
 
 	<screen>&prompt.root; <userinput><command>cvsup</command> <option>-g</option> <option>-L2</option> <replaceable>doc-www-cvsfile</replaceable></userinput></screen>
 
-	<para>Tamb&eacute;m &eacute; recomendado que voc&eacute; defina a vari&aacute;vel de ambiente <envar>CVSROOT</envar> nos arquivos de inicializa&ccedil;&atilde;o do seu <foreignphrase>shell</foreignphrase>.  Por exemplo, utilize a seguinte linha no seu arquivo <filename>~/.cshrc</filename>:</para>
+	<para>Tamb&eacute;m &eacute; recomendado que voc&eacute; 
+	  defina a vari&aacute;vel de ambiente <envar>CVSROOT</envar>
+	  nos arquivos de inicializa&ccedil;&atilde;o do seu 
+	  <foreignphrase>shell</foreignphrase>.  Por exemplo, utilize
+	  a seguinte linha no seu arquivo 
+	  <filename>~/.cshrc</filename>:</para>
 
 	<programlisting>setenv <envar>CVSROOT</envar> <replaceable>/usr/dcvs</replaceable></programlisting>
 
-	<para>Se voc&ecirc; definir esta vari&aacute;vel, voc&ecirc; poder&aacute; omitir o argumento <option>-d</option> (mostrado abaixo) quando estiver trabalhando com o seu reposit&oacute;rio usando o comando <command>cvs</command>.</para>
+	<para>Se voc&ecirc; definir esta vari&aacute;vel, voc&ecirc; 
+	  poder&aacute; omitir o argumento <option>-d</option> 
+	  (mostrado abaixo) quando estiver trabalhando com o seu 
+	  reposit&oacute;rio usando o comando 
+	  <command>cvs</command>.</para>
 
-	<para>Atualmente voc&ecirc; precisar&aacute; de mais de 400&nbsp;MB de espa&ccedil;o livre para armazenar os arquivos do reposit&oacute;rio.  E precisar&aacute; de mais 200&nbsp;MB para a &aacute;rea tempor&aacute;ria de compila&ccedil;&atilde;o.  Uma vez que o comando <command>cvsup</command> finalizar, voc&ecirc; estar&aacute; pronto para realizar o <foreignphrase>check out</foreignphrase> dos arquivos para o seu diretorio de compila&ccedil;&atilde;o:</para>
+	<para>Atualmente voc&ecirc; precisar&aacute; de mais de 
+	  400&nbsp;MB de espa&ccedil;o livre para armazenar os 
+	  arquivos do reposit&oacute;rio.  E precisar&aacute; de mais 
+	  200&nbsp;MB para a &aacute;rea tempor&aacute;ria de 
+	  compila&ccedil;&atilde;o.  Uma vez que o comando <command>
+	  cvsup</command> finalizar, voc&ecirc; estar&aacute; pronto 
+	  para realizar o <foreignphrase>check out</foreignphrase> 
+	  dos arquivos para o seu diret&oacute;rio de 
+	  compila&ccedil;&atilde;o:</para>
 
 	<screen>&prompt.root; <userinput><command>mkdir</command> <replaceable>/usr/build</replaceable></userinput>
-	&prompt.root; <userinput><command>cd</command> <replaceable>/usr/build</replaceable></userinput>
-	&prompt.root; <userinput><command>cvs</command> <option>-d</option> <replaceable>/usr/dcvs</replaceable> <option>-R</option> co <option>-AP</option> doc www ports</userinput></screen>
+&prompt.root; <userinput><command>cd</command> <replaceable>/usr/build</replaceable></userinput>
+&prompt.root; <userinput><command>cvs</command> <option>-d</option> <replaceable>/usr/dcvs</replaceable> <option>-R</option> co <option>-AP</option> doc www ports</userinput></screen>
 
-	<para>O comando acima &eacute; consistente com a forma pela o <application>csup</application> faz o <foreignphrase>check out</foreignphrase> dos arquivos a partir dos servidores <application>CVSup</application>.  Quando ele completar, voce ter&aacute; um diret&oacute;rio de compila&ccedil;&atilde;o com um conte&uacute;do semelhante ao que voc&ecirc; obt&eacute;m pelo m&eacute;todo simples usando o <application>csup</application>.</para>
+	<para>O comando acima &eacute; consistente com a forma pela 
+	  qual o <application>csup</application> faz o 
+	  <foreignphrase>check out</foreignphrase> dos arquivos a 
+	  partir dos servidores <application>CVSup</application>.  
+	  Quando ele completar, voce ter&aacute; um diret&oacute;rio 
+	  de compila&ccedil;&atilde;o com um conte&uacute;do 
+	  semelhante ao que voc&ecirc; obt&eacute;m pelo 
+	  m&eacute;todo simples usando o 
+	  <application>csup</application>.</para>
 
-	<para>Voc&ecirc; pode continuar utilizando o comando <command>cvsup</command> acima para atualizar regularmente o seu reposit&oacute;rio <application>CVS</application> local.  Depois do demorado download inicial, a atualiza&ccedil;&atilde;o peri&oacute;dica ir&aacute; levar apenas alguns poucos minutos.</para>
+	<para>Voc&ecirc; pode continuar utilizando o comando 
+	  <command>cvsup</command> acima para atualizar regularmente 
+	  o seu reposit&oacute;rio <application>CVS</application> 
+	  local.  Depois do demorado download inicial, a 
+	  atualiza&ccedil;&atilde;o peri&oacute;dica ir&aacute; 
+	  levar apenas alguns poucos minutos.</para>
 	</sect2>
 
   </sect1>
@@ -195,19 +291,32 @@
   <sect1 id="the-website-build">
     <title>Construa as web pages do inicio</title>
     
-	<para>Depois de ter completado qualquer um dos dois m&eacute;todos acima, voc&ecirc; estar&aacute; pronto para iniciar a compila&ccedil;&atilde;o do s&iacute;tio www.  No nosso exemplo, o diret&oacute;rio de compila&ccedil;&atilde;o &eacute; <filename class="directory"><replaceable>/usr/build</replaceable></filename> e todos os arquivos necess&aacute;rios j&aacute; est&atilde;o dispon&iacute;veis no mesmo.</para>
+	<para>Depois de ter completado qualquer um dos dois 
+	  m&eacute;todos acima, voc&ecirc; estar&aacute; pronto 
+	  para iniciar a compila&ccedil;&atilde;o do s&iacute;tio 
+	  www.  No nosso exemplo, o diret&oacute;rio de 
+	  compila&ccedil;&atilde;o &eacute; <filename 
+	  class="directory"><replaceable>/usr/build</replaceable>
+	  </filename> e todos os arquivos necess&aacute;rios 
+	  j&aacute; est&atilde;o dispon&iacute;veis no mesmo.</para>
 
 	<procedure>
-		<step>
-			<para>V&aacute; para o diret&oacute;rio de compila&ccedil;&atilde;o:</para>
-			<screen>&prompt.root; <userinput><command>cd</command> <replaceable>/usr/build</replaceable></userinput></screen>
-    </step>
-      
-    <step>
-    	<para>A compila&ccedil;&atilde;o do s&iacute;tio www deve ser iniciada de dentro do diret&oacute;rio <filename class="directory">www/en</filename> executando o comando &man.make.1; <maketarget>all</maketarget>, para criar as p&aacute;ginas web:</para>
+	  <step>
+	    <para>V&aacute; para o diret&oacute;rio de 
+	      compila&ccedil;&atilde;o:</para>
 
-			<screen>&prompt.root; <userinput><command>cd</command> www/en</userinput>
-			&prompt.root; <userinput><command>make</command> <maketarget>all</maketarget></userinput></screen>
+<screen>&prompt.root; <userinput><command>cd</command> <replaceable>/usr/build</replaceable></userinput></screen>
+	</step>
+      
+	  <step>
+	    <para>A compila&ccedil;&atilde;o do s&iacute;tio www 
+	      deve ser iniciada de dentro do diret&oacute;rio 
+	      <filename class="directory">www/en</filename> 
+	      executando o comando &man.make.1; <maketarget>all
+	      </maketarget>, para criar as p&aacute;ginas web:</para>
+
+<screen>&prompt.root; <userinput><command>cd</command> www/en</userinput>
+&prompt.root; <userinput><command>make</command> <maketarget>all</maketarget></userinput></screen>
 		</step>
   </procedure>
  </sect1>
@@ -217,24 +326,37 @@
     
     <procedure>
       <step>
-			<para>Se voc&ecirc; tiver se movdo para fora do diret&oacute;rio <filename class="directory">en</filename>, volte para dele.</para>
+	<para>Se voc&ecirc; tiver se movdo para fora do 
+	  diret&oacute;rio <filename class="directory">en</filename>,
+	  volte para dele.</para>
 
-			<screen>&prompt.root; <userinput><command>cd</command> <replaceable>/usr/build/www/en</replaceable></userinput></screen>
+<screen>&prompt.root; <userinput><command>cd</command> <replaceable>/usr/build/www/en</replaceable></userinput></screen>
       </step>
 
       <step>
-			<para>Execute o comando &man.make.1; <maketarget>install</maketarget>, setando a vari&aacute;vel <makevar>DESTDIR</makevar> para o nome do diret&oacute;rio no qual deseja instalar os arquivos.  Eles ser&atilde;o instalados no <filename class="directory">$DESTDIR/data</filename> o qual deve estar configurado para ser o diret&oacute;rio raiz do seu servidor web.</para>
+	<para>Execute o comando &man.make.1; <maketarget>install
+	  </maketarget>, setando a vari&aacute;vel <makevar>DESTDIR
+	  </makevar> para o nome do diret&oacute;rio no qual deseja 
+	  instalar os arquivos.  Eles ser&atilde;o instalados no 
+	  <filename class="directory">$DESTDIR/data</filename> o qual
+	  deve estar configurado para ser o diret&oacute;rio raiz do 
+	  seu servidor web.</para>
 			
-			<screen>&prompt.root; <userinput><command>env</command> <makevar>DESTDIR</makevar>=<replaceable>/usr/local/www</replaceable> <command>make</command> <maketarget>install</maketarget></userinput></screen>
+<screen>&prompt.root; <userinput><command>env</command> <makevar>DESTDIR</makevar>=<replaceable>/usr/local/www</replaceable> <command>make</command> <maketarget>install</maketarget></userinput></screen>
       </step>
 
       <step>
-			<para>Se voc&ecirc; j&aacute; havia instalado previamente as p&aacute;ginas web dentro deste mesmo diret&oacute; o processo de instala&ccedil;&atilde;
-         n&atilde;o ir&aacute; deletar nenhuma p&aacute;gina web velhas ou desatualizada. Por exemplo, se voc&ecirc; compilar e instalar
-         uma nova c&oacute;pia do s&iacute;tio www todos os dias, o comando abaixo ir&aacute; procurar e deletar todos os arquivos que n&atilde;o tenham sido 
-         alterados nos &uacute;ltimos tr&ecirc;s dias.</para>
+	<para>Se voc&ecirc; j&aacute; havia instalado previamente 
+	  as p&aacute;ginas web dentro deste mesmo diret&oacute;rio o 
+	  processo de instala&ccedil;&atilde;o n&atilde;o ir&aacute; 
+	  deletar nenhuma p&aacute;gina web velhas ou desatualizada. 
+	  Por exemplo, se voc&ecirc; compilar e instalar uma nova 
+	  c&oacute;pia do s&iacute;tio www todos os dias, o comando 
+	  abaixo ir&aacute; procurar e deletar todos os arquivos que 
+	  n&atilde;o tenham sido alterados nos &uacute;ltimos 
+	  tr&ecirc;s dias.</para>
 
-			<screen>&prompt.root; <userinput><command>find</command> <replaceable>/usr/local/www</replaceable> <option>-ctime</option> 3 <option>-print0</option> | <command>xargs</command> <option>-0</option> <command>rm</command></userinput></screen>
+<screen>&prompt.root; <userinput><command>find</command> <replaceable>/usr/local/www</replaceable> <option>-ctime</option> 3 <option>-print0</option> | <command>xargs</command> <option>-0</option> <command>rm</command></userinput></screen>
       </step>
     </procedure>
   </sect1>
@@ -247,11 +369,23 @@
 	<term><envar>CVSROOT</envar></term>
 	
 	<listitem>
-		<para>Localiza&ccedil;o da &aacute;rvore de CVS.  Se voc&ecirc; utiliza o m&eacute;todo do <application>CVSup</application> n&oacute;s sugerimos que voc&ecirc; defina esta vari&aacute;vel:</para>
+	  <para>Localiza&ccedil;o da &aacute;rvore de CVS.  Se 
+	    voc&ecirc; utiliza o m&eacute;todo do <application>CVSup
+	    </application> n&oacute;s sugerimos que voc&ecirc; 
+	    defina esta vari&aacute;vel:</para>
 
-		<screen><userinput>&prompt.root; <makevar>CVSROOT</makevar>=<replaceable>/usr/dcvs</replaceable>; <command>export</command> <makevar>CVSROOT</makevar></userinput></screen> 
+<screen><userinput>&prompt.root; <makevar>CVSROOT</makevar>=<replaceable>/usr/dcvs</replaceable>; <command>export</command> <makevar>CVSROOT</makevar></userinput></screen> 
 
-<para>A <envar>CVSROOT</envar> &eacute; uma vari&aacute;vel de ambiente.  Voc&ecirc; deve defin&iacute;-la pela linha de comando ou nos seus arquivos de inicializa&ccedil;&atilde;o do seu <foreignphrase>shell</foreignphrase> (por exemplo, <filename>~/.profile</filename>).  A sintaxe exata ir&aacute; variar dependendo de qual <foreignphrase>shell</foreignphrase> voc&ecirc; utiliza (o exemplo acima &eacute; para o <application>bash</application> e demais <foreignphrase>shells</foreignphrase> semelhantes.</para>
+	  <para>A <envar>CVSROOT</envar> &eacute; uma vari&aacute;vel
+	    de ambiente.  Voc&ecirc; deve defin&iacute;-la pela linha
+	    de comando ou nos seus arquivos de 
+	    inicializa&ccedil;&atilde;o do seu <foreignphrase>shell
+	    </foreignphrase> (por exemplo, 
+	    <filename>~/.profile</filename>).  A sintaxe exata 
+	    ir&aacute; variar dependendo de qual <foreignphrase>shell
+	    </foreignphrase> voc&ecirc; utiliza (o exemplo acima 
+	    &eacute; para o <application>bash</application> e demais 
+	    <foreignphrase>shells</foreignphrase> semelhantes).</para>
 	</listitem>
       </varlistentry>
 	
@@ -259,17 +393,21 @@
 	<term><makevar>ENGLISH_ONLY</makevar></term>
 	
 	<listitem>
-	  <para>Se esta vari&aacute;vel estiver setada e n&atilde;o for vazia, o Makefiles ir&aacute; compilar e
-	    instalar apenas a documenta&ccedil;&atilde;o em Ingles.  Todas tradu&ccedil;&otilde;es ser&atilde;o ignoradas. E.g.:</para>
+	  <para>Se esta vari&aacute;vel estiver setada e n&atilde;o 
+	    for vazia, o Makefiles ir&aacute; compilar e instalar 
+	    apenas a documenta&ccedil;&atilde;o em Ingles.  Todas 
+	    tradu&ccedil;&otilde;es ser&atilde;o ignoradas. 
+	    E.g.:</para>
 	  
-		<screen>&prompt.root; <userinput><command>make</command> <makevar>ENGLISH_ONLY=YES</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget></userinput></screen>
+<screen>&prompt.root; <userinput><command>make</command> <makevar>ENGLISH_ONLY=YES</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget></userinput></screen>
 
 	  <para>Se voc&ecirc; quiser desabilitar a vari&aacute;vel
-	    <makevar>ENGLISH_ONLY</makevar> e compilar todas as paginas, incluindo
-	    tradu&ccedil;&otilde;es, basta setar a vari&aacute;vel <makevar>ENGLISH_ONLY</makevar>
+	    <makevar>ENGLISH_ONLY</makevar> e compilar todas as 
+	    paginas, incluindo tradu&ccedil;&otilde;es, basta setar 
+	    a vari&aacute;vel <makevar>ENGLISH_ONLY</makevar>
 	    para um valor vazio:</para>
 	
-		<screen>&prompt.root; <userinput><command>make</command> <makevar>ENGLISH_ONLY=""</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget> <maketarget>clean</maketarget></userinput></screen>
+<screen>&prompt.root; <userinput><command>make</command> <makevar>ENGLISH_ONLY=""</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget> <maketarget>clean</maketarget></userinput></screen>
   
 	</listitem>
       </varlistentry>
@@ -278,9 +416,13 @@
 	<term><makevar>WEB_ONLY</makevar></term>
 	
 	<listitem>
-	  <para>Se esta vari&aacute;vel estiver setada e n&atilde;o for vazia, o Makefiles ir&aacute; compilar e instalar
-	    apenas as p&aacute;ginas HTML do diret&oacute;rio <filename class="directory">www</filename>. Todos os documentos do
-	    diret&oacute;rio <filename class="directory">doc</filename> (Handbook, FAQ, Tutorais) ser&atilde;o ignorados.  Por exemplo:</para>
+	  <para>Se esta vari&aacute;vel estiver setada e n&atilde;o 
+	    for vazia, o Makefiles ir&aacute; compilar e instalar 
+	    apenas as p&aacute;ginas HTML do diret&oacute;rio 
+	    <filename class="directory">www</filename>. Todos os 
+	    documentos do diret&oacute;rio <filename 
+	    class="directory">doc</filename> (Handbook, FAQ, 
+	    Tutorais) ser&atilde;o ignorados.  Por exemplo:</para>
 
 		<screen>&prompt.root; <userinput><command>make</command> <makevar>WEB_ONLY=YES</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget></userinput></screen>	
   
@@ -291,23 +433,39 @@
       	<term><makevar>WEB_LANG</makevar></term>
 
 	<listitem>
-		  <para>Se esta vari&aacute;vel estiver setada, o Makefiles ir&aacute; compilar e instalar apenas as p&aacute;ginas web no idioma especificado por esta vari&aacute;vel dentro do idiret&oacute;rio <filename class="directory">www</filename>.  Todos os demais idiomas ser&atilde;o ignorados. Por exemplo:</para>
+	  <para>Se esta vari&aacute;vel estiver setada, o Makefiles 
+	    ir&aacute; compilar e instalar apenas as p&aacute;ginas 
+	    web no idioma especificado por esta vari&aacute;vel 
+	    dentro do idiret&oacute;rio <filename 
+	    class="directory">www</filename>.  Todos os demais 
+	    idiomas ser&atilde;o ignorados. Por exemplo:</para>
 
-	  <screen>&prompt.root; <userinput>make WEB_LANG="el es hu nl" all install</userinput></screen>
-	  	</listitem>
-	    </varlistentry>
+<screen>&prompt.root; <userinput>make WEB_LANG="el es hu nl" all install</userinput></screen>
+  	</listitem>
+      </varlistentry>
 	
       <varlistentry>
 	<term><makevar>NOPORTSCVS</makevar></term>
 	
 	<listitem>
-	  <para>Se esta varia&aacute;vel estiver setada, o Makefiles n&atilde;o far&aacute; o check out dos arquivos do ports do 
-	    cvs repository. Ao inv&eacute;s disso, ele ir&aacute; copiar os arquivos a partir do <filename class="directory">/usr/ports</filename> (ou a onde a vari&aacute;vel <envar>PORTSBASE</envar> apontar).</para>
+	  <para>Se esta varia&aacute;vel estiver setada, o Makefiles 
+	    n&atilde;o far&aacute; o check out dos arquivos do ports 
+	    do cvs repository. Ao inv&eacute;s disso, ele ir&aacute; 
+	    copiar os arquivos a partir do <filename 
+	    class="directory">/usr/ports</filename> (ou a onde a 
+	    vari&aacute;vel <envar>PORTSBASE</envar> apontar).</para>
 	</listitem>
       </varlistentry>
     </variablelist>
     
-    <para><makevar>WEB_ONLY</makevar>, <makevar>WEB_LANG</makevar>, <makevar>ENGLISH_ONLY</makevar> e <makevar>NOPORTSCVS</makevar> s&atilde;o vari&aacute;veis do make.  Voc&ecirc; pode definir estas vari&aacute;veis no <filename>/etc/make.conf</filename>, no <filename>Makefile.inc</filename>, ou ainda como vari&aacute;veis de ambiente na linha de comando ou nos arquivos de inicializa&ccedil;&atilde;o do seu <foreignphrase>shell</foreignphrase>.</para>
+    <para><makevar>WEB_ONLY</makevar>, <makevar>WEB_LANG</makevar>, 
+      <makevar>ENGLISH_ONLY</makevar> e <makevar>NOPORTSCVS</makevar>
+      s&atilde;o vari&aacute;veis do make.  Voc&ecirc; pode definir 
+      estas vari&aacute;veis no <filename>/etc/make.conf</filename>, 
+      no <filename>Makefile.inc</filename>, ou ainda como 
+      vari&aacute;veis de ambiente na linha de comando ou nos 
+      arquivos de inicializa&ccedil;&atilde;o do seu 
+      <foreignphrase>shell</foreignphrase>.</para>
   </sect1>
 </chapter>
   
