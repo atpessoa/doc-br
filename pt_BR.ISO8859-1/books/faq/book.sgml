@@ -7713,7 +7713,7 @@ C:\="DOS"</programlisting>
 	  <para>Desmontar o dispositivo &eacute; extremamente
 	    simples:</para>
 
-	  <screen>&prompt.user; <userinput>umount <filename>~/my-mount-point</></userinput></screen>
+	  <screen>&prompt.user; <userinput>umount <filename>~/my-mount-point</filename></userinput></screen>
 
 	  <para>Contudo, habilitar a op&ccedil;&atilde;o
 	    <varname>vfs.usermount</varname>, contudo, causa algumas
@@ -10670,7 +10670,7 @@ Key F15        A        A        Menu Workplace Nop</programlisting>
 	    de rede e a netmask em quest&atilde;o, da forma
 	    tradicional:</para>
 
-	  <screen>&prompt.root; <userinput>ifconfig ed0 alias 172.16.141.5 netmask 0xffffff00</userinput</screen>
+	  <screen>&prompt.root; <userinput>ifconfig ed0 alias 172.16.141.5 netmask 0xffffff00</userinput></screen>
 	</answer>
       </qandaentry>
 
