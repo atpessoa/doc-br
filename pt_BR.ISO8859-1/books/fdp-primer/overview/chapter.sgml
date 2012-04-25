@@ -111,11 +111,11 @@
 	
 	<listitem>
 	  <para>O objetivo do FAQ &eacute; consolidar (no formato de 
-            perguntas respostas curtas) as perguntas que foram feitas,
-            ou que podem ser feitas, nas v&aacute;rias listas de 
-            discuss&atilde;o e newsgroups dedicados ao FreeBSD.  O 
-            formato n&atilde;o permite respostas longas e detalhadas.
-            </para>
+            perguntas e respostas curtas) as perguntas que foram 
+	    feitas, ou que podem ser feitas, nas v&aacute;rias 
+	    listas de discuss&atilde;o e newsgroups dedicados ao 
+	    FreeBSD.  O formato n&atilde;o permite respostas longas 
+	    e detalhadas.</para>
 	</listitem>
       </varlistentry>
 
@@ -133,7 +133,7 @@
 	 <term>Site Web</term>
 	
 	 <listitem>
-	   <para>Este &eacute; a principal presen&ccedil;a do FreeBSD
+	   <para>Esta &eacute; a principal presen&ccedil;a do FreeBSD
              na <literal> World Wide Web</literal>, vis&iacute;vel em
              <ulink url="&url.base;/index.html">
              http://www.FreeBSD.org/</ulink>
@@ -280,8 +280,8 @@
 	<para>Teste a marca&ccedil;&atilde;o SGML utilizando o alvo 
           <maketarget>lint</maketarget> com o comando make.  Isto 
           ir&aacute; listar rapidamente qualquer erro existente no 
-          documento sem realizar realmente qualquer tipo de 
-          transforma&ccedil;&atilde;o no seu arquivo a que 
+          documento sem realizar qualquer tipo de 
+          transforma&ccedil;&atilde;o no seu arquivo, o que
           consumiria tempo.</para>
 
 	<screen>&prompt.user; <userinput>make lint</userinput></screen>
@@ -295,11 +295,11 @@
           <literal>ps</literal>, <literal>pdf</literal>, e 
           <literal>rtf</literal>.  A lista mais atualizada dos 
           formatos suportados est&aacute; listada no inicio do 
-          arquivo <filename>doc/share/mk/doc.docbook.mk</filename> 
-          file.  Certifique-se de utilizar aspas 
+          arquivo <filename>doc/share/mk/doc.docbook.mk</filename>.   
+          Certifique-se de utilizar aspas 
           (<literal>"</literal>) em volta da lista de formatos quando
 	  voc&ecirc; estiver compilando mais de um formato num 
-          un&iacute;co comando.</para>
+          &uacute;nico comando.</para>
 	
 	<para>Por exemplo, para converter o documento apenas para
 	  <literal>html</literal>, voc&ecirc; deve utilizar:</para>
