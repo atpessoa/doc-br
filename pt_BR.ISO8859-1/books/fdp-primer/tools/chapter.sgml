@@ -39,15 +39,15 @@
     Voc&ecirc; pr&oacute;prio precisar&aacute; usar essas ferramentas
     se for trabalhar com a documenta&ccedil;&atilde;o.</para>
 
-  <para>Todas essas ferramentas est&atilde;o dispon&iacute;veis como
+  <para>Todas estas ferramentas est&atilde;o dispon&iacute;veis como
     <literal>Ports</literal> e <literal>Packages</literal> do FreeBSD,
-    simplificando enormemente o trabalho a ser feito para
+    simplificando enormemente o seu trabalho para 
     instal&aacute;-las.</para>
 
-  <para>Voc&ecirc; precisar&aacute; instalar essas ferramentas antes
+  <para>Voc&ecirc; precisar&aacute; instalar estas ferramentas antes
     de trabalhar com qualquer exemplo dos pr&oacute;ximos
-    cap&iacute;tulos.  O uso real dessas ferramentas ser&aacute;
-    coberto em cap&iacute;tulos posteriores.</para>
+    cap&iacute;tulos.  O uso real destas ferramentas ser&aacute;
+    abordado nos pr&oacute;ximos cap&iacute;tulos.</para>
 
   <tip>
     <title>Se poss&iacute;vel use o <filename role="package">
@@ -73,7 +73,7 @@
 
     <para>Para economizar seu tempo e espa&ccedil;o em disco
       voc&ecirc; deve especificar se quer, ou n&atilde;o, a
-      instala&ccedil;&atilde;o do <application>JadeTeXi</application>
+      instala&ccedil;&atilde;o do <application>JadeTeX</application>
       (e por consequ&ecirc;ncia o &tex;) quando o 
       <literal>port</literal> for instalado.  Conforme 
       necess&aacute;rio, fa&ccedil;a:</para>
@@ -88,7 +88,7 @@
       <filename role="package">textproc/docproj-jadetex</filename> ou o 
       <filename role="package">textproc/docproj-nojadetex</filename>. 
       Estes <literal>ports</literal> secund&aacute;rios ir&atilde;o 
-      definir a vari&aacute;el <makevar>JADETEX</makevar> para 
+      definir a vari&aacute;vel <makevar>JADETEX</makevar> para 
       voc&ecirc;, consequentemente eles ir&atilde;o instalar o mesmo 
       conjunto de aplicativos na sua m&aacute;quina.  Observe que 
       voc&ecirc; poder&aacute; produzir apenas documentos em HTML e 
@@ -106,7 +106,7 @@
 
       <para>Esses programas s&atilde;o necess&aacute;rios para 
 	voc&ecirc; trabalhar com a documenta&ccedil;&atilde;o do 
-	FreeBSD, e permitir&atilde;o a converter&ccedil;&atilde;o 
+	FreeBSD, e permitir&atilde;o a conver&ccedil;&atilde;o 
 	da mesma para os formatos HTML, texto puro e RTF.  Eles 
 	est&atilde;o todos inclu&iacute;dos em
 	<filename role="package">textproc/docproj</filename>.</para>
@@ -152,10 +152,10 @@
 	
 	  <listitem>
 	    <para>Parte da documenta&ccedil;&atilde;o inclui imagens,
-	      algumas delas sendo armazenadas como arquivos EPS.  
-	      Essas imagens devem ser convertidas para PNG antes de 
-	      algum navegador <literal>web</literal> 
-	      apresent&aacute;-las.</para>
+	      algumas delas est&atilde;o armazenadas como arquivos EPS.  
+	      Estas imagens precisam ser convertidas para o formato 
+	      PNG antes de serem exibidas em um navegador 
+	      <literal>web</literal>.</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
@@ -164,9 +164,9 @@
     <sect2>
       <title>Entidades e DTDs</title>
 
-      <para>Esses s&atilde;o os conjuntos de DTDs e entidade usados
-	pelo FDP.  Eles precisam estar instalados antes que voc&ecirc;
-	trabalhe com qualquer parte da
+      <para>Esses s&atilde;o os conjuntos de DTDs e de entidades 
+	usados pelo FDP.  Eles precisam estar instalados para que
+	voc&ecirc; possa trabalhar com qualquer parte da
 	documenta&ccedil;&atilde;o.</para>
 
       <variablelist>
@@ -215,8 +215,8 @@
       <title>Stylesheets</title>
 
       <para><literal>Stylesheets</literal> s&atilde;o usadas na
-	convers&atilde;o e formata&ccedil;&atilde;o de documentos a
-	serem apresentados na tela, impressos, e assim por
+	convers&atilde;o e formata&ccedil;&atilde;o de documentos
+	para serem apresentados na tela, impressos, e assim por
 	diante.</para>
 
       <variablelist>
@@ -228,7 +228,7 @@
 	  <listitem>
 	    <para>Modular DocBook Stylesheets s&atilde;o usados na
 	      convers&atilde;o da documenta&ccedil;&atilde;o escrita 
-	      com DocBook para outros formatos, tais como HTML ou 
+	      em DocBook para outros formatos, tais como HTML ou 
 	      RTF.</para>
 	  </listitem>
 	</varlistentry>
@@ -265,11 +265,11 @@
 	      convers&otilde;es.</para>
 
 	    <para>Se voc&ecirc; n&atilde;o pretende converter seus
-	      documentos para um desses formatos (i.e., HTML, texto 
+	      documentos para um destes formatos (i.e., HTML, texto 
 	      puro, e RTF s&atilde;o o suficiente) ent&atilde;o 
-	      n&atilde;o &eacute; preciso instalar o 
+	      n&atilde;o ser&aacute; preciso instalar o 
 	      <application>JadeTeX</application> e
-	      <application>teTeX</application>.  Isso pode resultar em
+	      <application>teTeX</application>.  Isto pode resultar em
 	      uma boa economia de tempo e espa&ccedil;o em disco, 
 	      j&aacute; que o <application>teTeX</application> 
 	      possui tamanho de aproximadamente 30MB.</para>
@@ -281,7 +281,7 @@
 		ser&aacute; preciso configurar o 
 		<application>teTeX</application> depois do 
 		<application>JadeTeX</application> ter sido 
-		instalado.  
+		instalado.  O arquivo 
 		<filename>print/jadetex/pkg-message</filename>
 		cont&eacute;m instru&ccedil;&otilde;es detalhadas 
 		sobre o que &eacute; preciso ser feito.</para>
@@ -300,14 +300,15 @@
 	      edi&ccedil;&atilde;o de documentos com uma linguagem de
 	      marcas que siga um SGML DTD.  Esse modo inclui comandos
 	      para reduzir o volume total de digita&ccedil;&atilde;o a
-	      ser feito e ajuda a reduzir a possibilidade de
+	      ser feita, o que ajuda a reduzir a possibilidade de
 	      erros.</para>
 	
 	    <para>Voc&ecirc; n&atilde;o precisa utiliz&aacute;-los,
 	      qualquer editor pode ser usado para editar documentos
 	      escritos com linguagem de marcas.  Entretanto,
-	      voc&ecirc; pode vir a achar que eles tornar&atilde;o seu
-	      trabalho mais eficiente.</para>
+	      se optar por us&aacute;-los voc&ecirc; poder&aacute; 
+	      constatar que eles tornam seu trabalho 
+	      mais eficiente.</para>
 	  </listitem>
 	</varlistentry>
       </variablelist>
@@ -315,7 +316,7 @@
       <para>Se algu&eacute;m tiver sugest&otilde;es sobre algum outro
 	<literal>software</literal> que seja &uacute;til para a
 	manipula&ccedil;&atilde;o de documentos SGML, por favor 
-	informe &a.doceng;, assim elas poder&atilde;o ser 
+	informe a &a.doceng;, desta forma eles poder&atilde;o ser 
 	adicionadas a essa lista.</para>
     </sect2>
   </sect1>
