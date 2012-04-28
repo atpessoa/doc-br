@@ -74,7 +74,7 @@
       <para>Este &a.ptbr.p.fdpp; cobre tudo o que voc&ecirc; precisa
 	saber para come&ccedil;ar a contribuir com o Projeto de
 	Documenta&ccedil;&atilde;o do FreeBSD, desde as ferramentas e
-	softwares que que voc&ecirc; estar&aacute; utilizando (tanto
+	softwares que voc&ecirc; estar&aacute; utilizando (tanto
 	os obrigat&oacute;rios quanto os recomendados) &agrave;
 	filosofia por tr&aacute;s do projeto de
 	documenta&ccedil;&atilde;o.</para>
@@ -214,14 +214,14 @@ Password:</screen></entry>
 
       <note>
 	<para>Notas s&atilde;o representadas desta forma, e
-	  cont&eacute;m informa&ccedil;&otilde;es para as quais
+	  cont&ecirc;m informa&ccedil;&otilde;es para as quais
 	  voc&ecirc; deveria ficar atento, pois podem afetar o que
 	  voc&ecirc; faz.</para>
       </note>
 
       <tip>
 	<para>Dicas s&atilde;o representadas desta forma, e
-	  cont&eacute;m informa&ccedil;&otilde;es que voc&ecirc; pode
+	  cont&ecirc;m informa&ccedil;&otilde;es que voc&ecirc; pode
 	  achar &uacute;teis, ou que mostram uma maneira mais
 	  f&aacute;cil de fazer alguma coisa.</para>
       </tip>
@@ -234,7 +234,7 @@ Password:</screen></entry>
 
       <warning>
 	<para>Avisos s&atilde;o representados deste modo, e
-	  cont&eacute;m informa&ccedil;&otilde;es de alerta para
+	  cont&ecirc;m informa&ccedil;&otilde;es de alerta para
 	  voc&ecirc; sobre poss&iacute;veis danos se voc&ecirc;
 	  n&atilde;o seguir as instru&ccedil;&otilde;es.  Estes danos
 	  podem ser f&iacute;sicos: para o seu equipamento ou para
@@ -247,7 +247,7 @@ Password:</screen></entry>
 	<title>Uma amostra de exemplo</title>
 
 	<para>Os exemplos s&atilde;o representados deste modo, e
-	  normalmente cont&eacute;m exemplos que voc&ecirc; deve
+	  normalmente cont&ecirc;m exemplos que voc&ecirc; deve
 	  analisar, ou ent&atilde;o, mostram como deveriam ser os
 	  resultados de uma determinada a&ccedil;&atilde;o.</para>
       </example>
