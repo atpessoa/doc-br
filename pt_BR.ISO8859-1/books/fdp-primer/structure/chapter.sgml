@@ -44,7 +44,7 @@
   <orderedlist>
     <listitem>
       <para>Facilitar a automatiza&ccedil;&atilde;o da 
-	conver&ccedil;&atilde;o de documentos para outros 
+	convers&atilde;o de documentos para outros 
 	formatos.</para>
     </listitem>
 
@@ -92,7 +92,7 @@
 	  Cont&eacute;m subdiret&oacute;rios para promover uma melhor 
 	  categoriza&ccedil;&atilde;o da
 	  informa&ccedil;&atilde;o.  Por exemplo, os arquivos que
-	  comp&otilde;e a infraestrutura de &man.make.1; encontram-se
+	  comp&otilde;em a infraestrutura de &man.make.1; encontram-se
 	  em <filename>share/mk</filename>, enquanto os arquivos
 	  adicionais para suporte SGML (como as extens&otilde;es do
 	  FreeBSD ao DocBook DTD) encontram-se em
@@ -113,7 +113,7 @@
 	  cabe&ccedil;a caso um time de tradu&ccedil;&atilde;o queira
 	  prover a documenta&ccedil;&atilde;o na mesma l&iacute;ngua
 	  mas em mais de uma codifica&ccedil;&atilde;o.  Isto
-	  tamb&eacute;m nos insola completamente de quaisquer
+	  tamb&eacute;m nos isola completamente de quaisquer
 	  problemas que possam ser causados por uma mudan&ccedil;a
 	  para Unicode.</seg>
       </seglistitem>
@@ -124,7 +124,7 @@
 
     <title>Os Diret&oacute;rios de <filename><replaceable>idioma</replaceable>.<replaceable>codifica&ccedil;&atilde;o</replaceable></filename></title>
 
-    <para>Estes diret&oacute;rios cont&eacute;m os documentos
+    <para>Estes diret&oacute;rios cont&ecirc;m os documentos
       propriamente ditos.  A documenta&ccedil;&atilde;o &eacute;
       dividida em at&eacute; tr&ecirc;s categorias adicionais neste
       n&iacute;vel, indicadas pelos diferentes nomes de
@@ -184,7 +184,7 @@
       Documento</title>
 
     <para>Esta sess&atilde;o cont&eacute;m observa&ccedil;&otilde;es 
-      especificas sobre documentos particulares controlados pelo 
+      espec&iacute;ficas sobre documentos particulares controlados pelo 
       FDP.</para>
 
     <sect2>
@@ -197,7 +197,7 @@
 	projeto FreeBSD.</para>
 
       <para>O Handbook &eacute; organizado como um 
-	<sgmltag>book</sgmltag> Docbook.  Ele est&aacute; divididos 
+	<sgmltag>book</sgmltag> Docbook.  Ele est&aacute; dividido 
 	em <sgmltag>part</sgmltag>es, e cada uma delas pode conter 
 	diversos <sgmltag>chapter</sgmltag>s (Capitulos).  Os 
 	<sgmltag>chapter</sgmltag>s est&atilde;o subdivididos
@@ -226,7 +226,7 @@
 	  <para>O <filename>Makefile</filename> define algumas 
 	    vari&aacute;veis as quais afetam a forma como o fonte 
 	    SGML &eacute; convertido para outros formatos, e lista 
-	    os v&aacute;rios arquivos fonte que comp&otilde;e o 
+	    os v&aacute;rios arquivos fonte que comp&otilde;em o 
 	    Handbook.  Ele tamb&eacute;m inclui um arquivo 
 	    padr&atilde;o chamado <filename>doc.project.mk</filename>,
 	    o qual cont&eacute;m o restante do c&oacute;digo 
@@ -246,7 +246,7 @@
 	
 	  <para>O <filename>book.sgml</filename> utiliza <link
 	    linkend="sgml-primer-parameter-entities">entidades de
-	    parametro</link> para carregar os arquivos com 
+	    par&acirc;metro</link> para carregar os arquivos com 
 	    extens&atilde;o <filename>.ent</filename>.  Estes 
 	    arquivos (descritos abaixo) definem as 
 	    <link linkend="sgml-primer-general-entities">
@@ -275,14 +275,14 @@
 	  <para>Ent&atilde;o ele ser&aacute; chamado de 
 	    <filename>chapter.sgml</filename> e ser&aacute;
 	    armazenadao no diret&oacute;rio <filename>kernelconfig
-	    </filename> Em geral, todo o conte&uacute;do do 
+	    </filename>. Em geral, todo o conte&uacute;do do 
 	    cap&iacute;tulo ser&aacute; mantido neste arquivo.</para>
 	
 	  <para>Quando a vers&atilde;o HTML do Handbook for 
 	    produzida, ser&aacute; gerado um arquivo 
 	    <filename>kernelconfig.html</filename>.  Isto ocorre 
 	    devido ao valor do atributo <literal>id</literal> e
-	    n&atilde;o esta relacionado ao nome do 
+	    n&atilde;o est&aacute; relacionado ao nome do 
 	    diret&oacute;rio.</para>
 	
 	  <para>Nas vers&otilde;es anteriores do Handbook os 
@@ -328,7 +328,7 @@
 	
 	  <para>Cada arquivo <filename>chapter.sgml</filename> 
 	    n&atilde;o ser&aacute; um documento SGML completo.  Em 
-	    particular, eles n&atilde;o ter&atilde;o as sua 
+	    particular, eles n&atilde;o ter&atilde;o as suas 
 	    pr&oacute;prias linhas DOCTYPE no in&iacute;cio do
 	    arquivo.</para>
 	
