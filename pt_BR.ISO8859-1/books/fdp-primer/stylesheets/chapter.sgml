@@ -58,7 +58,7 @@
       sistema de <literal>ports</literal>.  Elas s&atilde;o parte do
       reposit&oacute;rio de fontes do projeto de
       documenta&ccedil;&atilde;o, e podem ser encontradas em
-      <filename> doc/share/sgml/freebsd.dsl </filename>.  Elas
+      <filename>doc/share/sgml/freebsd.dsl</filename>.  Elas
       est&atilde;o bem comentadas, e como a conclus&atilde;o desta
       se&ccedil;&atilde;o est&aacute; pendente, recomendamos que
       voc&ecirc; examine este arquivo para ver como algumas das
@@ -87,7 +87,7 @@
 	refer&ecirc;ncia para a folha de estilo,
 	<filename>docbook.css</filename>, a qual espera-se aparecer 
 	no mesmo diret&oacute;rio dos arquivos HTML.  Este arquivo 
-	CSS geral do projeto  &eacute; copiado de 
+	CSS geral do projeto &eacute; copiado de 
 	<filename>doc/share/misc/docbook.css</filename> quando os 
 	documentos s&atilde;o convertidos para HTML, e &eacute; 
 	instalado automaticamente.</para>
