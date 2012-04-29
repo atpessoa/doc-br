@@ -55,8 +55,8 @@
     </listitem>
 
     <listitem>
-      <para>Facilitar a decis&atilde;o de onde na &aacute;rvore nova
-	documenta&ccedil;&atilde;o deveria ser colocada.</para>
+      <para>Facilitar a decis&atilde;o de onde na &aacute;rvore uma 
+      nova documenta&ccedil;&atilde;o deveria ser colocada.</para>
     </listitem>
   </orderedlist>
 
@@ -89,12 +89,13 @@
 	<seg>Cont&eacute;m arquivos que n&atilde;o s&atilde;o
 	  espec&iacute;ficos as v&aacute;rias tradu&ccedil;&otilde;es
 	  e codifica&ccedil;&otilde;es da documenta&ccedil;&otilde;o.
-	  Cont&eacute;m subdiret&oacute;rios para maior categorizar a
+	  Cont&eacute;m subdiret&oacute;rios para promover uma melhor 
+	  categoriza&ccedil;&atilde;o da
 	  informa&ccedil;&atilde;o.  Por exemplo, os arquivos que
 	  comp&otilde;e a infraestrutura de &man.make.1; encontram-se
 	  em <filename>share/mk</filename>, enquanto os arquivos
-	  adicionais para suporte SGML (como FreeBSD DocBook DTD
-	  extendido) encontram-se em
+	  adicionais para suporte SGML (como as extens&otilde;es do
+	  FreeBSD ao DocBook DTD) encontram-se em
 	  <filename>share/sgml</filename>.</seg>
       </seglistitem>
 
@@ -104,7 +105,7 @@
 	
 	<seg>Existe um diret&oacute;rio para cada
 	  tradu&ccedil;&atilde;o e codifica&ccedil;&atilde;o da
-	  documenta&ccedil;&atilde;o, por ex.
+	  documenta&ccedil;&atilde;o, por exemplo 
 	  <filename>en_US.ISO8859-1/</filename> e
 	  <filename>zh_TW.Big5/</filename>.  Os nomes s&atilde;o
 	  longos, mas ao especificar completamente a l&iacute;ngua e
@@ -125,7 +126,7 @@
 
     <para>Estes diret&oacute;rios cont&eacute;m os documentos
       propriamente ditos.  A documenta&ccedil;&atilde;o &eacute;
-      dividida em at&eacute; tr&ecirc;s mais categorias neste
+      dividida em at&eacute; tr&ecirc;s categorias adicionais neste
       n&iacute;vel, indicadas pelos diferentes nomes de
       diret&oacute;rios.</para>
 
@@ -138,20 +139,19 @@
       <seglistitem>
 	<seg><filename>articles</filename></seg>
 
-	<seg>Documenta&ccedil;&atilde;o <foreignphrase>marked
-	    up</foreignphrase> como DocBook <sgmltag>article</sgmltag>
-	  (ou equivalente).  Razoavelmente pequena, e separada em
+	<seg>Documenta&ccedil;&atilde;o codificada como DocBook 
+	  <sgmltag>article</sgmltag> (ou equivalente).  
+	  Razoavelmente pequena, e separada em
 	  se&ccedil;&otilde;es.  Normalmente dispon&iacute;vel apenas
-	  como um arquivo HTML.  XXX</seg>
+	  como um arquivo HTML.</seg>
       </seglistitem>
 	
       <seglistitem>
 	<seg><filename>books</filename></seg>
 
-	<seg>Documenta&ccedil;&atilde;o <foreignphrase>marked
-	    up</foreignphrase> como DocBook <sgmltag>book</sgmltag>
-	  (ou equivalente).  Com extens&atilde;o de livro
-	  (<foreignphrase>book length</foreignphrase>), e separada em
+	<seg>Documenta&ccedil;&atilde;o codificada como DocBook 
+	  <sgmltag>book</sgmltag> (ou equivalente).  
+	  Com o tamanho de um livro,  e separada em
 	  cap&iacute;tulos.  Normalmente dispon&iacute;vel tanto como
 	  um grande arquivo HTML (para pessoas com conex&otilde;es
 	  r&aacute;pidas, ou que queiram imprim&iacute;-la facilmente
@@ -163,7 +163,7 @@
       <seglistitem>
 	<seg><filename>man</filename></seg>
 	
-	<seg>Para tradu&ccedil;&otilde;es de p&aacute;ginas de manual
+	<seg>Para tradu&ccedil;&otilde;es das p&aacute;ginas de manual
 	  do sistema.  Este diret&oacute;rio conter&aacute; um ou mais
 	  diret&oacute;rios
 	  <filename>man<replaceable>n</replaceable></filename>,
@@ -203,7 +203,7 @@
 	<sgmltag>chapter</sgmltag>s est&atilde;o subdivididos
 	em sess&otilde;es (<sgmltag>sect1</sgmltag>) e 
 	subsess&otilde;es (<sgmltag>sect2</sgmltag>, 
-	<sgmltag>sect3</sgmltag>), etc.</para>
+	<sgmltag>sect3</sgmltag>) e assim por diante.</para>
 	
       <sect3>
 	<title>Organiza&ccedil;&atilde;o Fis&iacute;ca</title>
@@ -292,7 +292,7 @@
 	    presente no elemento <sgmltag>chapter</sgmltag> do 
 	    arquivo.  Agora, &eacute; poss&iacute;vel incluir imagens
 	    em cada cap&iacute;tulo.  As imagens de cada 
-	    cap&iacute;tulo do &a.ptbr.p.handbook; s&atilde;o 
+	    cap&iacute;tulo do Handbook  s&atilde;o 
 	    armazenadas dentro de 
 	    <filename class="directory">share/images/books/handbook</filename>.  
 	    Observe que as vers&otilde;es localizadas destas imagens 
@@ -315,7 +315,7 @@
 	
 	  <important>
 	    <para>Os cap&iacute;tulos e/ou diret&oacute;rios 
-	      n&atilde;o devem ser nomeados em uma forma que 
+	      n&atilde;o devem ser nomeados de forma que 
 	      reflitam sua ordem no Handbook.  Esta 
 	      ordena&ccedil;&atilde;o pode mudar com uma 
 	      reorganiza&ccedil;&atilde;o do conte&uacute;do
