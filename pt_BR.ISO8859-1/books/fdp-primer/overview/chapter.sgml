@@ -45,7 +45,7 @@
     <emphasis>como escrever e como submeter documentos para o FDP
     </emphasis>, e <emphasis>como utilizar de forma efetiva as 
     ferramentas que est&atilde;o dispon&iacute;veis para voc&ecirc; 
-    enquanto voc&ecirc; estiver escrevendo</emphasis>.</para>
+    enquanto estiver escrevendo</emphasis>.</para>
 
   <para><indexterm><primary>Sociedade</primary></indexterm>
     Todos s&atilde;o bem vindos para se juntar ao FDP.  N&atilde;o 
@@ -176,7 +176,7 @@
           manuten&ccedil;&atilde;o de uma c&oacute;pia local do 
           reposit&oacute;rio CVS do FreeBSD (utilizando <application>
           CVS</application>, <application>CVSup</application> ou 
-          <application>CTM </application>) ou atrav&eacute;s do uso 
+          <application>CTM</application>) ou atrav&eacute;s do uso 
           do <application>CVSup</application> copiando apenas uma 
           <emphasis>vers&atilde;o de trabalho</emphasis> dos 
           arquivos.</para>
@@ -255,7 +255,7 @@
 	    <para>Copie um artigo existente para utilizar como
 	      template.  Neste caso, voc&ecirc; decidiu que o seu 
               novo artivo iria para um diret&oacute;rio chamado 
-              <filename>vpn-w2k </filename>.</para>
+              <filename>vpn-w2k</filename>.</para>
 
 	    <screen>&prompt.user; <userinput>cd doc/en_US.ISO8859-1/articles</userinput>
 &prompt.user; <userinput>cp -R committers-guide vpn-w2k</userinput></screen>
@@ -264,7 +264,7 @@
 
 	<para>Se voc&ecirc; deseja editar um documento existente, 
           como por exemplo o FAQ, o qual est&aacute; em <filename>
-	  doc/en_US.ISO8859-1/books/faq</filename> voc&ecirc; deve 
+	  doc/en_US.ISO8859-1/books/faq</filename>, voc&ecirc; deve 
           retirar a c&oacute;pia de trabalho do reposit&oacute;rio 
           da seguinte forma:</para>
 
