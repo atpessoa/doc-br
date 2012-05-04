@@ -94,7 +94,7 @@
 	  <para>As p&aacute;ginas de manual do sistema na 
             l&iacute;ngua inglesa n&atilde;o s&atilde;o escritas pelo
             FDP, porque elas s&atilde;o parte da base do sistema.  
-            Entretanto, o FDP pode (e tem) re-escrito partes das 
+            Entretanto, o FDP pode (e tem) reescrito partes das 
             p&aacute;ginas de manual existentes para torn&aacute;-las
             mais claras, ou para corrigir imprecis&otilde;es.</para>
 	
@@ -134,7 +134,7 @@
 	
 	 <listitem>
 	   <para>Esta &eacute; a principal presen&ccedil;a do FreeBSD
-             na <literal> World Wide Web</literal>, vis&iacute;vel em
+             na <literal>World Wide Web</literal>, vis&iacute;vel em
              <ulink url="&url.base;/index.html">
              http://www.FreeBSD.org/</ulink>
 	     e em muitos sites espelhos ao redor do mundo.  O site 
@@ -193,7 +193,7 @@
     <title>In&iacute;cio R&aacute;pido</title>
 
     <para>Se voc&ecirc; deseja ir come&ccedil;ando, e se sente 
-      seguro de que pode ir pegando as coisas a medida que 
+      seguro de que pode ir pegando as coisas &agrave; medida que 
       avan&ccedil;a, siga estas instru&ccedil;&otilde;es.</para>
 
     <procedure>
@@ -237,7 +237,7 @@
           retire uma vers&atilde;o de trabalho do arquivo do
 	  reposit&oacute;rio.  Se voc&ecirc; est&aacute; planejando 
           contribuir com um novo livro ou artigo, ent&atilde;o 
-          utlize um dos existentes como guia.</para>
+          utilize um dos existentes como guia.</para>
 	
 	<para>Por exemplo, se voc&ecirc; deseja contribuir com um 
           novo artigo sobre como configurar uma VPN entre o FreeBSD 
@@ -254,7 +254,7 @@
 	  <step>
 	    <para>Copie um artigo existente para utilizar como
 	      template.  Neste caso, voc&ecirc; decidiu que o seu 
-              novo artivo iria para um diret&oacute;rio chamado 
+              novo artigo iria para um diret&oacute;rio chamado 
               <filename>vpn-w2k</filename>.</para>
 
 	    <screen>&prompt.user; <userinput>cd doc/en_US.ISO8859-1/articles</userinput>
@@ -294,7 +294,7 @@
           <literal>html-split</literal>, <literal>txt</literal>, 
           <literal>ps</literal>, <literal>pdf</literal>, e 
           <literal>rtf</literal>.  A lista mais atualizada dos 
-          formatos suportados est&aacute; listada no inicio do 
+          formatos suportados est&aacute; listada no in&iacute;cio do 
           arquivo <filename>doc/share/mk/doc.docbook.mk</filename>.   
           Certifique-se de utilizar aspas 
           (<literal>"</literal>) em volta da lista de formatos quando
