@@ -63,7 +63,7 @@
   <para>Al&eacute;m disso, a &aacute;rvore de 
     documenta&ccedil;&atilde;o tem de acomodar 
     documenta&ccedil;&atilde;o que pode estar em muitas diferentes
-    l&iacute;ngua e muitas diferentes codifica&ccedil;&otilde;es.
+    l&iacute;nguas e muitas diferentes codifica&ccedil;&otilde;es.
     &Eacute; importante que a estrutura da &aacute;rvore de
     documenta&ccedil;&atilde;o n&atilde;o force nenhum padr&atilde;o
     particular ou prefer&ecirc;ncia cultural.</para>
@@ -88,7 +88,7 @@
 	
 	<seg>Cont&eacute;m arquivos que n&atilde;o s&atilde;o
 	  espec&iacute;ficos as v&aacute;rias tradu&ccedil;&otilde;es
-	  e codifica&ccedil;&otilde;es da documenta&ccedil;&otilde;o.
+	  e codifica&ccedil;&otilde;es da documenta&ccedil;&atilde;o.
 	  Cont&eacute;m subdiret&oacute;rios para promover uma melhor 
 	  categoriza&ccedil;&atilde;o da
 	  informa&ccedil;&atilde;o.  Por exemplo, os arquivos que
@@ -193,7 +193,7 @@
       <subtitle><filename>books/handbook/</filename></subtitle>
 
       <para>O Handbook &eacute; escrito de forma a obedecer a 
-	vers&atilde;o extendida do DTD DocBook utilizado pelo 
+	vers&atilde;o estendida do DTD DocBook utilizado pelo 
 	projeto FreeBSD.</para>
 
       <para>O Handbook &eacute; organizado como um 
@@ -201,8 +201,8 @@
 	em <sgmltag>part</sgmltag>es, e cada uma delas pode conter 
 	diversos <sgmltag>chapter</sgmltag>s (Capitulos).  Os 
 	<sgmltag>chapter</sgmltag>s est&atilde;o subdivididos
-	em sess&otilde;es (<sgmltag>sect1</sgmltag>) e 
-	subsess&otilde;es (<sgmltag>sect2</sgmltag>, 
+	em se&ccedil;&otilde;es (<sgmltag>sect1</sgmltag>) e 
+	subse&ccedil;&otilde;es (<sgmltag>sect2</sgmltag>, 
 	<sgmltag>sect3</sgmltag>) e assim por diante.</para>
 	
       <sect3>
@@ -240,7 +240,7 @@
 	  <para>Este &eacute; o documento de mais alto n&iacute;vel 
 	    do Handbook.  Ele cont&eacute;m as 
 	    <link linkend="sgml-primer-doctype-declaration">
-	    declara&ccedil;&otilde;es DOCTYPE</link> do handbook, 
+	    declara&ccedil;&otilde;es DOCTYPE</link> do Handbook, 
 	    assim como os elementos que descrevem a estrutura do 
 	    Handbook.</para>
 	
@@ -275,7 +275,7 @@
 	  <para>Ent&atilde;o ele ser&aacute; chamado de 
 	    <filename>chapter.sgml</filename> e ser&aacute;
 	    armazenadao no diret&oacute;rio <filename>kernelconfig
-	    </filename>. Em geral, todo o conte&uacute;do do 
+	    </filename>.  Em geral, todo o conte&uacute;do do 
 	    cap&iacute;tulo ser&aacute; mantido neste arquivo.</para>
 	
 	  <para>Quando a vers&atilde;o HTML do Handbook for 
@@ -292,7 +292,7 @@
 	    presente no elemento <sgmltag>chapter</sgmltag> do 
 	    arquivo.  Agora, &eacute; poss&iacute;vel incluir imagens
 	    em cada cap&iacute;tulo.  As imagens de cada 
-	    cap&iacute;tulo do Handbook  s&atilde;o 
+	    cap&iacute;tulo do Handbook s&atilde;o 
 	    armazenadas dentro de 
 	    <filename class="directory">share/images/books/handbook</filename>.  
 	    Observe que as vers&otilde;es localizadas destas imagens 
