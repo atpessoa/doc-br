@@ -34,7 +34,7 @@
   <title>O processo de constru&ccedil;&atilde;o da 
     documenta&ccedil;&atilde;o</title>
 
-  <para>A principal finalidade desse capitulo &eacute; explicar 
+  <para>A principal finalidade desse cap&iacute;tulo &eacute; explicar 
     claramente <emphasis>como o processo de cria&ccedil;&atilde;o da 
     documenta&ccedil;&atilde;o &eacute; organizado</emphasis>, e 
     <emphasis>como fazer modifica&ccedil;&otilde;es a este 
@@ -84,7 +84,7 @@
 
       <listitem>
 	<para>A constru&ccedil;&atilde;o de pacotes no FreeBSD 
-	  &eacute; executado pelo 
+	  &eacute; executada pelo 
 	  <application>pkg_create</application>.  Se voc&ecirc; 
 	  n&atilde;o est&aacute; utilizando o FreeBSD, voc&ecirc; 
 	  ter&aacute; que viver sem o uso de pacotes, ou ent&atilde;o
@@ -111,7 +111,7 @@
 
     <note>
       <para>&Eacute; improv&aacute;vel que voc&ecirc; tenha qualquer 
-	problema em localizar estes dois ultimos, eles est&atilde;o 
+	problema em localizar esses dois &uacute;ltimos, eles est&atilde;o 
 	sendo mencionados apenas para que a listagem fique completa.
 	</para>
     </note>
@@ -134,10 +134,10 @@
       </listitem>
 
       <listitem>
-	<para>O <link linkend="doc-make">
+	<para>Os <link linkend="doc-make">
 	  <filename>Makefile</filename>s de 
 	  documenta&ccedil;&atilde;o</link> descrevem o(s) 
-	  documento(s) que deve ser produzido(s) a partir desde 
+	  documento(s) que deve ser produzido(s) a partir deste 
 	  diret&oacute;rio.</para>
       </listitem>
 
@@ -219,7 +219,7 @@ DOC_PREFIX?= ${.CURDIR}/..
       <para>A linha final inclui o arquivo principal do projeto de
 	documenta&ccedil;&atilde;o do FreeBSD, o 
 	<filename>doc.project.mk</filename>, ele &eacute; o 
-	respons&aacute;vel por converter estas v&aacute;riaveis em 
+	respons&aacute;vel por converter estas vari&aacute;veis em 
 	instru&ccedil;&otilde;es de compila&ccedil;&atilde;o para 
 	uso do <application>make</application>.</para>
 
@@ -255,18 +255,18 @@ DOC_PREFIX?= ${.CURDIR}/../../..
 	habilidade de reivindicar a propriedade sobre um documento no 
 	projeto de documenta&ccedil;&atilde;o do FreeBSD, &eacute; 
 	por meio dela que voc&ecirc; recebe a responsabilidade de 
-	mant&eacute;-lo.</para>
+	mant&ecirc;-lo.</para>
 
       <para><makevar>DOC</makevar> &eacute; o nome (sem a 
 	extens&atilde;o <filename>.sgml</filename>) do principal 
-	documento criado por este diret&oacute;rio. A vari&aacute;vel
+	documento criado por este diret&oacute;rio.  A vari&aacute;vel
 	<makevar>SRCS</makevar> lista todos os arquivo individuais 
 	que comp&otilde;em o documento.  Ela tamb&eacute;m deve 
 	incluir os arquivos importantes, nos quais qualquer 
 	mudan&ccedil;a deve resultar em uma 
 	reconstru&ccedil;&atilde;o.</para>
 
-      <para>O <makevar>FORMATS</makevar> indica o formatos 
+      <para>O <makevar>FORMATS</makevar> indica os formatos 
 	nos quais o documento deve ser gerado por padr&atilde;o.
 	O <makevar>INSTALL_COMPRESSED</makevar> cont&eacute;m a lista 
 	padr&atilde;o das t&eacute;cnicas de compress&atilde;o que 
@@ -366,7 +366,7 @@ PRI_LANG?=	en_US.ISO8859-1
 
 	<para>A vari&aacute;vel <makevar>PRI_LANG</makevar> deve ser 
 	  configurada para refletir o idioma e a 
-	  codifica&ccedil;&atilde;o  nativa dos usu&aacute;rios aos 
+	  codifica&ccedil;&atilde;o nativa dos usu&aacute;rios aos 
 	  quais os documentos se destinam.  O Ingl&ecirc;s Americano 
 	  (US English) &eacute; o padr&atilde;o.</para>
 
@@ -376,7 +376,7 @@ PRI_LANG?=	en_US.ISO8859-1
 	    ou que poder&atilde;o, ser compilados.  Sua 
 	    fun&ccedil;&atilde;o principal &eacute; criar links para 
 	    os documentos referenciados com maior frequ&ecirc;ncia no 
-	    diretorio raiz de instala&ccedil;&atilde;o da 
+	    diret&oacute;rio raiz de instala&ccedil;&atilde;o da 
 	    documenta&ccedil;&atilde;o do FreeBSD.</para>
 	</note>
       </sect3>
@@ -406,7 +406,7 @@ PRI_LANG?=	en_US.ISO8859-1
     <sect2>
       <title>doc.subdir.mk</title>
 
-      <para>Este arquivo  &eacute; muito longo para ser explicado por 
+      <para>Este arquivo &eacute; muito longo para ser explicado por 
 	inspe&ccedil;&atilde;o, voc&ecirc; deve ser capaz de 
 	interpret&aacute;-lo com o conhecimento adquirido nos 
 	cap&iacute;tulos anteriores, e com a pequena ajuda dada 
@@ -446,7 +446,7 @@ PRI_LANG?=	en_US.ISO8859-1
 	<para>As depend&ecirc;ncias s&atilde;o descritas por
 	  <literal><replaceable>target</replaceable>:
 	  <replaceable>depend&ecirc;ncia1 depend&ecirc;ncia2 ...
-	  </replaceable></literal>, nas quais para construir o 
+	  </replaceable></literal>, nas quais, para construir o 
 	  <literal>target</literal>, voc&ecirc; necessita 
 	  primeiramente construir as depend&ecirc;ncias 
 	  informadas.</para>
@@ -479,7 +479,7 @@ PRI_LANG?=	en_US.ISO8859-1
 	  Basicamente, ela &eacute; executada <emphasis>ap&oacute;s
 	  </emphasis> as instru&ccedil;&otilde;es passadas no 
 	  processo de constru&ccedil;&atilde;o por ser uma 
-	  depend&ecirc;ncia para o mesmo, e ela n&atilde;o o 
+	  depend&ecirc;ncia para o mesmo, e ela n&atilde;o 
 	  configura o <makevar>.TARGET</makevar>, que &eacute; a
 	  vari&aacute;vel que cont&eacute;m o nome do target atual 
 	  que est&aacute; sendo constru&iacute;do.</para>
@@ -507,7 +507,7 @@ PRI_LANG?=	en_US.ISO8859-1
 		<maketarget>package</maketarget>, ambos descem pela
 		&aacute;rvore de diret&oacute;rios executando a sua
 		vers&atilde;o real dentro dos subdiret&oacute;rios.  
-		(<maketarget>realinstall </maketarget> e 
+		(<maketarget>realinstall</maketarget> e 
 		<maketarget>realpackage</maketarget> 
 		respectivamente).</para>
 	    </listitem>
