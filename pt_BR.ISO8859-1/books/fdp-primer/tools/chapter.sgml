@@ -106,7 +106,7 @@
 
       <para>Esses programas s&atilde;o necess&aacute;rios para 
 	voc&ecirc; trabalhar com a documenta&ccedil;&atilde;o do 
-	FreeBSD, e permitir&atilde;o a conver&ccedil;&atilde;o 
+	FreeBSD, e permitir&atilde;o a convers&atilde;o 
 	da mesma para os formatos HTML, texto puro e RTF.  Eles 
 	est&atilde;o todos inclu&iacute;dos em
 	<filename role="package">textproc/docproj</filename>.</para>
