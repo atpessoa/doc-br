@@ -38,7 +38,7 @@
     ou <application>XEmacs</application> (dispon&iacute;vel na
     cole&ccedil;&atilde;o dos <literal>ports</literal>) cont&ecirc;m
     um pacote muito &uacute;til chamado PSGML (ele pode ser instalado
-    pelo <filename role="package">editors/psgml</filename>).Ele 
+    pelo <filename role="package">editors/psgml</filename>).  Ele 
     &eacute; autom&aacute;ticamente invocado quando um arquivo com a
     extens&atilde;o <filename>.sgml</filename> &eacute; carregado, ou
     executando <command>M-x sgml-mode</command>, ele &eacute; a
@@ -115,7 +115,7 @@
 
       <listitem>
 	<para>Executa o <function>sgml-fill-element</function>.
-	  Ir&aacute reformatar recursivamente o elemento atual.  A
+	  Ir&aacute; reformatar recursivamente o elemento atual.  A
 	  reformata&ccedil;&atilde;o <emphasis>afetar&aacute;
 	  </emphasis> o conte&uacute;do em que os espa&ccedil;os em
 	  branco s&atilde;o significativos, como dentro de elementos
@@ -129,9 +129,9 @@
 
       <listitem>
 	<para>Executa o <function>sgml-edit-attributes</function>.  
-	  Abre um segundo <literal>buffer</literal> que contendo 
-	  uma lista de todos os atributos para o elemento mais 
-	  pr&oacute;ximo, e seus valores atuais.  Use a tecla 
+	  Abre um segundo <literal>buffer</literal> que cont&eacute;m 
+	  uma lista de todos os atributos e valores atuais para o 
+	  elemento mais pr&oacute;ximo.  Use a tecla 
 	  <keycap>TAB</keycap> para navegar entre os atributos, 
 	  utilize <command>C-k</command> para remover um 
 	  valor existente e para substitu&iacute;-lo com um novo,
