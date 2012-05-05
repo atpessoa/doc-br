@@ -47,10 +47,10 @@
     <note>
       <para>Certifique-se que seus ports de 
 	documenta&ccedil;&atilde;o est&atilde;o atualizados! Quando 
-	na d&uacute;vida, remova o outro ports usando o comando 
+	na d&uacute;vida, remova os outros ports usando o comando 
 	&man.pkg.delete.1; antes de instalar o ports.  Por exemplo, 
 	n&oacute;s atualmente dependemos do jade-1.2, e se voc&ecirc;
-	tem instalado o jade-1.1. por favor fa&ccedil;a:</para>
+	tem instalado o jade-1.1. por favor execute:</para>
 
       <screen>&prompt.root; <userinput><command>pkg_delete jade-1.1</command></userinput></screen>
     </note>
@@ -58,18 +58,18 @@
       necess&aacute;rios para construir o s&iacute;tio www:</para>
     <itemizedlist>
     	<listitem>
-    	<para>Utilize o <command>csup</command> para obter uma 
+    	<para>Utilizar o <command>csup</command> para obter uma 
 	  c&oacute;pia local dos arquivos de um servidor 
 	  <application>CVSup</application>.  Este &eacute; o 
 	  m&eacute;todo mais f&aacute;cil e ele n&atilde;o requer 
 	  a instala&ccedil;&atilde;o de nenhum software adicional.  
 	  O <literal>supfile</literal> apresentado na pr&oacute;xima 
 	  sess&atilde;o ir&aacute; sempre buscar a vers&atilde;o mais
-	  atual dos arquivos necess&aacute;rios.  Este m&eacute';todo
-	  &eacute; suficiente se voc&ecirc; est&aacute; apenas 
+	  atual dos arquivos necess&aacute;rios.  Este m&eacute;todo
+	  &eacute; o indicado se voc&ecirc; est&aacute; apenas 
 	  regerando o s&iacute;tio www e n&atilde;o tem 
 	  inten&ccedil;&atilde;o de realizar o <literal>commit
-	  </literal> de nenhuma mudan&ccedil;a/</para>
+	  </literal> de nenhuma mudan&ccedil;a.</para>
 	</listitem>
 
 	<listitem>
@@ -129,11 +129,12 @@ ports-base</programlisting>
 
 	<para>Voc&ecirc; deve &eacute; claro, alterar o registro 
 	  <literal>default host</literal> para apontar para um 
-	  mirror <application>CVSup</application> pr&oacute;ximo da 
-	  sua localiza&ccedil;&atilde;o, e o registro 
-	  <literal>default prefix</literal> deve ser ajustado para o 
-	  local onde voc&ecirc; deseja armazenar os arquivos do CVS.
-	  Salve este arquivo com o nome desejado, por ex. 
+	  sit&iacute;o espelho <application>CVSup</application> 
+	  pr&oacute;ximo da sua localiza&ccedil;&atilde;o, e o 
+	  registro <literal>default prefix</literal> deve ser 
+	  ajustado para o local onde voc&ecirc; deseja armazenar os 
+	  arquivos do CVS.  Salve este arquivo com o nome desejado, 
+	  por exexemplo   
 	  <filename><replaceable>doc-www-supfile</replaceable>
 	  </filename>, e execute o comando abaixo:</para>
 
@@ -177,12 +178,12 @@ ports-base</programlisting>
 	    compilador Modula&nbsp;3.  Como este compilador &eacute; 
 	    relativamente lento, e uma vez que a maior parte das 
 	    pessoas n&atilde;o vai precisar dele para mais nada, 
-	    possivelmente ser&acute; melhor instalar o 
+	    possivelmente ser&aacute; melhor instalar o 
 	    <application>CVSup</application> a partir de um 
 	    pacote.</para>
 	</note>
 
-	<para>o aplicativo <application>CVSup</application> tem um 
+	<para>O aplicativo <application>CVSup</application> tem um 
 	  modo <quote>cvs</quote> especial o qual possibilita a 
 	  obten&ccedil;&atilde;o dos arquivos <quote>,v</quote> dos
 	  quais um reposit&oacute;rio <application>CVS</application> 
@@ -239,7 +240,7 @@ cvsroot-doc</programlisting>
 
 	<screen>&prompt.root; <userinput><command>cvsup</command> <option>-g</option> <option>-L2</option> <replaceable>doc-www-cvsfile</replaceable></userinput></screen>
 
-	<para>Tamb&eacute;m &eacute; recomendado que voc&eacute; 
+	<para>Tamb&eacute;m &eacute; recomendado que voc&ecirc; 
 	  defina a vari&aacute;vel de ambiente <envar>CVSROOT</envar>
 	  nos arquivos de inicializa&ccedil;&atilde;o do seu 
 	  <foreignphrase>shell</foreignphrase>.  Por exemplo, utilize
@@ -289,7 +290,7 @@ cvsroot-doc</programlisting>
   </sect1>
   
   <sect1 id="the-website-build">
-    <title>Construa as web pages do inicio</title>
+    <title>Construa as p&aacute;ginas web do inicio</title>
     
 	<para>Depois de ter completado qualquer um dos dois 
 	  m&eacute;todos acima, voc&ecirc; estar&aacute; pronto 
@@ -326,7 +327,7 @@ cvsroot-doc</programlisting>
     
     <procedure>
       <step>
-	<para>Se voc&ecirc; tiver se movdo para fora do 
+	<para>Se voc&ecirc; tiver sa&iacute;do do 
 	  diret&oacute;rio <filename class="directory">en</filename>,
 	  volte para dele.</para>
 
@@ -346,10 +347,10 @@ cvsroot-doc</programlisting>
       </step>
 
       <step>
-	<para>Se voc&ecirc; j&aacute; havia instalado previamente 
+	<para>Se voc&ecirc; j&aacute; instalou previamente 
 	  as p&aacute;ginas web dentro deste mesmo diret&oacute;rio o 
 	  processo de instala&ccedil;&atilde;o n&atilde;o ir&aacute; 
-	  deletar nenhuma p&aacute;gina web velhas ou desatualizada. 
+	  deletar nenhuma p&aacute;gina web antiga ou desatualizada. 
 	  Por exemplo, se voc&ecirc; compilar e instalar uma nova 
 	  c&oacute;pia do s&iacute;tio www todos os dias, o comando 
 	  abaixo ir&aacute; procurar e deletar todos os arquivos que 
@@ -369,10 +370,10 @@ cvsroot-doc</programlisting>
 	<term><envar>CVSROOT</envar></term>
 	
 	<listitem>
-	  <para>Localiza&ccedil;o da &aacute;rvore de CVS.  Se 
-	    voc&ecirc; utiliza o m&eacute;todo do <application>CVSup
-	    </application> n&oacute;s sugerimos que voc&ecirc; 
-	    defina esta vari&aacute;vel:</para>
+	  <para>Localiza&ccedil;&atilde;o da &aacute;rvore de CVS.  
+	    Se voc&ecirc; utiliza o m&eacute;todo do 
+	    <application>CVSup</application> n&oacute;s sugerimos 
+	    que voc&ecirc; defina esta vari&aacute;vel:</para>
 
 <screen><userinput>&prompt.root; <makevar>CVSROOT</makevar>=<replaceable>/usr/dcvs</replaceable>; <command>export</command> <makevar>CVSROOT</makevar></userinput></screen> 
 
@@ -394,8 +395,8 @@ cvsroot-doc</programlisting>
 	
 	<listitem>
 	  <para>Se esta vari&aacute;vel estiver setada e n&atilde;o 
-	    for vazia, o Makefiles ir&aacute; compilar e instalar 
-	    apenas a documenta&ccedil;&atilde;o em Ingles.  Todas 
+	    for vazia, apenas a documenta&ccedil;&atilde;o em Ingles
+	    ser&aacute; compilada e instalada. Todas as
 	    tradu&ccedil;&otilde;es ser&atilde;o ignoradas. 
 	    E.g.:</para>
 	  
@@ -403,8 +404,8 @@ cvsroot-doc</programlisting>
 
 	  <para>Se voc&ecirc; quiser desabilitar a vari&aacute;vel
 	    <makevar>ENGLISH_ONLY</makevar> e compilar todas as 
-	    paginas, incluindo tradu&ccedil;&otilde;es, basta setar 
-	    a vari&aacute;vel <makevar>ENGLISH_ONLY</makevar>
+	    p&aacute;ginas, incluindo tradu&ccedil;&otilde;es, basta 
+	    setar a vari&aacute;vel <makevar>ENGLISH_ONLY</makevar>
 	    para um valor vazio:</para>
 	
 <screen>&prompt.root; <userinput><command>make</command> <makevar>ENGLISH_ONLY=""</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget> <maketarget>clean</maketarget></userinput></screen>
@@ -417,12 +418,13 @@ cvsroot-doc</programlisting>
 	
 	<listitem>
 	  <para>Se esta vari&aacute;vel estiver setada e n&atilde;o 
-	    for vazia, o Makefiles ir&aacute; compilar e instalar 
-	    apenas as p&aacute;ginas HTML do diret&oacute;rio 
-	    <filename class="directory">www</filename>. Todos os 
-	    documentos do diret&oacute;rio <filename 
+	    for vazia, apenas as p&aacute;ginas HTML do
+	    diret&oacute;rio <filename class="directory">www
+	    </filename> ser&atilde;o compiladas e instaladas. 
+	    Todos os demais documentos do diret&oacute;rio <filename 
 	    class="directory">doc</filename> (Handbook, FAQ, 
-	    Tutorais) ser&atilde;o ignorados.  Por exemplo:</para>
+	    Tutorais, etc) ser&atilde;o ignorados.  
+	    Por exemplo:</para>
 
 		<screen>&prompt.root; <userinput><command>make</command> <makevar>WEB_ONLY=YES</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget></userinput></screen>	
   
@@ -433,12 +435,12 @@ cvsroot-doc</programlisting>
       	<term><makevar>WEB_LANG</makevar></term>
 
 	<listitem>
-	  <para>Se esta vari&aacute;vel estiver setada, o Makefiles 
-	    ir&aacute; compilar e instalar apenas as p&aacute;ginas 
-	    web no idioma especificado por esta vari&aacute;vel 
-	    dentro do idiret&oacute;rio <filename 
-	    class="directory">www</filename>.  Todos os demais 
-	    idiomas ser&atilde;o ignorados. Por exemplo:</para>
+	  <para>Se esta vari&aacute;vel estiver setada, apenas as 
+	    p&aacute;ginas web no idioma especificado por ela
+	    ser&atilde;o compiladas e instaladas dentro do 
+	    diret&oacute;rio <filename class="directory">www
+	    </filename>.  Todos os demais idiomas ser&atilde;o 
+	    ignorados. Por exemplo:</para>
 
 <screen>&prompt.root; <userinput>make WEB_LANG="el es hu nl" all install</userinput></screen>
   	</listitem>
@@ -448,20 +450,22 @@ cvsroot-doc</programlisting>
 	<term><makevar>NOPORTSCVS</makevar></term>
 	
 	<listitem>
-	  <para>Se esta varia&aacute;vel estiver setada, o Makefiles 
-	    n&atilde;o far&aacute; o check out dos arquivos do ports 
-	    do cvs repository. Ao inv&eacute;s disso, ele ir&aacute; 
-	    copiar os arquivos a partir do <filename 
-	    class="directory">/usr/ports</filename> (ou a onde a 
-	    vari&aacute;vel <envar>PORTSBASE</envar> apontar).</para>
+	  <para>Se esta varia&aacute;vel estiver setada, o processo de
+	    compila&ccedil;&atilde;o n&atilde;o far&aacute; o check 
+	    out dos arquivos do ports do reposit&oacute;rio cvs.  
+	    Ao inv&eacute;s disso, ele ir&aacute; copiar os arquivos 
+	    a partir do <filename class="directory">/usr/ports
+	    </filename> (ou do local definido na vari&aacute;vel 
+	    <envar>PORTSBASE</envar>).</para>
 	</listitem>
       </varlistentry>
     </variablelist>
     
     <para><makevar>WEB_ONLY</makevar>, <makevar>WEB_LANG</makevar>, 
       <makevar>ENGLISH_ONLY</makevar> e <makevar>NOPORTSCVS</makevar>
-      s&atilde;o vari&aacute;veis do make.  Voc&ecirc; pode definir 
-      estas vari&aacute;veis no <filename>/etc/make.conf</filename>, 
+      s&atilde;o vari&aacute;veis do <command>make</command>.  
+      Voc&ecirc; pode definir estas vari&aacute;veis no 
+      <filename>/etc/make.conf</filename>, 
       no <filename>Makefile.inc</filename>, ou ainda como 
       vari&aacute;veis de ambiente na linha de comando ou nos 
       arquivos de inicializa&ccedil;&atilde;o do seu 
