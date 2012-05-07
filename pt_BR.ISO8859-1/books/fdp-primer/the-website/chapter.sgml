@@ -38,7 +38,7 @@
     
     <para>Utilize um disco que tenha espa&ccedil;o livre suficiente. 
       Voc&ecirc; ir&aacute; precisar de 200&nbsp;MB a 500&nbsp;MB, 
-      dependendo do m&eacute;todo que escolher. Este espa&ccedil;o 
+      dependendo do m&eacute;todo que escolher.  Este espa&ccedil;o 
       ir&aacute; abrigar as ferramentas SGML, um subconjunto da 
       &aacute;rvore <application>CVS</application>, os arquivos 
       tempor&aacute;rios de trabalho e as p&aacute;ginas web 
@@ -46,15 +46,15 @@
  
     <note>
       <para>Certifique-se que seus ports de 
-	documenta&ccedil;&atilde;o est&atilde;o atualizados! Quando 
+	documenta&ccedil;&atilde;o est&atilde;o atualizados!  Quando 
 	na d&uacute;vida, remova os outros ports usando o comando 
 	&man.pkg.delete.1; antes de instalar o ports.  Por exemplo, 
 	n&oacute;s atualmente dependemos do jade-1.2, e se voc&ecirc;
-	tem instalado o jade-1.1. por favor execute:</para>
+	tem instalado o jade-1.1, por favor execute:</para>
 
       <screen>&prompt.root; <userinput><command>pkg_delete jade-1.1</command></userinput></screen>
     </note>
-    <para>Existem 2 m&eacute;todos para se obter os arquivos 
+    <para>Existem dois m&eacute;todos para se obter os arquivos 
       necess&aacute;rios para construir o s&iacute;tio www:</para>
     <itemizedlist>
     	<listitem>
@@ -79,7 +79,7 @@
 	  necess&aacute;rios.  Isto ir&aacute; requerer que 
 	  voc&ecirc; instale um programa como o 
 	  <filename>net/cvsup-without-gui</filename>, este &eacute; 
-	  o m&eacute;todo  mais flex&iacute;vel se voc&ecirc; 
+	  o m&eacute;todo mais flex&iacute;vel se voc&ecirc; 
 	  precisa de acesso r&aacute;pido a diferentes revis&otilde;es
 	  dos arquivos do <literal>doc/www</literal>, revis&otilde;es
 	  hist&oacute;ricas, ou se voc&ecirc; planeja realizar 
@@ -127,14 +127,14 @@ www
 
 ports-base</programlisting>
 
-	<para>Voc&ecirc; deve &eacute; claro, alterar o registro 
+	<para>Voc&ecirc; deve, &eacute; claro, alterar o registro 
 	  <literal>default host</literal> para apontar para um 
 	  sit&iacute;o espelho <application>CVSup</application> 
 	  pr&oacute;ximo da sua localiza&ccedil;&atilde;o, e o 
 	  registro <literal>default prefix</literal> deve ser 
 	  ajustado para o local onde voc&ecirc; deseja armazenar os 
 	  arquivos do CVS.  Salve este arquivo com o nome desejado, 
-	  por exexemplo   
+	  por exemplo,   
 	  <filename><replaceable>doc-www-supfile</replaceable>
 	  </filename>, e execute o comando abaixo:</para>
 
@@ -187,7 +187,7 @@ ports-base</programlisting>
 	  modo <quote>cvs</quote> especial o qual possibilita a 
 	  obten&ccedil;&atilde;o dos arquivos <quote>,v</quote> dos
 	  quais um reposit&oacute;rio <application>CVS</application> 
-	  &eacute; constitui&iacute;do.  Esta fun&ccedil;&atilde;o 
+	  &eacute; constitu&iacute;do.  Esta fun&ccedil;&atilde;o 
 	  n&atilde;o est&aacute; dispon&iacute;vel atualmente no 
 	  <application>csup</application>.  Para 
 	  informa&ccedil;&otilde;es mais detalhadas sobre o 
@@ -228,13 +228,13 @@ cvsroot-common
 cvsroot-ports
 cvsroot-doc</programlisting>
 
-	<para>Voc&ecirc; deve &eacute; claro, alterar o registro 
+	<para>Voc&ecirc; deve, &eacute; claro, alterar o registro 
 	  <literal>default host</literal> para apontar para um 
 	  sit&iacute;o espelho que esteja pr&oacute;ximo da sua 
 	  localiza&ccedil;&atilde;o, e o registro <literal>default 
 	  prefix</literal> deve ser alterado para apontar para o 
 	  local no qual voc&ecirc; deseja armazenar os arquivos do 
-	  reposit&oacute;o.  Salve este arquivo como por exemplo 
+	  reposit&oacute;rio.  Salve este arquivo como, por exemplo, 
 	  <filename><replaceable>doc-www-cvsfile</replaceable>
 	  </filename> e execute o seguinte comando:</para>
 
@@ -273,7 +273,7 @@ cvsroot-doc</programlisting>
 	  qual o <application>csup</application> faz o 
 	  <foreignphrase>check out</foreignphrase> dos arquivos a 
 	  partir dos servidores <application>CVSup</application>.  
-	  Quando ele completar, voce ter&aacute; um diret&oacute;rio 
+	  Quando ele completar, voc&ecirc; ter&aacute; um diret&oacute;rio 
 	  de compila&ccedil;&atilde;o com um conte&uacute;do 
 	  semelhante ao que voc&ecirc; obt&eacute;m pelo 
 	  m&eacute;todo simples usando o 
@@ -290,7 +290,7 @@ cvsroot-doc</programlisting>
   </sect1>
   
   <sect1 id="the-website-build">
-    <title>Construa as p&aacute;ginas web do inicio</title>
+    <title>Construa as p&aacute;ginas web do in&iacute;cio</title>
     
 	<para>Depois de ter completado qualquer um dos dois 
 	  m&eacute;todos acima, voc&ecirc; estar&aacute; pronto 
@@ -336,7 +336,7 @@ cvsroot-doc</programlisting>
 
       <step>
 	<para>Execute o comando &man.make.1; <maketarget>install
-	  </maketarget>, setando a vari&aacute;vel <makevar>DESTDIR
+	  </maketarget>, definindo a vari&aacute;vel <makevar>DESTDIR
 	  </makevar> para o nome do diret&oacute;rio no qual deseja 
 	  instalar os arquivos.  Eles ser&atilde;o instalados no 
 	  <filename class="directory">$DESTDIR/data</filename> o qual
@@ -350,10 +350,10 @@ cvsroot-doc</programlisting>
 	<para>Se voc&ecirc; j&aacute; instalou previamente 
 	  as p&aacute;ginas web dentro deste mesmo diret&oacute;rio o 
 	  processo de instala&ccedil;&atilde;o n&atilde;o ir&aacute; 
-	  deletar nenhuma p&aacute;gina web antiga ou desatualizada. 
+	  remover nenhuma p&aacute;gina web antiga ou desatualizada. 
 	  Por exemplo, se voc&ecirc; compilar e instalar uma nova 
 	  c&oacute;pia do s&iacute;tio www todos os dias, o comando 
-	  abaixo ir&aacute; procurar e deletar todos os arquivos que 
+	  abaixo ir&aacute; procurar e remover todos os arquivos que 
 	  n&atilde;o tenham sido alterados nos &uacute;ltimos 
 	  tr&ecirc;s dias.</para>
 
@@ -378,7 +378,7 @@ cvsroot-doc</programlisting>
 <screen><userinput>&prompt.root; <makevar>CVSROOT</makevar>=<replaceable>/usr/dcvs</replaceable>; <command>export</command> <makevar>CVSROOT</makevar></userinput></screen> 
 
 	  <para>A <envar>CVSROOT</envar> &eacute; uma vari&aacute;vel
-	    de ambiente.  Voc&ecirc; deve defin&iacute;-la pela linha
+	    de ambiente.  Voc&ecirc; deve defini-la pela linha
 	    de comando ou nos seus arquivos de 
 	    inicializa&ccedil;&atilde;o do seu <foreignphrase>shell
 	    </foreignphrase> (por exemplo, 
@@ -394,18 +394,18 @@ cvsroot-doc</programlisting>
 	<term><makevar>ENGLISH_ONLY</makevar></term>
 	
 	<listitem>
-	  <para>Se esta vari&aacute;vel estiver setada e n&atilde;o 
-	    for vazia, apenas a documenta&ccedil;&atilde;o em Ingles
-	    ser&aacute; compilada e instalada. Todas as
+	  <para>Se esta vari&aacute;vel estiver definida e n&atilde;o 
+	    for vazia, apenas a documenta&ccedil;&atilde;o em Ingl&ecirc;s
+	    ser&aacute; compilada e instalada.  Todas as
 	    tradu&ccedil;&otilde;es ser&atilde;o ignoradas. 
-	    E.g.:</para>
+	    Por exemplo:</para>
 	  
 <screen>&prompt.root; <userinput><command>make</command> <makevar>ENGLISH_ONLY=YES</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget></userinput></screen>
 
 	  <para>Se voc&ecirc; quiser desabilitar a vari&aacute;vel
 	    <makevar>ENGLISH_ONLY</makevar> e compilar todas as 
 	    p&aacute;ginas, incluindo tradu&ccedil;&otilde;es, basta 
-	    setar a vari&aacute;vel <makevar>ENGLISH_ONLY</makevar>
+	    definir a vari&aacute;vel <makevar>ENGLISH_ONLY</makevar>
 	    para um valor vazio:</para>
 	
 <screen>&prompt.root; <userinput><command>make</command> <makevar>ENGLISH_ONLY=""</makevar> <maketarget>all</maketarget> <maketarget>install</maketarget> <maketarget>clean</maketarget></userinput></screen>
@@ -417,7 +417,7 @@ cvsroot-doc</programlisting>
 	<term><makevar>WEB_ONLY</makevar></term>
 	
 	<listitem>
-	  <para>Se esta vari&aacute;vel estiver setada e n&atilde;o 
+	  <para>Se esta vari&aacute;vel estiver definida e n&atilde;o 
 	    for vazia, apenas as p&aacute;ginas HTML do
 	    diret&oacute;rio <filename class="directory">www
 	    </filename> ser&atilde;o compiladas e instaladas. 
@@ -435,12 +435,12 @@ cvsroot-doc</programlisting>
       	<term><makevar>WEB_LANG</makevar></term>
 
 	<listitem>
-	  <para>Se esta vari&aacute;vel estiver setada, apenas as 
+	  <para>Se esta vari&aacute;vel estiver definida, apenas as 
 	    p&aacute;ginas web no idioma especificado por ela
 	    ser&atilde;o compiladas e instaladas dentro do 
 	    diret&oacute;rio <filename class="directory">www
 	    </filename>.  Todos os demais idiomas ser&atilde;o 
-	    ignorados. Por exemplo:</para>
+	    ignorados.  Por exemplo:</para>
 
 <screen>&prompt.root; <userinput>make WEB_LANG="el es hu nl" all install</userinput></screen>
   	</listitem>
@@ -450,7 +450,7 @@ cvsroot-doc</programlisting>
 	<term><makevar>NOPORTSCVS</makevar></term>
 	
 	<listitem>
-	  <para>Se esta varia&aacute;vel estiver setada, o processo de
+	  <para>Se esta vari&aacute;vel estiver definida, o processo de
 	    compila&ccedil;&atilde;o n&atilde;o far&aacute; o check 
 	    out dos arquivos do ports do reposit&oacute;rio cvs.  
 	    Ao inv&eacute;s disso, ele ir&aacute; copiar os arquivos 
