@@ -39,7 +39,7 @@
     cole&ccedil;&atilde;o dos <literal>ports</literal>) cont&ecirc;m
     um pacote muito &uacute;til chamado PSGML (ele pode ser instalado
     pelo <filename role="package">editors/psgml</filename>).  Ele 
-    &eacute; autom&aacute;ticamente invocado quando um arquivo com a
+    &eacute; automaticamente invocado quando um arquivo com a
     extens&atilde;o <filename>.sgml</filename> &eacute; carregado, ou
     executando <command>M-x sgml-mode</command>, ele &eacute; a
     modalidade principal para tratar dos elementos e dos atributos de
@@ -47,7 +47,7 @@
 
   <para>Compreender alguns dos comandos fornecidos por esta modalidade
     pode tornar o trabalho com os documentos em SGML, tais como o
-    manual, muito mais f&aacute;cil.</para>
+    Handbook, muito mais f&aacute;cil.</para>
 
   <variablelist>
     <varlistentry>
@@ -61,7 +61,7 @@
 	  Os elementos que s&atilde;o inv&aacute;lidos no ponto 
 	  atual n&atilde;o ser&atilde;o permitidos.</para>
 
-	<para>As Tags de abertura e de fechamento para o elemento
+	<para>As tags de abertura e de fechamento para o elemento
 	  ser&atilde;o inseridas.  Se o elemento contiver outro,
 	  obrigat&oacute;rios, os elementos destes tamb&eacute;m
 	  ser&atilde;o inseridos.</para>
@@ -75,7 +75,7 @@
 	<para>Executa o <function>sgml-change-element-name</function>.
 	  Coloque o cursor dentro de um elemento e execute este
 	  comando.  Voc&ecirc; ser&aacute; questionado sobre o nome do
-	  elemento para o qual voc&ecirc; deseja mudar.  As Tags de
+	  elemento para o qual voc&ecirc; deseja mudar.  As tags de
 	  abertura e de fechamento do elemento atual ser&atilde;o
 	  alterados para o novo elemento.</para>
       </listitem>
@@ -86,13 +86,13 @@
 
       <listitem>
 	<para>Executa o <function>sgml-tag-region</function>.  
-	  Selecione algum texto (Posicione o cursor no come&ccedil;o 
+	  Selecione algum texto (posicione o cursor no come&ccedil;o 
 	  do texto, de <command>C-espa&ccedil;o</command>, agora 
 	  posicione o cursor no final do texto, 
 	  de <command>C-espa&ccedil;o</command>) e
 	  execute ent&atilde;o este comando.  Voc&ecirc;
 	  ser&aacute; questionado sobre o nome do elemento que deseja
-	  inserir.  Este elemento ser&aacute inserido ent&atilde;o
+	  inserir.  Este elemento ser&aacute; inserido ent&atilde;o
 	  imediatamente antes e depois da regi&atilde;o
 	  marcada.</para>
       </listitem>
@@ -103,9 +103,9 @@
 
       <listitem>
 	<para>Executa o <function>sgml-untag-element</function>.
-	  Coloque o cursor dentro da Tag de abertura ou de fechamento
+	  Coloque o cursor dentro da tag de abertura ou de fechamento
 	  do elemento que voc&ecirc; quer remover, e execute este
-	  comando.  As Tags de abertura ou de fechamento do elemento
+	  comando.  As tags de abertura ou de fechamento do elemento
 	  ser&atilde;o removidas.</para>
       </listitem>
     </varlistentry>
@@ -167,7 +167,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>Sem d&uacute;vida h&aacute; outras fun&ccedil;&atilde;es
+  <para>Sem d&uacute;vida h&aacute; outras fun&ccedil;&otilde;es
     &uacute;teis desta modalidade, mas estas s&atilde;o as que
     voc&ecirc; ir&aacute; utilizar com mais frequ&ecirc;ncia.</para>
 
